@@ -18,19 +18,20 @@
       </a>
       <ul class="navigation__menu menu-list">
         <li class="menu-list__item menu-list__item--active">
-          <a>Каталог товаров</a>
+          <a class="menu-list__link menu-list__link--active">Каталог товаров</a>
         </li>
         <li class="menu-list__item">
-          <a href="form.html">Вязание на заказ</a>
+          <a class="menu-list__link" href="form.html">Вязание на заказ</a>
         </li>
       </ul>
-      <div class="navigation__user-block user-block">
-        <form class="user-block__search-form search-form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-form__input" type="text" name="search" value="Поиск по сайту">
-          <button class="search-form__button" type="submit">Искать</button>
-        </form>
-        <a class="user-block__cart" href="#">Корзина: <span class="user-block__cart-status">пока пуста</span></a>
-      </div>
+      <ul class="navigation__user-block user-block">
+        <li class="user-block__item">
+          <a class="user-block__link user-block__link--search" href="#">Поиск по сайту</a>
+        </li>
+        <li class="user-block__item">
+          <a class="user-block__link user-block__link--cart" href="#">Корзина: <span class="user-block__link-status">пока пуста</span></a>
+        </li>
+      </ul>
     </nav>
   </header>
 
