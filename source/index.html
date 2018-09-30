@@ -177,6 +177,28 @@
     </p>
   </footer>
 
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <ul class="modal__form-list">
+        <li class="modal__form-item">
+          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="s" checked>
+          <label class="modal__form-label" for="s">S</label>
+        </li>
+        <li class="modal__form-item">
+          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="m" checked>
+          <label class="modal__form-label" for="s">M</label>
+        </li>
+        <li class="modal__form-item">
+          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="l" checked>
+          <label class="modal__form-label" for="s">L</label>
+        </li>
+      </ul>
+      <button class="modal__form-button" type="submit">Добавить</button>
+    </form>
+  </section>
+
 </body>
 
 </html>
