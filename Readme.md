@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Шардин](https://up.htmlacademy.ru/adaptive/15/user/818053).
-* Наставник: [Андрей Грачев](https://up.htmlacademy.ru/htmlcss/22/user/252055).
+* Наставник: [Андрей Грачев](https://up.htmlacademy.ru/adaptive/15/user/252055).
 
 ---
 
