@@ -1,0 +1,71 @@
+.contacts {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  outline: 1px solid orange;
+}
+
+.contacts__header {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.contacts__property {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__value {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__email {
+  text-decoration: none;
+  color: #444444;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #62d1ba;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: #46c1ae;
+    &::before {
+      background-color: #46c1ae;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+    &::before {
+      opacity: 0.1;
+    }
+  }
+}
+
+.contacts__map {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__write {
+  font-size: 18px;
+}
