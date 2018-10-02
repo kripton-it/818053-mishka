@@ -29,11 +29,13 @@
   font-size: 20px;
   line-height: 30px;
   text-decoration: none;
+
   &:hover,
   &:focus,
   &:active {
     background-color: #59d5bc;
   }
+
   &:active {
     color: rgba($color: #ffffff, $alpha: 0.3);
   }
@@ -43,6 +45,7 @@
   &--different {
     .intro__link {
       background-color: #56c3b2;
+
       &:hover,
       &:focus,
       &:active {

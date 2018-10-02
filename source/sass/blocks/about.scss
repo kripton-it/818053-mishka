@@ -19,26 +19,32 @@
   line-height: 20px;
   background-repeat: no-repeat;
   background-position: left center;
+
   &--eco {
     background-image: url("../../img/icon-feature-flower.svg");
     background-size: 32px 37px;
   }
+
   &--style {
     background-image: url("../../img/icon-feature-money.svg");
     background-size: 47px 27px;
   }
+
   &--like {
     background-image: url("../../img/icon-feature-heart.svg");
     background-size: 34px 27px;
   }
+
   &--knit {
     background-image: url("../../img/icon-feature-ball.svg");
     background-size: 35px 34px;
   }
+
   &--support {
     background-image: url("../../img/icon-feature-rocket.svg");
     background-size: 55px 23px;
   }
+
   &--box {
     background-image: url("../../img/icon-feature-gift.svg");
     background-size: 33px 32px;

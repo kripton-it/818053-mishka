@@ -53,19 +53,21 @@
   background-position: center;
   opacity: 1;
   cursor: pointer;
+
   &:hover,
   &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   &--prev {
     background-image: url("../img/icon-left-arrow.svg");
   }
+
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
 }
-
-

@@ -10,10 +10,12 @@
   color: #000000;
   text-decoration: none;
   opacity: 1;
+
   &:hover,
   &:focus {
     opacity: 1;
   }
+
   &:active {
     opacity: 0.3;
   }

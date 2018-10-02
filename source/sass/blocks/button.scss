@@ -10,11 +10,13 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
+
   &:hover,
   &:focus {
     background-color: #444444;
     color: #ffffff;
   }
+
   &:active {
     background-color: #444444;
     color: rgba($color: #ffffff, $alpha: 0.3);

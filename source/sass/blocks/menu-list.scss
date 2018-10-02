@@ -2,10 +2,12 @@
   text-decoration: none;
   color: #000000;
   opacity: 1;
+
   &[href]:hover,
   &[href]:focus {
     opacity: 0.6;
   }
+
   &[href]:active {
     opacity: 0.3;
   }

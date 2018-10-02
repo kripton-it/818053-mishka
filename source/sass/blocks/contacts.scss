@@ -36,6 +36,7 @@
   text-decoration: none;
   color: #444444;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -45,16 +46,20 @@
     left: 0;
     right: 0;
   }
+
   &:hover,
   &:focus,
   &:active {
     color: #46c1ae;
+
     &::before {
       background-color: #46c1ae;
     }
   }
+
   &:active {
     opacity: 0.3;
+
     &::before {
       opacity: 0.1;
     }
