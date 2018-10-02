@@ -1,0 +1,12 @@
+.user-block__link {
+  text-decoration: none;
+  color: #000000;
+  opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
