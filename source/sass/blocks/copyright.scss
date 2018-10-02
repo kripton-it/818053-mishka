@@ -1,0 +1,18 @@
+.copyright {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.copyright__link {
+  color: #000000;
+  text-decoration: none;
+  opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
