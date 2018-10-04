@@ -1,0 +1,51 @@
+.week {
+  outline: 1px solid paleturquoise;
+  background-color: $bg-color-main;
+  color: $color-main;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.week__header {
+  color: $color-green;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.week__description {
+  color: $color-main;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.week__table {
+  color: $color-main;
+
+  td,
+  th {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+}
+
+.week__image {
+  margin: 0;
+  padding: 0;
+}
+
+.week__price {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

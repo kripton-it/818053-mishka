@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
 
   <header class="page-header">
     <nav class="navigation">
@@ -14,7 +15,7 @@
         <span class="visually-hidden">Открыть/Закрыть меню</span>
       </button>
       <a class="navigation__logo logo">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
       </a>
       <ul class="navigation__menu menu-list">
         <li class="menu-list__item">
@@ -46,7 +47,7 @@
         <li class="intro__item">
           <a class="intro__link" href="#">Предметы интерьера</a>
         </li>
-        <li class="intro__item">
+        <li class="intro__item intro__item--different">
           <a class="intro__link" href="#">Детские игрушки</a>
         </li>
       </ul>
@@ -71,7 +72,7 @@
         </tr>
       </table>
       <p class="week__image">
-        <img src="http://placehold.it/260x315" alt="Товар недели: вязаные корзинки" width="260" height="315">
+        <img src="img/triple-set-mobile@1x.jpg" alt="Товар недели: вязаные корзинки" width="260" height="315">
       </p>
       <p class="week__price">
         Цена: 990 руб.
@@ -138,7 +139,7 @@
         <dd class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
       </dl>
       <p class="contacts__map">
-        <img class="contacts__map-image" src="http://placehold.it/322x457" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"
+        <img class="contacts__map-image" src="img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"
           width="322" height="457">
       </p>
       <a class="contacts__write button" href="#">Напишите нам</a>
@@ -164,10 +165,8 @@
       </li>
     </ul>
     <p class="page-footer__copyright copyright">
-      <span class="copyright__text">
-        Разработано
-      </span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
         <span class="visually-hidden">в HTML Academy</span>
       </a>
     </p>
@@ -179,19 +178,19 @@
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
       <ul class="modal__form-list">
         <li class="modal__form-item">
-          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="s" checked>
+          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="s" value="s" checked>
           <label class="modal__form-label" for="s">S</label>
         </li>
         <li class="modal__form-item">
-          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="m" checked>
-          <label class="modal__form-label" for="s">M</label>
+          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="m" value="m">
+          <label class="modal__form-label" for="m">M</label>
         </li>
         <li class="modal__form-item">
-          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="l" checked>
-          <label class="modal__form-label" for="s">L</label>
+          <input class="modal__form-input-radio visually-hidden" type="radio" name="size" id="l" value="l">
+          <label class="modal__form-label" for="l">L</label>
         </li>
       </ul>
-      <button class="modal__form-button" type="submit">Добавить</button>
+      <button class="modal__form-button button" type="submit">Добавить</button>
     </form>
   </section>
 

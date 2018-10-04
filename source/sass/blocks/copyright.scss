@@ -1,0 +1,15 @@
+.copyright {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.copyright__link {
+  color: $color-black;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

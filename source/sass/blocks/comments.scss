@@ -1,0 +1,71 @@
+.comments {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  outline: 1px solid green;
+}
+
+.comments__item {
+  margin: 0;
+  padding: 0;
+}
+
+.comments__text {
+  margin: 0;
+  padding: 0;
+  color: $color-main;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.comments__author-name {
+  display: block;
+  color: $color-black;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.comments__author-link {
+  font-size: 17px;
+  color: $color-main;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.comments__controls {
+  border: 1px solid #ececec;
+  background-color: $bg-color-main;
+  height: 50px;
+  font-size: 0;
+}
+
+.comments__button {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  border: none;
+  width: 130px;
+  height: 50px;
+  background-color: $bg-color-main;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}

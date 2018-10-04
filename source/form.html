@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
 
   <header class="page-header">
     <nav class="navigation">
@@ -14,7 +15,7 @@
         <span class="visually-hidden">Открыть/Закрыть меню</span>
       </button>
       <a class="navigation__logo logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
       </a>
       <ul class="navigation__menu menu-list">
         <li class="menu-list__item">
@@ -36,7 +37,7 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__heading heading">
+    <h1 class="page-main__heading page-main__heading--form heading">
       Вязание на заказ
     </h1>
     <p class="page-main__intro">
@@ -93,17 +94,17 @@
         <legend class="form__legend">ФИО</legend>
         <ul class="form__list">
           <li class="form__item">
-            <label for="name">Имя:</label>
+            <label class="form__label" for="name">Имя:</label>
             <input class="form__input form__input--text" type="text" name="name" placeholder="Введите ваше имя*" id="name"
               required>
           </li>
           <li class="form__item">
-            <label for="surname">Фамилия:</label>
+            <label class="form__label" for="surname">Фамилия:</label>
             <input class="form__input form__input--text" type="text" name="surname" placeholder="Введите фамилию*" id="surname"
               required>
           </li>
           <li class="form__item">
-            <label for="patronymic">Отчество:</label>
+            <label class="form__label" for="patronymic">Отчество:</label>
             <input class="form__input form__input--text" type="text" name="patronymic" placeholder="Отчество, если желаете"
               id="patronymic">
           </li>
@@ -153,10 +154,8 @@
       </li>
     </ul>
     <p class="page-footer__copyright copyright">
-      <span class="copyright__text">
-        Разработано
-      </span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">Разработано</span>
         <span class="visually-hidden">в HTML Academy</span>
       </a>
     </p>

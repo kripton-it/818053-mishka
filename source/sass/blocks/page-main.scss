@@ -1,0 +1,41 @@
+.page-main {
+  border-bottom: 1px solid transparent;
+}
+
+.page-main__heading {
+  font-size: 27px;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: $bg-color-gray;
+  margin-bottom: 30px;
+
+  &--form {
+    color: #231f20;
+  }
+}
+
+.page-main__goods {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.page-main__intro {
+  color: $color-main;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__form {
+  outline: 1px solid red;
+  margin-bottom: 55px;
+}
+
+.page-main__production {
+  margin-bottom: 55px;
+}
