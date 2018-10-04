@@ -1,7 +1,7 @@
 .about {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #ffffff;
+  background-color: $bg-color-main;
   outline: 1px solid red;
 }
 
@@ -13,7 +13,7 @@
 
 .about__item {
   padding-top: 85px;
-  color: #000000;
+  color: $color-black;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;

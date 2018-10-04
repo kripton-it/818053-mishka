@@ -3,12 +3,12 @@
   padding-bottom: 45px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
-  background-color: #ffffff;
-  color: #444444;
+  background-color: $bg-color-main;
+  color: $color-main;
 }
 
 .modal__title {
-  color: #000000;
+  color: $color-black;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
@@ -20,7 +20,6 @@
 .modal__text {
   margin: 0;
   padding: 0;
-  color: #444444;
   font-size: 15px;
   font-weight: normal;
   line-height: 30px;
@@ -35,7 +34,6 @@
 .modal__form-label {
   cursor: pointer;
   display: block;
-  color: #444444;
   text-align: center;
   width: 78px;
   height: 48px;
@@ -43,12 +41,12 @@
   font-weight: bold;
   line-height: 48px;
   text-transform: uppercase;
-  border: 2px solid rgba(#444444, 0.1);
-  background-color: #ffffff;
+  border: 2px solid rgba($color-main, 0.1);
+  background-color: $bg-color-main;
 
   &:hover,
   &:focus {
-    border-color: rgba(#444444, 0.3);
+    border-color: rgba($color-main, 0.3);
   }
 
   &:active {
@@ -58,29 +56,23 @@
 
 .modal__form-input-radio:checked {
   + .modal__form-label {
-    border-color: #63d1bb;
+    border-color: $color-green;
   }
 }
 
 .modal__form-button {
   width: 100%;
-  background-color: #63d1bb;
-  border-color: #63d1bb;
-  color: #ffffff;
+  background-color: $color-green;
+  border-color: $color-green;
+  color: $color-white;
   line-height: 16px;
 
   &:hover,
   &:focus {
-    background-color: #63d1bb;
-    border-color: #63d1bb;
-    color: #ffffff;
     opacity: 0.8;
   }
 
   &:active {
-    background-color: #63d1bb;
-    border-color: #63d1bb;
-    color: #ffffff;
     opacity: 0.3;
   }
 }

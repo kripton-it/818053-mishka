@@ -24,11 +24,10 @@
 
 .intro__link {
   display: block;
-  background-color: #63d1bb;
-  color: #ffffff;
+  background-color: $color-green;
+  color: $color-white;
   font-size: 20px;
   line-height: 30px;
-  text-decoration: none;
 
   &:hover,
   &:focus,
@@ -37,7 +36,7 @@
   }
 
   &:active {
-    color: rgba(#ffffff, 0.3);
+    color: rgba($color-white, 0.3);
   }
 }
 

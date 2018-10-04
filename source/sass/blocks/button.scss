@@ -1,9 +1,8 @@
 .button {
   cursor: pointer;
-  border: 2px solid #444444;
-  background-color: #ffffff;
-  color: #444444;
-  text-decoration: none;
+  border: 2px solid $color-main;
+  background-color: $bg-color-main;
+  color: $color-main;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -13,12 +12,12 @@
 
   &:hover,
   &:focus {
-    background-color: #444444;
-    color: #ffffff;
+    background-color: $color-main;
+    color: $color-white;
   }
 
   &:active {
-    background-color: #444444;
-    color: rgba(#ffffff, 0.3);
+    background-color: $color-main;
+    color: rgba($color-white, 0.3);
   }
 }

@@ -26,7 +26,7 @@
 
 .goods__info {
   border: 1px solid #ececec;
-  background-color: #ffffff;
+  background-color: $bg-color-main;
 }
 
 .goods__title {
@@ -38,8 +38,7 @@
 }
 
 .goods__title-link {
-  text-decoration: none;
-  color: #000000;
+  color: $color-black;
 
   &:hover,
   &:focus {
@@ -52,7 +51,7 @@
 }
 
 .goods__features {
-  color: #444444;
+  color: $color-main;
   font-size: 13px;
   font-weight: normal;
   line-height: 30px;
@@ -61,7 +60,7 @@
 }
 
 .goods__price {
-  color: #000000;
+  color: $color-black;
   font-size: 15px;
   font-weight: bold;
   line-height: 24px;

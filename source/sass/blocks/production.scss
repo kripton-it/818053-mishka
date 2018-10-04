@@ -2,7 +2,7 @@
   outline: 1px solid green;
   padding-bottom: 30px;
   border: 1px solid #ececec;
-  background-color: #ffffff;
+  background-color: $bg-color-main;
 
   &:hover,
   &:focus {
@@ -17,7 +17,7 @@
 .production__header {
   margin: 0;
   padding: 0;
-  color: #000000;
+  color: $color-black;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
@@ -33,7 +33,7 @@
 .production__text {
   margin: 0;
   padding: 0;
-  color: #444444;
+  color: $color-main;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;

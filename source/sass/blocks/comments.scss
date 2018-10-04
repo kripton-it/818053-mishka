@@ -12,7 +12,7 @@
 .comments__text {
   margin: 0;
   padding: 0;
-  color: #444444;
+  color: $color-main;
   font-size: 15px;
   font-weight: normal;
   line-height: 30px;
@@ -20,7 +20,7 @@
 
 .comments__author-name {
   display: block;
-  color: #000000;
+  color: $color-black;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
@@ -28,15 +28,14 @@
 
 .comments__author-link {
   font-size: 17px;
-  color: #444444;
+  color: $color-main;
   font-weight: normal;
   line-height: 30px;
-  text-decoration: none;
 }
 
 .comments__controls {
   border: 1px solid #ececec;
-  background-color: #ffffff;
+  background-color: $bg-color-main;
   height: 50px;
   font-size: 0;
 }
@@ -48,7 +47,7 @@
   border: none;
   width: 130px;
   height: 50px;
-  background-color: #ffffff;
+  background-color: $bg-color-main;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
