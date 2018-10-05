@@ -117,7 +117,9 @@ body > * > * > * > * > *::before {
 .about__header::before,
 .about__list::before,
 .comments__header::before,
-.contacts__header::before {
+.contacts__header::before,
+.page-footer__social::before,
+.page-footer__copyright::before {
   display: none;
 }
 
