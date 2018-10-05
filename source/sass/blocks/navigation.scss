@@ -1,13 +1,14 @@
 .navigation {
-  outline: 1px solid red;
+  @include container();
+  /* Временно для сетки */
+  min-height: 395px;
+  background-color: transparent;
 }
 
 .navigation__menu {
   @include reset-list();
-  outline: 1px solid blue;
 }
 
 .navigation__user-block {
   @include reset-list();
-  outline: 1px solid green;
 }

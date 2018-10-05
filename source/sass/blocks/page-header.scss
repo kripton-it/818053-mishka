@@ -1,6 +1,9 @@
 .page-header {
-  background-color: $bg-color-main;
+  // background-color: $bg-color-main;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+  /* Временно для сетки */
+  min-height: 395px;
+  background-color: transparent;
 }

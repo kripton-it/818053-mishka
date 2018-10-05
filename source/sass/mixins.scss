@@ -3,3 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin container() {
+  width: $mobile-width;
+  padding: 0 $mobile-padding;
+  margin: 0 auto;
+}
