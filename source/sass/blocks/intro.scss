@@ -1,16 +1,17 @@
 .intro {
   padding-top: 70px;
   font-weight: bold;
+  /* Временно для сетки
   background-color: #f9f9f9;
-  background-image: url("../img/hero-mobile@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg"); */
+  /* Временно для сетки */
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center top;
-  /* Временно для сетки */
-  background: none;
 }
 
 .intro__header {
-  @include container();
+  @include container-mobile();
   color: #010000;
   font-size: 27px;
   line-height: 30px;
@@ -22,7 +23,6 @@
 
 .intro__list {
   @include reset-list();
-  @include container();
   /* Временно для сетки */
   min-height: 205px;
 }

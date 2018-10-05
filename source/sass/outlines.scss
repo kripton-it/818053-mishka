@@ -104,7 +104,8 @@ body > * > * > * > * > *::before {
   font-size: 12px;
 }
 
-.intro__header::before {
+.intro__header::before,
+.intro__list::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

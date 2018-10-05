@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-@mixin container() {
+@mixin container-mobile() {
   width: $mobile-width;
   padding: 0 $mobile-padding;
   margin: 0 auto;

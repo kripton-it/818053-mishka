@@ -1,5 +1,5 @@
 .navigation {
-  @include container();
+  @include container-mobile();
   /* Временно для сетки */
   min-height: 395px;
   background-color: transparent;
