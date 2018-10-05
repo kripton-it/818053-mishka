@@ -46,7 +46,9 @@ body > * {
 
 body > *::before {
   color: white;
-  background: green;
+  background: rgba(green, 0.4);
+  right: 0;
+  left: auto;
 }
 
 body > * > * {
@@ -96,14 +98,17 @@ body > * > * > * > * > *::before {
 }
 
 .navigation > *::before {
-  left: auto;
-  top: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   font-size: 12px;
 }
 
-.site-list::before {
-  top: auto;
-  bottom: 3px;
+.intro__header::before {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
 }
 
 .user-list::before {
