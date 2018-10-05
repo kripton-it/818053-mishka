@@ -1,0 +1,170 @@
+body {
+  background-image: url("../img/preview/mishka-index-mobile.png");
+  /* background-image: url("../img/preview/mishka-catalog-mobile.jpg"); */
+  /* background-image: url("../img/preview/mishka-form-mobile.jpg"); */
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  min-height: 750px;
+}
+
+/* Обводки */
+body > *,
+body > * > *,
+body > * > * > *,
+body > * > * > * > *,
+body > * > * > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before,
+body > * > * > * > *::before,
+body > * > * > * > * > *::before {
+  content: "."attr(class);
+
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monospace;
+  white-space: nowrap;
+}
+
+body > * {
+  background: rgba(128, 255, 128, 0.25);
+  background-clip: content-box;
+  outline: 3px solid green;
+  outline-offset: -3px;
+}
+
+body > *::before {
+  color: white;
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(255, 45, 82, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > *::before {
+  color: white;
+  background: rgba(255, 45, 82, 0.4);
+}
+
+body > * > * > * {
+  background: rgba(173, 216, 230, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(173, 216, 230, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > * > *::before {
+  color: black;
+  background: rgba(0, 0, 255, 0.2);
+}
+
+body > * > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  background-clip: content-box;
+  outline: 3px solid rgba(234, 255, 45, 0.9);
+  outline-offset: -3px;
+}
+
+body > * > * > * > *::before {
+  color: black;
+  background: rgba(234, 255, 45, 0.4);
+}
+
+body > * > * > * > * > * {
+  outline: 3px solid violet;
+  outline-offset: -3px;
+}
+
+body > * > * > * > * > *::before {
+  color: black;
+  background: rgba(violet, 0.4);
+}
+
+.navigation > *::before {
+  left: auto;
+  top: 40%;
+  font-size: 12px;
+}
+
+.site-list::before {
+  top: auto;
+  bottom: 3px;
+}
+
+.user-list::before {
+  top: auto;
+  bottom: 3px;
+}
+
+.stats__header::before,
+.stats__list::before {
+  top: auto;
+  bottom: 2px;
+}
+
+.advantages__wrapper::before {
+  left: auto;
+  right: 2px;
+}
+
+.advantages__item::before {
+  top: auto;
+  bottom: 2px;
+}
+
+.news__wrapper::before {
+  left: auto;
+  right: 2px;
+}
+
+.news__item::before {
+  top: auto;
+  bottom: 2px;
+}
+
+.reviews__wrapper::before {
+  left: auto;
+  right: 2px;
+}
+
+.page-footer__wrapper::before {
+  left: auto;
+  right: 2px;
+}
+
+@media (min-width: 768px) {
+  .page-footer__copyright::before {
+    font-size: 10px;
+  }
+
+  .user-list::before {
+    content: "...";
+  }
+
+  .nav-mock::before {
+    left: auto;
+    right: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__social::before {
+    font-size: 10px;
+  }
+}
+
