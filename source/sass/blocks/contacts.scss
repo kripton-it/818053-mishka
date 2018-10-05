@@ -1,7 +1,8 @@
 .contacts {
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 40px;
-  outline: 1px solid orange;
+  /* Временно для сетки */
+  background-color: transparent;
 }
 
 .contacts__header {
@@ -11,6 +12,11 @@
   line-height: 30px;
   margin: 0;
   padding: 0;
+
+  @include container-mobile();
+  margin-bottom: 25px;
+  /* Временно для сетки */
+  min-height: 35px;
 }
 
 .contacts__list {
@@ -20,6 +26,11 @@
   font-size: 15px;
   font-weight: normal;
   line-height: 30px;
+
+  @include container-mobile();
+  margin-bottom: 35px;
+  /* Временно для сетки */
+  min-height: 180px;
 }
 
 .contacts__property {
@@ -67,9 +78,16 @@
 
 .contacts__map {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
+  /* Временно для сетки */
+  min-height: 457px;
 }
 
 .contacts__write {
+  @include container-mobile();
   font-size: 18px;
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: transparent;
 }

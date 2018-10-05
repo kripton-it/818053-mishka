@@ -116,7 +116,8 @@ body > * > * > * > * > *::before {
 .week__title::before,
 .about__header::before,
 .about__list::before,
-.comments__header::before {
+.comments__header::before,
+.contacts__header::before {
   display: none;
 }
 
@@ -127,75 +128,13 @@ body > * > * > * > * > *::before {
 .week__price::before,
 .comments__item::before,
 .comments__controls::before,
-.comments__write::before {
+.comments__write::before,
+.about__item::before,
+.contacts__list::before,
+.contacts__write::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 12px;
   text-transform: lowercase;
 }
-
-.about__item::before {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 12px;
-}
-
-.stats__header::before,
-.stats__list::before {
-  top: auto;
-  bottom: 2px;
-}
-
-.advantages__wrapper::before {
-  left: auto;
-  right: 2px;
-}
-
-.advantages__item::before {
-  top: auto;
-  bottom: 2px;
-}
-
-.news__wrapper::before {
-  left: auto;
-  right: 2px;
-}
-
-.news__item::before {
-  top: auto;
-  bottom: 2px;
-}
-
-.reviews__wrapper::before {
-  left: auto;
-  right: 2px;
-}
-
-.page-footer__wrapper::before {
-  left: auto;
-  right: 2px;
-}
-
-@media (min-width: 768px) {
-  .page-footer__copyright::before {
-    font-size: 10px;
-  }
-
-  .user-list::before {
-    content: "...";
-  }
-
-  .nav-mock::before {
-    left: auto;
-    right: 2px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-footer__social::before {
-    font-size: 10px;
-  }
-}
-
