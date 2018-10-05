@@ -113,7 +113,8 @@ body > * > * > * > * > *::before {
 }
 
 .week__header::before,
-.week__title::before {
+.week__title::before,
+.about__header::before {
   display: none;
 }
 
@@ -122,6 +123,14 @@ body > * > * > * > * > *::before {
 .week__table::before,
 .week__order::before,
 .week__price::before {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.about__item::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

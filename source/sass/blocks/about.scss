@@ -1,8 +1,13 @@
 .about {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: $bg-color-main;
-  outline: 1px solid red;
+  @include container-mobile();
+  padding-top: 40px;
+  padding-bottom: 25px;
+  // background-color: $bg-color-main;
+}
+
+.about__header {
+  /* Временно для сетки */
+  min-height: 30px;
 }
 
 .about__list {
@@ -10,15 +15,17 @@
 }
 
 .about__item {
-  padding-top: 85px;
+  // padding-top: 85px;
   color: $color-black;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   background-repeat: no-repeat;
   background-position: left center;
+  /* Временно для сетки */
+  min-height: 125px;
 
-  &--eco {
+  /* &--eco {
     background-image: url("../../img/icon-feature-flower.svg");
     background-size: 32px 37px;
   }
@@ -46,5 +53,5 @@
   &--box {
     background-image: url("../../img/icon-feature-gift.svg");
     background-size: 33px 32px;
-  }
+  } */
 }
