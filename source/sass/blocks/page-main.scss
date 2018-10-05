@@ -5,10 +5,14 @@
 .page-main__heading {
   font-size: 27px;
   text-align: center;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  background-color: $bg-color-gray;
+
+  @include container-mobile();
+  // padding-top: 75px;
+  // padding-bottom: 75px;
+  // background-color: $bg-color-gray;
   margin-bottom: 30px;
+  /* Временно для сетки */
+  min-height: 170px;
 
   &--form {
     color: #231f20;
@@ -17,7 +21,10 @@
 
 .page-main__goods {
   @include reset-list();
+  @include container-mobile();
   margin-bottom: 30px;
+  /* Временно для сетки */
+  padding-bottom: 25px;
 }
 
 .page-main__intro {
@@ -35,5 +42,8 @@
 }
 
 .page-main__production {
+  @include container-mobile();
   margin-bottom: 55px;
+  /* Временно для сетки */
+  min-height: 505px;
 }

@@ -1,10 +1,11 @@
-.goods {
-  outline: 1px solid red;
-}
-
 .goods__item {
-  outline: 1px solid blue;
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  /* Временно для сетки */
+  min-height: 375px;
 
   &:hover,
   &:focus {
