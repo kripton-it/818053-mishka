@@ -1,12 +1,22 @@
 .comments {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  outline: 1px solid green;
+  @include container-mobile();
+  padding-top: 20px;
+  padding-bottom: 40px;
+  // background-color: $bg-color-main;
+}
+
+.comments__header {
+  margin-bottom: 25px;
+  /* Временно для сетки */
+  min-height: 30px;
 }
 
 .comments__item {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  /* Временно для сетки */
+  min-height: 350px;
 }
 
 .comments__text {
@@ -35,7 +45,8 @@
 
 .comments__controls {
   border: 1px solid #ececec;
-  background-color: $bg-color-main;
+  margin-bottom: 40px;
+  // background-color: $bg-color-main;
   height: 50px;
   font-size: 0;
 }
@@ -68,4 +79,10 @@
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
+}
+
+.comments__write {
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: transparent;
 }

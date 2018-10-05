@@ -114,7 +114,9 @@ body > * > * > * > * > *::before {
 
 .week__header::before,
 .week__title::before,
-.about__header::before {
+.about__header::before,
+.about__list::before,
+.comments__header::before {
   display: none;
 }
 
@@ -122,7 +124,10 @@ body > * > * > * > * > *::before {
 .week__image::before,
 .week__table::before,
 .week__order::before,
-.week__price::before {
+.week__price::before,
+.comments__item::before,
+.comments__controls::before,
+.comments__write::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
