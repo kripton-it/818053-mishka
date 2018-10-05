@@ -9,7 +9,5 @@
 }
 
 .page-footer__social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list();
 }

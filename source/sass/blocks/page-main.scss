@@ -16,10 +16,8 @@
 }
 
 .page-main__goods {
-  list-style: none;
-  margin: 0;
+  @include reset-list();
   margin-bottom: 30px;
-  padding: 0;
 }
 
 .page-main__intro {
