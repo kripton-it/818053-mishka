@@ -1,6 +1,9 @@
 .week {
-  outline: 1px solid paleturquoise;
-  background-color: $bg-color-main;
+  @include container-mobile();
+  display: flex;
+  flex-direction: column;
+  // background-color: $bg-color-main;
+  background-color: transparent;
   color: $color-main;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -13,7 +16,16 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
+  /* Временно для сетки */
+  min-height: 25px;
+}
+
+.week__title {
+  order: -1;
+  /* Временно для сетки */
+  min-height: 35px;
 }
 
 .week__description {
@@ -22,11 +34,17 @@
   font-weight: normal;
   line-height: 24px;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
+  /* Временно для сетки */
+  min-height: 70px;
 }
 
 .week__table {
   color: $color-main;
+  margin-bottom: 30px;
+  /* Временно для сетки */
+  min-height: 110px;
 
   td,
   th {
@@ -39,6 +57,8 @@
 .week__image {
   margin: 0;
   padding: 0;
+  /* Временно для сетки */
+  min-height: 315px;
 }
 
 .week__price {
@@ -48,4 +68,12 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  /* Временно для сетки */
+  min-height: 75px;
+}
+
+.week__order {
+  /* Временно для сетки */
+  min-height: 50px;
+  background-color: transparent;
 }

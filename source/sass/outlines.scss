@@ -112,9 +112,20 @@ body > * > * > * > * > *::before {
   font-size: 12px;
 }
 
-.user-list::before {
-  top: auto;
-  bottom: 3px;
+.week__header::before,
+.week__title::before {
+  display: none;
+}
+
+.week__description::before,
+.week__image::before,
+.week__table::before,
+.week__order::before,
+.week__price::before {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
 }
 
 .stats__header::before,
