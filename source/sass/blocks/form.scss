@@ -1,18 +1,35 @@
-.form {
-  outline: 1px solid red;
-}
-
 .form__fieldset {
   border: none;
-  outline: 1px solid green;
   margin: 0;
   padding: 0;
+
+  /* Временно для сетки */
+  &:nth-child(1) {
+    min-height: 150px;
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(2) {
+    min-height: 400px;
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(3) {
+    min-height: 310px;
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(4) {
+    min-height: 190px;
+    margin-bottom: 20px;
+  }
 }
 
 .form__comment {
-  outline: 1px solid green;
   margin: 0;
   padding: 0;
+  /* Временно для сетки */
+  min-height: 195px;
 }
 
 .form__legend {

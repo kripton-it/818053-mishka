@@ -34,11 +34,18 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
+
+  @include container-mobile();
+  margin-bottom: 20px;
+  /* Временно для сетки */
+  min-height: 85px;
 }
 
 .page-main__form {
-  outline: 1px solid red;
+  @include container-mobile();
   margin-bottom: 55px;
+  /* Временно для сетки */
+  min-height: 1440px;
 }
 
 .page-main__production {

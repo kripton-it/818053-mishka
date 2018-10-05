@@ -1,7 +1,7 @@
 body {
   // background-image: url("../img/preview/mishka-index-mobile.png");
   background-image: url("../img/preview/mishka-catalog-mobile.png");
-  /* background-image: url("../img/preview/mishka-form-mobile.jpg"); */
+  // background-image: url("../img/preview/mishka-form-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   min-height: 750px;
@@ -133,7 +133,11 @@ body > * > * > * > * > *::before {
 .comments__write::before,
 .about__item::before,
 .contacts__list::before,
-.contacts__write::before {
+.contacts__write::before,
+.form__fieldset::before,
+.form__comment::before,
+.page-main__intro::before,
+.goods__item::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
