@@ -3,17 +3,55 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.page-footer__wrapper {
+  @include container();
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    /* Временно для сетки */
+    min-height: 50px;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: block;
+    width: 102px;
+    margin-right: 155px;
+  }
 }
 
 .page-footer__social {
   @include reset-list();
-  @include container-mobile();
   /* Временно для сетки */
-  min-height: 75px;
+  min-height: 80px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 150px;
+    /* Временно для сетки */
+    min-height: 30px;
+  }
 }
 
 .page-footer__copyright {
-  @include container-mobile();
+  margin: 0;
+  padding: 0;
   /* Временно для сетки */
   min-height: 75px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 182px;
+    margin-left: auto;
+    /* Временно для сетки */
+    min-height: 30px;
+  }
 }

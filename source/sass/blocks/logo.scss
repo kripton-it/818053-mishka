@@ -1,18 +1,5 @@
 .logo {
   display: block;
-  /* Временно для сетки */
-  min-height: 80px;
-
-  @media (min-width: $tablet-breakpoint) {
-    /* Временно для сетки */
-    min-height: 90px;
-  }
-
-  @media (min-width: $tablet-breakpoint) {
-    /* Временно для сетки */
-    min-height: 90px;
-    height: 90px;
-  }
 }
 
 .logo[href] {

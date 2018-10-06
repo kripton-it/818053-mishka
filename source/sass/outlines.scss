@@ -126,9 +126,7 @@ body>*>*>*>*>*::before {
 
 .about__list::before,
 .comments__header::before,
-.contacts__header::before,
-.page-footer__social::before,
-.page-footer__copyright::before {
+.contacts__header::before {
   display: none;
 }
 
@@ -149,7 +147,9 @@ body>*>*>*>*>*::before {
 .form__fieldset::before,
 .form__comment::before,
 .page-main__intro::before,
-.goods__item::before {
+.goods__item::before,
+.page-footer__social::before,
+.page-footer__copyright::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
