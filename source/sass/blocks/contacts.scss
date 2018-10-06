@@ -3,6 +3,23 @@
   padding-bottom: 40px;
   /* Временно для сетки */
   background-color: transparent;
+
+  @include container-desktop();
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 75px;
+    padding-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 457px;
+    align-content: space-between;
+  }
 }
 
 .contacts__header {
@@ -14,9 +31,25 @@
   padding: 0;
 
   @include container-mobile();
+  @include container-tablet();
   margin-bottom: 25px;
   /* Временно для сетки */
   min-height: 35px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 45px;
+    /* Временно для сетки */
+    min-height: 45px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 175px;
+    margin-top: 60px;
+    width: 320px;
+    margin-bottom: 30px;
+    /* Временно для сетки */
+    min-height: 90px;
+  }
 }
 
 .contacts__list {
@@ -28,9 +61,24 @@
   line-height: 30px;
 
   @include container-mobile();
-  margin-bottom: 35px;
+  @include container-tablet();
+  margin-bottom: 30px;
   /* Временно для сетки */
   min-height: 180px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 60px;
+    /* Временно для сетки */
+    min-height: 90px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 320px;
+    margin-left: 175px;
+    margin-bottom: auto;
+    /* Временно для сетки */
+    min-height: 150px;
+  }
 }
 
 .contacts__property {
@@ -82,12 +130,33 @@
   padding: 0;
   /* Временно для сетки */
   min-height: 457px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 525px;
+    order: 2;
+    margin-bottom: 55px;
+  }
 }
 
 .contacts__write {
-  @include container-mobile();
+  width: $mobile-width;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 18px;
   /* Временно для сетки */
-  min-height: 50px;
+  min-height: 52px;
   background-color: transparent;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 175px;
+    width: 230px;
+  }
 }

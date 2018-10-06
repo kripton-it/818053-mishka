@@ -15,7 +15,7 @@
 }
 
 @mixin container-tablet() {
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
     width: $tablet-width;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
