@@ -5,6 +5,20 @@
   }
 }
 
+.user-block__item {
+  &--delivery {
+    display: none;
+    color: $color-main;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 24px;
+
+    @media (min-width: $tablet-breakpoint) {
+      display: block;
+    }
+  }
+}
+
 .user-block__link {
   color: $color-black;
 
