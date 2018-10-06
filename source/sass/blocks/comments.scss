@@ -1,14 +1,29 @@
 .comments {
   @include container-mobile();
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 50px;
   // background-color: $bg-color-main;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+}
+
+.comments__wrapper {
+  @include container-tablet();
 }
 
 .comments__header {
   margin-bottom: 25px;
   /* Временно для сетки */
   min-height: 30px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 55px;
+    /* Временно для сетки */
+    min-height: 40px;
+  }
 }
 
 .comments__item {
@@ -17,6 +32,12 @@
   padding: 0;
   /* Временно для сетки */
   min-height: 350px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 0;
+    /* Временно для сетки */
+    min-height: 240px;
+  }
 }
 
 .comments__text {
@@ -45,10 +66,15 @@
 
 .comments__controls {
   border: 1px solid #ececec;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   // background-color: $bg-color-main;
   height: 50px;
   font-size: 0;
+
+  @media (min-width: $tablet-breakpoint) {
+    /* Временно для сетки */
+    display: none;
+  }
 }
 
 .comments__button {
@@ -85,4 +111,9 @@
   /* Временно для сетки */
   min-height: 50px;
   background-color: transparent;
+
+  @media (min-width: $tablet-breakpoint) {
+    /* Временно для сетки */
+    display: none;
+  }
 }

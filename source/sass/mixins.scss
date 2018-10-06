@@ -7,7 +7,8 @@
 @mixin container-mobile() {
   @media (max-width: $tablet-breakpoint) {
     width: $mobile-width;
-    padding: 0 $mobile-padding;
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
     margin-left: auto;
     margin-right: auto;
   }
@@ -16,7 +17,8 @@
 @mixin container-tablet() {
   @media (min-width: $tablet-breakpoint) {
     width: $tablet-width;
-    padding: 0 $tablet-padding;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
     margin-left: auto;
     margin-right: auto;
   }
@@ -25,7 +27,8 @@
 @mixin container-desktop() {
   @media (min-width: $desktop-breakpoint) {
     width: $desktop-width;
-    padding: 0 $desktop-padding;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
     margin-left: auto;
     margin-right: auto;
   }
@@ -33,7 +36,8 @@
 
 @mixin container() {
   width: $mobile-width;
-  padding: 0 $mobile-padding;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
   margin-left: auto;
   margin-right: auto;
 
