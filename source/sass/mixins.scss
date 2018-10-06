@@ -12,6 +12,14 @@
   }
 }
 
+@mixin container-tablet() {
+  @media (min-width: $tablet-breakpoint) {
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+    margin: 0 auto;
+  }
+}
+
 @mixin container() {
   width: $mobile-width;
   padding: 0 $mobile-padding;
