@@ -8,7 +8,8 @@
   @media (max-width: $tablet-breakpoint) {
     width: $mobile-width;
     padding: 0 $mobile-padding;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -16,7 +17,8 @@
   @media (min-width: $tablet-breakpoint) {
     width: $tablet-width;
     padding: 0 $tablet-padding;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -24,14 +26,16 @@
   @media (min-width: $desktop-breakpoint) {
     width: $desktop-width;
     padding: 0 $desktop-padding;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @mixin container() {
   width: $mobile-width;
   padding: 0 $mobile-padding;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-breakpoint) {
     width: $tablet-width;

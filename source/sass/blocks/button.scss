@@ -1,4 +1,5 @@
 .button {
+  box-sizing: border-box;
   cursor: pointer;
   border: 2px solid $color-main;
   background-color: $bg-color-main;
