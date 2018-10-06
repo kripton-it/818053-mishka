@@ -76,6 +76,11 @@
     /* Временно для сетки */
     min-height: 45px;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    /* Временно для сетки */
+    min-height: 50px;
+  }
 }
 
 .page-main__form {
@@ -87,6 +92,10 @@
   @media (min-width: $tablet-breakpoint) {
     min-height: 1355px;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    min-height: 1270px;
   }
 }
 
