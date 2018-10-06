@@ -20,6 +20,14 @@
   }
 }
 
+@mixin container-desktop() {
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+    margin: 0 auto;
+  }
+}
+
 @mixin container() {
   width: $mobile-width;
   padding: 0 $mobile-padding;

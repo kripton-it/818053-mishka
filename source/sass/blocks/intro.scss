@@ -16,6 +16,7 @@
 
 .intro__wrapper {
   @include container-tablet();
+  @include container-desktop();
 }
 
 .intro__header {
@@ -32,6 +33,12 @@
     margin-bottom: 365px;
     /* Временно для сетки */
     min-height: 110px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 345px;
+    /* Временно для сетки */
+    min-height: 130px;
   }
 }
 
@@ -69,6 +76,10 @@
     width: 334px;
     /* Временно для сетки */
     min-height: 120px;
+  }
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 525px;
   }
 
   &--different {
