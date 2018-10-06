@@ -1,5 +1,6 @@
 .intro {
   outline: 2px solid blue;
+
   padding-top: 70px;
   font-weight: bold;
   background-color: #f9f9f9;
@@ -36,6 +37,7 @@
 
 .intro__list {
   outline: 2px solid red;
+
   @include reset-list();
 
   @media (min-width: $tablet-breakpoint) {

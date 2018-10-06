@@ -36,6 +36,7 @@
 
 .page-main__goods {
   outline: 2px solid red;
+
   @include reset-list();
   @include container();
   margin-bottom: 30px;
