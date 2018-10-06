@@ -1,26 +1,37 @@
 body {
-  // background-image: url("../img/preview/mishka-index-mobile.png");
-  background-image: url("../img/preview/mishka-catalog-mobile.png");
+  background-image: url("../img/preview/mishka-index-mobile.png");
+  // background-image: url("../img/preview/mishka-catalog-mobile.png");
   // background-image: url("../img/preview/mishka-form-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  min-height: 750px;
+
+  @media (min-width: $tablet-breakpoint) {
+    background-image: url("../img/preview/mishka-index-tablet.jpg");
+    // background-image: url("../img/preview/mishka-catalog-mobile.png");
+    // background-image: url("../img/preview/mishka-form-mobile.png");
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    background-image: url("../img/preview/mishka-index-desktop.jpg");
+    // background-image: url("../img/preview/mishka-catalog-mobile.png");
+    // background-image: url("../img/preview/mishka-form-mobile.png");
+  }
 }
 
 /* Обводки */
-body > *,
-body > * > *,
-body > * > * > *,
-body > * > * > * > *,
-body > * > * > * > * > * {
+body>*,
+body>*>*,
+body>*>*>*,
+body>*>*>*>*,
+body>*>*>*>*>* {
   position: relative;
 }
 
-body > *::before,
-body > * > *::before,
-body > * > * > *::before,
-body > * > * > * > *::before,
-body > * > * > * > * > *::before {
+body>*::before,
+body>*>*::before,
+body>*>*>*::before,
+body>*>*>*>*::before,
+body>*>*>*>*>*::before {
   content: "."attr(class);
 
   position: absolute;
@@ -37,67 +48,68 @@ body > * > * > * > * > *::before {
   white-space: nowrap;
 }
 
-body > * {
+body>* {
   background: rgba(128, 255, 128, 0.25);
   background-clip: content-box;
   outline: 3px solid green;
   outline-offset: -3px;
 }
 
-body > *::before {
+body>*::before {
   color: white;
   background: rgba(green, 0.4);
   right: 0;
   left: auto;
 }
 
-body > * > * {
+body>*>* {
   background: rgba(255, 45, 82, 0.2);
   background-clip: content-box;
   outline: 3px solid rgba(255, 45, 82, 0.9);
   outline-offset: -3px;
 }
 
-body > * > *::before {
+body>*>*::before {
   color: white;
   background: rgba(255, 45, 82, 0.4);
 }
 
-body > * > * > * {
+body>*>*>* {
   background: rgba(173, 216, 230, 0.2);
   background-clip: content-box;
   outline: 3px solid rgba(173, 216, 230, 0.9);
   outline-offset: -3px;
 }
 
-body > * > * > *::before {
+body>*>*>*::before {
   color: black;
   background: rgba(0, 0, 255, 0.2);
 }
 
-body > * > * > * > * {
+body>*>*>*>* {
   background: rgba(234, 255, 45, 0.2);
   background-clip: content-box;
   outline: 3px solid rgba(234, 255, 45, 0.9);
   outline-offset: -3px;
 }
 
-body > * > * > * > *::before {
+body>*>*>*>*::before {
   color: black;
   background: rgba(234, 255, 45, 0.4);
 }
 
-body > * > * > * > * > * {
+body>*>*>*>*>* {
   outline: 3px solid violet;
   outline-offset: -3px;
 }
 
-body > * > * > * > * > *::before {
+body>*>*>*>*>*::before {
   color: black;
   background: rgba(violet, 0.4);
 }
 
-.navigation > *::before {
+.navigation__wrapper>*::before,
+.user-block::before {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

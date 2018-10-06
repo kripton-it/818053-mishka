@@ -1,14 +1,57 @@
 .navigation {
-  @include container-mobile();
+  @include container();
   /* Временно для сетки */
-  min-height: 395px;
   background-color: transparent;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-wrap: no-wrap;
+  }
+}
+
+.navigation__wrapper {
+  @media (min-width: $tablet-breakpoint) {
+    width: 320px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    width: 600px;
+  }
+}
+
+.navigation__logo {
+  @media (min-width: $tablet-breakpoint) {
+    width: 113px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 149px;
+    order: 2;
+  }
 }
 
 .navigation__menu {
   @include reset-list();
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 450px;
+  }
 }
 
 .navigation__user-block {
   @include reset-list();
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 347px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 350px;
+  }
 }

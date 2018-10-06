@@ -1,6 +1,11 @@
 .user-block {
   /* Временно для сетки */
   min-height: 160px;
+
+  @media (min-width: $tablet-breakpoint) {
+    /* Временно для сетки */
+    min-height: 150px;
+  }
 }
 
 .user-block__link {

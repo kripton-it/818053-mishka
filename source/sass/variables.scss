@@ -12,3 +12,9 @@ $line-height-main: 24px;
 
 $mobile-width: 260px;
 $mobile-padding: 30px;
+$tablet-width: 668px;
+$tablet-padding: 50px;
+$tablet-breakpoint: $tablet-width + 2 * $tablet-padding;
+$desktop-width: 1050px;
+$desktop-padding: 50px;
+$desktop-breakpoint: $desktop-width + 2 * $desktop-padding;

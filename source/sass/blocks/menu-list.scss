@@ -1,6 +1,11 @@
 .menu-list {
   /* Временно для сетки */
   min-height: 160px;
+
+  @media (min-width: $tablet-breakpoint) {
+    /* Временно для сетки */
+    min-height: 60px;
+  }
 }
 
 .menu-list__link {

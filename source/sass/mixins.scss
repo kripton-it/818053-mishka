@@ -5,7 +5,27 @@
 }
 
 @mixin container-mobile() {
+  @media (max-width: $tablet-breakpoint) {
+    width: $mobile-width;
+    padding: 0 $mobile-padding;
+    margin: 0 auto;
+  }
+}
+
+@mixin container() {
   width: $mobile-width;
   padding: 0 $mobile-padding;
   margin: 0 auto;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: $tablet-width;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: $desktop-width;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
 }

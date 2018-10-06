@@ -5,4 +5,5 @@
   font-size: $font-size-main;
   line-height: $line-height-main;
   font-weight: normal;
+  min-width: $mobile-width + 2 * $mobile-padding;
 }
