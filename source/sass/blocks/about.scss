@@ -1,17 +1,51 @@
 .about {
-  @include container-mobile();
+  @include container();
   padding-top: 40px;
   padding-bottom: 25px;
   // background-color: $bg-color-main;
+
+  @media (min-width: $tablet-breakpoint) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-bottom: 85px;
+  }
 }
 
 .about__header {
+  margin-bottom: 30px;
   /* Временно для сетки */
   min-height: 30px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 40px;
+    /* Временно для сетки */
+    min-height: 50px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 175px;
+    margin-bottom: 40px;
+    /* Временно для сетки */
+    min-height: 60px;
+  }
 }
 
 .about__list {
   @include reset-list();
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
 }
 
 .about__item {
@@ -22,8 +56,36 @@
   line-height: 20px;
   background-repeat: no-repeat;
   background-position: left center;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-bottom: 58px;
+  }
+
+  &:nth-child(2n+1) {
+    @media (min-width: $tablet-breakpoint) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   /* Временно для сетки */
-  min-height: 125px;
+  min-height: 95px;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 334px;
+    /* Временно для сетки */
+    min-height: 100px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 350px;
+    /* Временно для сетки */
+    min-height: 100px;
+  }
 
   /* &--eco {
     background-image: url("../../img/icon-feature-flower.svg");
