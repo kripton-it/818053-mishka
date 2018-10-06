@@ -1,19 +1,19 @@
 body {
-  background-image: url("../img/preview/mishka-index-mobile.png");
-  // background-image: url("../img/preview/mishka-catalog-mobile.png");
+  // background-image: url("../img/preview/mishka-index-mobile.png");
+  background-image: url("../img/preview/mishka-catalog-mobile.png");
   // background-image: url("../img/preview/mishka-form-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media (min-width: $tablet-breakpoint) {
-    background-image: url("../img/preview/mishka-index-tablet.jpg");
-    // background-image: url("../img/preview/mishka-catalog-mobile.png");
+    // background-image: url("../img/preview/mishka-index-tablet.jpg");
+    background-image: url("../img/preview/mishka-catalog-tablet.jpg");
     // background-image: url("../img/preview/mishka-form-mobile.png");
   }
 
   @media (min-width: $desktop-breakpoint) {
-    background-image: url("../img/preview/mishka-index-desktop.jpg");
-    // background-image: url("../img/preview/mishka-catalog-mobile.png");
+    // background-image: url("../img/preview/mishka-index-desktop.jpg");
+    background-image: url("../img/preview/mishka-catalog-desktop.jpg");
     // background-image: url("../img/preview/mishka-form-mobile.png");
   }
 }
