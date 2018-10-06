@@ -10,6 +10,13 @@
     min-height: 335px;
   }
 
+  @media (min-width: $desktop-breakpoint) {
+    width: 316px;
+    margin-bottom: 0;
+    /* Временно для сетки */
+    min-height: 660px;
+  }
+
   &:last-child {
     margin-bottom: 0;
 

@@ -16,6 +16,11 @@
     margin-bottom: 80px;
   }
 
+  @media (min-width: $desktop-breakpoint) {
+    padding-bottom: 100px;
+    margin-bottom: 125px;
+  }
+
   &--form {
     color: #231f20;
   }
@@ -29,6 +34,10 @@
   @media (min-width: $tablet-breakpoint) {
     min-height: 45px;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    min-height: 55px;
+  }
 }
 
 .page-main__goods {
@@ -41,6 +50,12 @@
   @media (min-width: $tablet-breakpoint) {
     padding-bottom: 0;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
   }
 }
 
@@ -75,5 +90,11 @@
     margin-bottom: 60px;
     /* Временно для сетки */
     min-height: 745px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 105px;
+    /* Временно для сетки */
+    min-height: 455px;
   }
 }
