@@ -1,8 +1,9 @@
 .about {
+  outline: 2px solid green;
   @include container();
   padding-top: 40px;
   padding-bottom: 25px;
-  // background-color: $bg-color-main;
+  background-color: $bg-color-main;
 
   @media (min-width: $tablet-breakpoint) {
     padding-top: 60px;
@@ -16,20 +17,14 @@
 
 .about__header {
   margin-bottom: 30px;
-  /* Временно для сетки */
-  min-height: 30px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 40px;
-    /* Временно для сетки */
-    min-height: 50px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     margin-left: 175px;
     margin-bottom: 40px;
-    /* Временно для сетки */
-    min-height: 60px;
   }
 }
 
@@ -49,13 +44,14 @@
 }
 
 .about__item {
-  // padding-top: 85px;
+  outline: 2px solid red;
+  padding-top: 85px;
   color: $color-black;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: top left;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-breakpoint) {
@@ -72,22 +68,15 @@
     margin-bottom: 0;
   }
 
-  /* Временно для сетки */
-  min-height: 95px;
-
   @media (min-width: $tablet-breakpoint) {
     width: 334px;
-    /* Временно для сетки */
-    min-height: 100px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     width: 350px;
-    /* Временно для сетки */
-    min-height: 100px;
   }
 
-  /* &--eco {
+  &--eco {
     background-image: url("../../img/icon-feature-flower.svg");
     background-size: 32px 37px;
   }
@@ -115,5 +104,5 @@
   &--box {
     background-image: url("../../img/icon-feature-gift.svg");
     background-size: 33px 32px;
-  } */
+  }
 }

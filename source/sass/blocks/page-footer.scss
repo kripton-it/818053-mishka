@@ -1,5 +1,5 @@
 .page-footer {
-  // background-color: $bg-color-gray;
+  background-color: $bg-color-gray;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
@@ -15,8 +15,6 @@
 
   @media (min-width: $tablet-breakpoint) {
     display: flex;
-    /* Временно для сетки */
-    min-height: 50px;
   }
 }
 
@@ -36,26 +34,18 @@
 
 .page-footer__social {
   @include reset-list();
-  /* Временно для сетки */
-  min-height: 80px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 150px;
-    /* Временно для сетки */
-    min-height: 30px;
   }
 }
 
 .page-footer__copyright {
   margin: 0;
   padding: 0;
-  /* Временно для сетки */
-  min-height: 75px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 182px;
     margin-left: auto;
-    /* Временно для сетки */
-    min-height: 30px;
   }
 }

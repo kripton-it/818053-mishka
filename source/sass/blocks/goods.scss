@@ -1,20 +1,14 @@
 .goods__item {
+  outline: 2px solid green;
   margin-bottom: 30px;
-
-  /* Временно для сетки */
-  min-height: 375px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 52px;
-    /* Временно для сетки */
-    min-height: 335px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     width: 316px;
     margin-bottom: 0;
-    /* Временно для сетки */
-    min-height: 660px;
   }
 
   &:last-child {

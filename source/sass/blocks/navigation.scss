@@ -1,7 +1,7 @@
 .navigation {
+  outline: 2px solid pink;
+
   @include container();
-  /* Временно для сетки */
-  background-color: transparent;
 
   @media (min-width: $tablet-breakpoint) {
     display: flex;
@@ -26,26 +26,25 @@
 }
 
 .navigation__logo {
-  /* Временно для сетки */
-  min-height: 80px;
+  outline: 2px solid blue;
 
   @media (min-width: $tablet-breakpoint) {
     width: 113px;
     /* Временно для сетки */
-  min-height: 90px;
+    min-height: 90px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     width: 149px;
     order: 2;
     /* Временно для сетки */
-  min-height: 90px;
-  height: 90px;
+    min-height: 90px;
   }
 }
 
 .navigation__menu {
   @include reset-list();
+  outline: 2px solid red;
 
   @media (min-width: $desktop-breakpoint) {
     width: 450px;
@@ -54,6 +53,7 @@
 
 .navigation__user-block {
   @include reset-list();
+  outline: 2px solid green;
 
   @media (min-width: $tablet-breakpoint) {
     width: 347px;

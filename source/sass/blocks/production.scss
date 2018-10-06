@@ -1,7 +1,10 @@
 .production {
-  // padding-bottom: 30px;
+  outline: 2px solid red;
+  background-color: $bg-color-main;
+}
+
+.production__wrapper {
   border: 1px solid #ececec;
-  // background-color: $bg-color-main;
 
   &:hover,
   &:focus {

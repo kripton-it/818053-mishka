@@ -3,11 +3,12 @@
 }
 
 .page-main__heading {
+  outline: 2px solid red;
   font-size: 27px;
   text-align: center;
   padding-top: 65px;
   padding-bottom: 75px;
-  // background-color: $bg-color-gray;
+  background-color: $bg-color-gray;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-breakpoint) {
@@ -28,27 +29,18 @@
 
 .page-main__heading-wrapper {
   display: block;
+  outline: 2px solid red;
+
   @include container();
-  min-height: 35px;
-
-  @media (min-width: $tablet-breakpoint) {
-    min-height: 45px;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    min-height: 55px;
-  }
 }
 
 .page-main__goods {
+  outline: 2px solid red;
   @include reset-list();
   @include container();
   margin-bottom: 30px;
-  /* Временно для сетки */
-  padding-bottom: 25px;
 
   @media (min-width: $tablet-breakpoint) {
-    padding-bottom: 0;
     margin-bottom: 50px;
   }
 
@@ -69,51 +61,28 @@
 
   @include container();
   margin-bottom: 20px;
-  /* Временно для сетки */
-  min-height: 85px;
-
-  @media (min-width: $tablet-breakpoint) {
-    /* Временно для сетки */
-    min-height: 45px;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    /* Временно для сетки */
-    min-height: 50px;
-  }
 }
 
 .page-main__form {
+  outline: 2px solid green;
+
   @include container-mobile();
   margin-bottom: 55px;
-  /* Временно для сетки */
-  min-height: 1440px;
 
   @media (min-width: $tablet-breakpoint) {
-    min-height: 1355px;
     margin-bottom: 50px;
-  }
-
-  @media (min-width: $tablet-breakpoint) {
-    min-height: 1270px;
   }
 }
 
 .page-main__production {
   @include container();
   margin-bottom: 55px;
-  /* Временно для сетки */
-  min-height: 505px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 60px;
-    /* Временно для сетки */
-    min-height: 745px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 105px;
-    /* Временно для сетки */
-    min-height: 455px;
   }
 }

@@ -1,11 +1,9 @@
 .intro {
+  outline: 2px solid blue;
   padding-top: 70px;
   font-weight: bold;
-  /* Временно для сетки
   background-color: #f9f9f9;
-  background-image: url("../img/hero-mobile@1x.jpg"); */
-  /* Временно для сетки */
-  background-color: transparent;
+  background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -26,23 +24,18 @@
   line-height: 30px;
   margin-bottom: 115px;
   text-align: center;
-  /* Временно для сетки */
-  min-height: 90px;
 
   @media (min-width: $tablet-breakpoint) {
     margin-bottom: 365px;
-    /* Временно для сетки */
-    min-height: 110px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 345px;
-    /* Временно для сетки */
-    min-height: 130px;
   }
 }
 
 .intro__list {
+  outline: 2px solid red;
   @include reset-list();
 
   @media (min-width: $tablet-breakpoint) {
@@ -56,6 +49,13 @@
   color: $color-white;
   font-size: 20px;
   line-height: 30px;
+  /* Временно для сетки */
+  min-height: 103px;
+
+  @media (min-width: $tablet-breakpoint) {
+    /* Временно для сетки */
+    min-height: 120px;
+  }
 
   &:hover,
   &:focus,

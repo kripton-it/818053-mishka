@@ -11,89 +11,35 @@
 
   <header class="page-header">
     <nav class="navigation">
+      <!-- <button class="navigation__button" type="button">
+        <span class="visually-hidden">Открыть/Закрыть меню</span>
+      </button> -->
       <div class="navigation__wrapper">
-        <a class="navigation__logo logo">
-
+        <a class="navigation__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
         </a>
         <ul class="navigation__menu menu-list">
-
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="menu-list__item menu-list__item--active">
+            <a class="menu-list__link menu-list__link--active">Вязание на заказ</a>
+          </li>
+          <li class="menu-list__item menu-list__item--desktop">
+            <a class="menu-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="menu-list__item menu-list__item--desktop">
+            <a class="menu-list__link" href="#">Распродажа</a>
+          </li>
         </ul>
       </div>
-      <ul class="navigation__user-block user-block">
-
-      </ul>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <h1 class="page-main__heading page-main__heading--form heading">
-      <span class="page-main__heading-wrapper"></span>
-      <!-- Вязание на заказ -->
-    </h1>
-    <p class="page-main__intro">
-      <!-- Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
-      уточнить детали. -->
-    </p>
-    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__fieldset">
-
-      </fieldset>
-      <fieldset class="form__fieldset">
-
-      </fieldset>
-      <fieldset class="form__fieldset">
-
-      </fieldset>
-      <fieldset class="form__fieldset">
-
-      </fieldset>
-      <p class="form__comment">
-
-      </p>
-    </form>
-
-  </main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo" href="index.html"></a>
-      <ul class="page-footer__social social">
-
-      </ul>
-      <p class="page-footer__copyright copyright">
-
-      </p>
-    </div>
-  </footer>
-
-  <!-- <header class="page-header">
-    <nav class="navigation">
-      <button class="navigation__button" type="button">
-        <span class="visually-hidden">Открыть/Закрыть меню</span>
-      </button>
-      <a class="navigation__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
-      </a>
-      <ul class="navigation__menu menu-list">
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="menu-list__item menu-list__item--active">
-          <a class="menu-list__link menu-list__link--active">Вязание на заказ</a>
-        </li>
-        <li class="menu-list__item menu-list__item--desktop">
-          <a class="menu-list__link" href="#">Новые поступления</a>
-        </li>
-        <li class="menu-list__item menu-list__item--desktop">
-          <a class="menu-list__link" href="#">Распродажа</a>
-        </li>
-      </ul>
       <ul class="navigation__user-block user-block">
         <li class="user-block__item">
           <a class="user-block__link user-block__link--search" href="#">Поиск по сайту</a>
         </li>
         <li class="user-block__item">
-          <a class="user-block__link user-block__link--cart" href="#">Корзина: <span class="user-block__link-status">пока пуста</span></a>
+          <a class="user-block__link user-block__link--cart" href="#">Корзина: <span class="user-block__link-status">пока
+              пуста</span></a>
         </li>
         <li class="user-block__item user-block__item--delivery">
           Бесплатная доставка по России
@@ -104,7 +50,7 @@
 
   <main class="page-main">
     <h1 class="page-main__heading page-main__heading--form heading">
-      Вязание на заказ
+      <span class="page-main__heading-wrapper">Вязание на заказ</span>
     </h1>
     <p class="page-main__intro">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
@@ -115,8 +61,7 @@
         <legend class="form__legend">Тип</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input-radio visually-hidden" type="radio" name="type" id="accessory"
-              checked>
+            <input class="form__input-radio visually-hidden" type="radio" name="type" id="accessory" checked>
             <label class="form__label" for="accessory">Аксессуар для интерьера</label>
           </li>
           <li class="form__item">
@@ -129,13 +74,11 @@
         <legend class="form__legend">Цвет</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input-checkbox visually-hidden" type="checkbox" name="white" id="white"
-              checked>
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
             <label class="form__label" for="white">Белый</label>
           </li>
           <li class="form__item">
-            <input class="form__input-checkbox visually-hidden" type="checkbox" name="gray" id="gray"
-              checked>
+            <input class="form__input-checkbox visually-hidden" type="checkbox" name="gray" id="gray" checked>
             <label class="form__label" for="gray">Серый</label>
           </li>
           <li class="form__item">
@@ -182,12 +125,12 @@
           <li class="form__item">
             <label class="form__legend" for="phone">Тел<span class="visually-hidden">ефон</span></label>
             <input class="form__input form__input--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-          required>
+              required>
           </li>
           <li class="form__item">
             <label class="form__legend" for="email">e-mail</label>
             <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="Ваш Email*"
-          required>
+              required>
           </li>
         </ul>
       </fieldset>
@@ -202,30 +145,35 @@
   </main>
 
   <footer class="page-footer">
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--inst" href="#">
-          <span class="visually-hidden">Наш Инстаграм</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--fb" href="#">
-          <span class="visually-hidden">Наш Фейсбук</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--tw" href="#">
-          <span class="visually-hidden">Наш Твиттер</span>
-        </a>
-      </li>
-    </ul>
-    <p class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">Разработано</span>
-        <span class="visually-hidden">в HTML Academy</span>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина «Мишка»">
       </a>
-    </p>
-  </footer> -->
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#">
+            <span class="visually-hidden">Наш Инстаграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Наш Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#">
+            <span class="visually-hidden">Наш Твиттер</span>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <span class="visually-hidden">в HTML Academy</span>
+        </a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 

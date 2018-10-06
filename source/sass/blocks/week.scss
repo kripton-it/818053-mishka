@@ -1,7 +1,8 @@
 .week {
+  outline: 2px solid red;
+
   @include container();
-  // background-color: $bg-color-main;
-  background-color: transparent;
+  background-color: $bg-color-main;
   color: $color-main;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -40,8 +41,6 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  /* Временно для сетки */
-  min-height: 25px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 130px;
@@ -58,19 +57,13 @@
 
 .week__title {
   order: -1;
-  /* Временно для сетки */
-  min-height: 30px;
 
   @media (min-width: $tablet-breakpoint) {
     flex-grow: 1;
-    /* Временно для сетки */
-    min-height: 50px;
   }
 
   @media (min-width: $desktop-breakpoint) {
     order: 1;
-    /* Временно для сетки */
-    min-height: 60px;
   }
 }
 
@@ -103,14 +96,10 @@
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  /* Временно для сетки */
-  min-height: 70px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 295px;
     margin-bottom: 40px;
-    /* Временно для сетки */
-    min-height: 85px;
   }
 
   @media (min-width: $desktop-breakpoint) {
@@ -123,19 +112,10 @@
   width: 100%;
   color: $color-main;
   margin-bottom: 30px;
-  /* Временно для сетки */
-  min-height: 110px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 295px;
     margin-bottom: auto;
-    /* Временно для сетки */
-    min-height: 115px;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    /* Временно для сетки */
-    min-height: 120px;
   }
 
   td,
@@ -149,8 +129,6 @@
 .week__image {
   margin: 0;
   padding: 0;
-  /* Временно для сетки */
-  min-height: 315px;
 
   @media (min-width: $tablet-breakpoint) {
     order: 2;
@@ -171,8 +149,6 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  /* Временно для сетки */
-  min-height: 75px;
 
   @media (min-width: $tablet-breakpoint) {
     width: 295px;
@@ -181,10 +157,6 @@
 }
 
 .week__order {
-  /* Временно для сетки */
-  min-height: 52px;
-  background-color: transparent;
-
   @media (min-width: $tablet-breakpoint) {
     width: 295px;
   }
