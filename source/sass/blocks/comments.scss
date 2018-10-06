@@ -8,10 +8,15 @@
     padding-top: 80px;
     padding-bottom: 120px;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-bottom: 125px;
+  }
 }
 
 .comments__wrapper {
   @include container-tablet();
+  @include container-desktop();
 }
 
 .comments__header {
