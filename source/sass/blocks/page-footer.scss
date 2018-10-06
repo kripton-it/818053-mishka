@@ -28,6 +28,10 @@
     width: 102px;
     margin-right: 155px;
   }
+
+  @media (min-width: $tablet-breakpoint) {
+    margin-right: 345px;
+  }
 }
 
 .page-footer__social {
