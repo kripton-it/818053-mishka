@@ -10,6 +10,11 @@
     padding-top: 50px;
     padding-bottom: 65px;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: 125px;
+    padding-bottom: 100px;
+  }
 }
 
 .week__header-wrapper {
@@ -20,6 +25,10 @@
   @media (min-width: $tablet-breakpoint) {
     flex-direction: row;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 45px;
   }
 }
 
@@ -39,6 +48,12 @@
     margin-left: 20px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 155px;
+    margin-left: 0;
+    margin-right: 20px;
+  }
 }
 
 .week__title {
@@ -51,6 +66,12 @@
     /* Временно для сетки */
     min-height: 50px;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    order: 1;
+    /* Временно для сетки */
+    min-height: 60px;
+  }
 }
 
 .week__wrapper {
@@ -60,6 +81,17 @@
     height: 405px;
     flex-wrap: wrap;
     align-content: space-between;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    padding-left: 170px;
+    height: 405px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: -160px;
+    padding-left: 170px;
+    height: 635px;
   }
 }
 
@@ -75,10 +107,15 @@
   min-height: 70px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 292px;
+    width: 295px;
     margin-bottom: 40px;
     /* Временно для сетки */
     min-height: 85px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-top: 160px;
+    margin-bottom: 55px;
   }
 }
 
@@ -90,8 +127,15 @@
   min-height: 110px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 292px;
-    margin-bottom: 35px;
+    width: 295px;
+    margin-bottom: auto;
+    /* Временно для сетки */
+    min-height: 115px;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    /* Временно для сетки */
+    min-height: 120px;
   }
 
   td,
@@ -113,6 +157,11 @@
     width: 334px;
     height: 405px;
   }
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 525px;
+    height: 635px;
+  }
 }
 
 .week__price {
@@ -126,8 +175,8 @@
   min-height: 75px;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 292px;
-    margin-bottom: auto;
+    width: 295px;
+    margin-bottom: 10px;
   }
 }
 
@@ -137,6 +186,6 @@
   background-color: transparent;
 
   @media (min-width: $tablet-breakpoint) {
-    width: 292px;
+    width: 295px;
   }
 }
