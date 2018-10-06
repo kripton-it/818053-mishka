@@ -67,10 +67,15 @@
   margin: 0;
   padding: 0;
 
-  @include container-mobile();
+  @include container();
   margin-bottom: 20px;
   /* Временно для сетки */
   min-height: 85px;
+
+  @media (min-width: $tablet-breakpoint) {
+    /* Временно для сетки */
+    min-height: 45px;
+  }
 }
 
 .page-main__form {
@@ -78,6 +83,11 @@
   margin-bottom: 55px;
   /* Временно для сетки */
   min-height: 1440px;
+
+  @media (min-width: $tablet-breakpoint) {
+    min-height: 1355px;
+    margin-bottom: 50px;
+  }
 }
 
 .page-main__production {
