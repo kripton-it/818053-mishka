@@ -6,12 +6,12 @@
   padding-bottom: 25px;
   background-color: $bg-color-main;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     padding-top: 60px;
     padding-bottom: 80px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     padding-bottom: 85px;
   }
 }
@@ -19,11 +19,11 @@
 .about__header {
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 40px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     margin-left: 175px;
     margin-bottom: 40px;
   }
@@ -32,13 +32,13 @@
 .about__list {
   @include reset-list();
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     margin-left: 175px;
     margin-right: 175px;
   }
@@ -55,12 +55,12 @@
   background-position: top left;
   margin-bottom: 29px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 58px;
   }
 
   &:nth-child(2n+1) {
-    @media (min-width: $tablet-breakpoint) {
+    @include tablet {
       margin-bottom: 0;
     }
   }
@@ -69,11 +69,11 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 334px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     width: 350px;
   }
 

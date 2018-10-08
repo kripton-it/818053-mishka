@@ -5,12 +5,12 @@
 
   @include container-desktop();
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     padding-top: 70px;
     padding-bottom: 60px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     padding-top: 75px;
     padding-bottom: 105px;
     display: flex;
@@ -33,11 +33,11 @@
   @include container-tablet();
   margin-bottom: 25px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 45px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     margin-left: 175px;
     margin-top: 60px;
     width: 320px;
@@ -57,11 +57,11 @@
   @include container-tablet();
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 60px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     width: 320px;
     margin-left: 175px;
     margin-bottom: auto;
@@ -116,11 +116,11 @@
   margin-bottom: 40px;
   padding: 0;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 55px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     width: 525px;
     order: 2;
     margin-bottom: 55px;
@@ -133,11 +133,11 @@
   margin-right: auto;
   font-size: 18px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 230px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     margin-left: 175px;
     width: 230px;
   }

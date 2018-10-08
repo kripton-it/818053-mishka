@@ -11,13 +11,13 @@
   background-color: $bg-color-gray;
   margin-bottom: 28px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     padding-top: 100px;
     padding-bottom: 80px;
     margin-bottom: 80px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     padding-bottom: 100px;
     margin-bottom: 125px;
   }
@@ -41,11 +41,11 @@
   @include container();
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 50px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     display: flex;
     justify-content: space-between;
     margin-bottom: 55px;
@@ -70,7 +70,7 @@
   @include container-mobile();
   margin-bottom: 55px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 50px;
   }
 }
@@ -79,11 +79,11 @@
   @include container();
   margin-bottom: 55px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 60px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     margin-bottom: 105px;
   }
 }

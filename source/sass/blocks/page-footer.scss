@@ -4,7 +4,7 @@
   font-weight: bold;
   line-height: 24px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -13,7 +13,7 @@
 .page-footer__wrapper {
   @include container();
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     display: flex;
   }
 }
@@ -21,13 +21,13 @@
 .page-footer__logo {
   display: none;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     display: block;
     width: 102px;
     margin-right: 155px;
   }
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-right: 345px;
   }
 }
@@ -35,7 +35,7 @@
 .page-footer__social {
   @include reset-list();
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 150px;
   }
 }
@@ -44,7 +44,7 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 182px;
     margin-left: auto;
   }

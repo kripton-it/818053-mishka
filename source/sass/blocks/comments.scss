@@ -6,12 +6,12 @@
   padding-bottom: 50px;
   background-color: $bg-color-main;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     padding-top: 80px;
     padding-bottom: 120px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     padding-bottom: 125px;
   }
 }
@@ -24,7 +24,7 @@
 .comments__header {
   margin-bottom: 25px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 55px;
   }
 }
@@ -34,7 +34,7 @@
   margin-bottom: 30px;
   padding: 0;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 0;
   }
 }

@@ -3,23 +3,23 @@
 
   @include container();
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     flex-wrap: no-wrap;
   }
 }
 
 .navigation__wrapper {
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 320px;
     margin-right: auto;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     display: flex;
     width: 600px;
   }
@@ -28,13 +28,13 @@
 .navigation__logo {
   outline: 2px solid blue;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 113px;
     /* Временно для сетки */
     min-height: 90px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     width: 149px;
     order: 2;
     /* Временно для сетки */
@@ -46,7 +46,7 @@
   @include reset-list();
   outline: 2px solid red;
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     width: 450px;
   }
 }
@@ -55,11 +55,11 @@
   @include reset-list();
   outline: 2px solid green;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 347px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     width: 350px;
   }
 }

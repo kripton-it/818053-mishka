@@ -1,5 +1,5 @@
 .user-block {
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     /* Временно для сетки */
     min-height: 150px;
   }
@@ -13,7 +13,7 @@
     font-weight: normal;
     line-height: 24px;
 
-    @media (min-width: $tablet-breakpoint) {
+    @include tablet {
       display: block;
     }
   }

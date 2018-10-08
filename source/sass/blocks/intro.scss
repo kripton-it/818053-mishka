@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: center top;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     padding-top: 150px;
   }
 }
@@ -26,11 +26,11 @@
   margin-bottom: 115px;
   text-align: center;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 365px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     margin-bottom: 345px;
   }
 }
@@ -40,7 +40,7 @@
 
   @include reset-list();
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     display: flex;
   }
 }
@@ -54,7 +54,7 @@
   /* Временно для сетки */
   min-height: 103px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     /* Временно для сетки */
     min-height: 120px;
   }
@@ -74,13 +74,13 @@
   /* Временно для сетки */
   min-height: 103px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 334px;
     /* Временно для сетки */
     min-height: 120px;
   }
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     width: 525px;
   }
 

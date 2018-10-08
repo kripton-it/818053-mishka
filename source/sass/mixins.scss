@@ -4,9 +4,33 @@
   padding: 0;
 }
 
+@mixin mobile-only {
+  @media (max-width: $tablet-width - 1) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
 @mixin container-mobile() {
-  @media (max-width: $tablet-breakpoint) {
-    width: $mobile-width;
+  @include mobile-only {
+    width: $mobile-width - 2 * $mobile-padding;
     padding-left: $mobile-padding;
     padding-right: $mobile-padding;
     margin-left: auto;
@@ -15,8 +39,8 @@
 }
 
 @mixin container-tablet() {
-  @media (min-width: $tablet-breakpoint) and (max-width: $desktop-breakpoint) {
-    width: $tablet-width;
+  @include tablet-only {
+    width: $tablet-width - 2 * $tablet-padding;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
     margin-left: auto;
@@ -25,8 +49,8 @@
 }
 
 @mixin container-desktop() {
-  @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
+  @include desktop {
+    width: $desktop-width - 2 * $desktop-padding;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
     margin-left: auto;
@@ -35,20 +59,20 @@
 }
 
 @mixin container() {
-  width: $mobile-width;
+  width: $mobile-width - 2 * $mobile-padding;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: $tablet-breakpoint) {
-    width: $tablet-width;
+  @include tablet {
+    width: $tablet-width - 2 * $tablet-padding;
     padding-left: $tablet-padding;
     padding-right: $tablet-padding;
   }
 
-  @media (min-width: $desktop-breakpoint) {
-    width: $desktop-width;
+  @include desktop {
+    width: $desktop-width - 2 * $desktop-padding;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;
   }

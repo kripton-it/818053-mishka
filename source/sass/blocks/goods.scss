@@ -2,11 +2,11 @@
   outline: 2px solid green;
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-breakpoint) {
+  @include tablet {
     margin-bottom: 52px;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @include desktop {
     width: 316px;
     margin-bottom: 0;
   }
@@ -14,7 +14,7 @@
   &:last-child {
     margin-bottom: 0;
 
-    @media (min-width: $tablet-breakpoint) {
+    @include tablet {
       margin-bottom: 0;
     }
   }

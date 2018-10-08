@@ -14,9 +14,9 @@
 .menu-list__item {
   &--desktop {
     display: none;
-  }
 
-  @media (min-width: $desktop-breakpoint) {
-    display: block;
+    @include desktop {
+      display: block;
+    }
   }
 }

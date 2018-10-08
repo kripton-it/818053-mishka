@@ -10,11 +10,9 @@ $font-family: "OpenSans", "Arial", sans-serif;
 $font-size-main: 15px;
 $line-height-main: 24px;
 
-$mobile-width: 260px;
+$mobile-width: 320px;
 $mobile-padding: 30px;
-$tablet-width: 668px;
+$tablet-width: 768px;
 $tablet-padding: 50px;
-$tablet-breakpoint: $tablet-width + 2 * $tablet-padding;
-$desktop-width: 1050px;
+$desktop-width: 1150px;
 $desktop-padding: 50px;
-$desktop-breakpoint: $desktop-width + 2 * $desktop-padding;
