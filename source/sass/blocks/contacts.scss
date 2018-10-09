@@ -1,7 +1,8 @@
 .contacts {
-  outline: 2px solid red;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  outline: 2px solid red;
 
   @include container-desktop();
 
@@ -11,51 +12,53 @@
   }
 
   @include desktop {
-    padding-top: 75px;
-    padding-bottom: 105px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 457px;
     align-content: space-between;
+    height: 457px;
+    padding-top: 75px;
+    padding-bottom: 105px;
   }
 }
 
 .contacts__header {
-  color: $color-black;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-black;
 
   @include container-mobile();
   @include container-tablet();
-  margin-bottom: 25px;
 
   @include tablet {
     margin-bottom: 45px;
   }
 
   @include desktop {
-    margin-left: 175px;
-    margin-top: 60px;
     width: 320px;
+    margin-top: 60px;
     margin-bottom: 30px;
+    margin-left: 175px;
   }
 }
 
 .contacts__list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
-  color: $color-main;
-  font-size: 15px;
+
   font-weight: normal;
+  font-size: 15px;
   line-height: 30px;
+  color: $color-main;
 
   @include container-mobile();
   @include container-tablet();
-  margin-bottom: 30px;
 
   @include tablet {
     margin-bottom: 60px;
@@ -63,8 +66,8 @@
 
   @include desktop {
     width: 320px;
-    margin-left: 175px;
     margin-bottom: auto;
+    margin-left: 175px;
   }
 }
 
@@ -79,17 +82,20 @@
 }
 
 .contacts__email {
-  color: $color-main;
   position: relative;
+
+  color: $color-main;
 
   &::before {
     content: "";
     position: absolute;
-    height: 1px;
-    background-color: #62d1ba;
+    right: 0;
     bottom: -5px;
     left: 0;
-    right: 0;
+
+    height: 1px;
+
+    background-color: #62d1ba;
   }
 
   &:hover,
@@ -121,16 +127,17 @@
   }
 
   @include desktop {
-    width: 525px;
     order: 2;
+    width: 525px;
     margin-bottom: 55px;
   }
 }
 
 .contacts__write {
   width: $mobile-width;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+
   font-size: 18px;
 
   @include tablet {
@@ -138,7 +145,7 @@
   }
 
   @include desktop {
-    margin-left: 175px;
     width: 230px;
+    margin-left: 175px;
   }
 }

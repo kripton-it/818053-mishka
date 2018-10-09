@@ -1,24 +1,28 @@
 .button {
-  box-sizing: border-box;
-  cursor: pointer;
-  border: 2px solid $color-main;
-  background-color: $bg-color-main;
-  color: $color-main;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
-  text-transform: uppercase;
   display: block;
+  box-sizing: border-box;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
   text-align: center;
+  color: $color-main;
+  text-transform: uppercase;
+
+  background-color: $bg-color-main;
+  border: 2px solid $color-main;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: $color-main;
     color: $color-white;
+
+    background-color: $color-main;
   }
 
   &:active {
-    background-color: $color-main;
     color: rgba($color-white, 0.3);
+
+    background-color: $color-main;
   }
 }

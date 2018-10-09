@@ -1,6 +1,5 @@
 .user-block {
   @include tablet {
-    /* Временно для сетки */
     min-height: 150px;
   }
 }
@@ -8,10 +7,11 @@
 .user-block__item {
   &--delivery {
     display: none;
-    color: $color-main;
-    font-size: 15px;
+
     font-weight: normal;
+    font-size: 15px;
     line-height: 24px;
+    color: $color-main;
 
     @include tablet {
       display: block;

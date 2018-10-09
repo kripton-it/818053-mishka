@@ -1,10 +1,11 @@
 .about {
+  padding-top: 40px;
+  padding-bottom: 25px;
+
+  background-color: $bg-color-main;
   outline: 2px solid green;
 
   @include container();
-  padding-top: 40px;
-  padding-bottom: 25px;
-  background-color: $bg-color-main;
 
   @include tablet {
     padding-top: 60px;
@@ -24,8 +25,8 @@
   }
 
   @include desktop {
-    margin-left: 175px;
     margin-bottom: 40px;
+    margin-left: 175px;
   }
 }
 
@@ -39,24 +40,31 @@
   }
 
   @include desktop {
-    margin-left: 175px;
     margin-right: 175px;
+    margin-left: 175px;
   }
 }
 
 .about__item {
-  outline: 2px solid red;
+  margin-bottom: 29px;
   padding-top: 85px;
-  color: $color-black;
-  font-size: 17px;
+
   font-weight: bold;
+  font-size: 17px;
   line-height: 20px;
+  color: $color-black;
+
   background-repeat: no-repeat;
   background-position: top left;
-  margin-bottom: 29px;
+  outline: 2px solid red;
 
   @include tablet {
+    width: 334px;
     margin-bottom: 58px;
+  }
+
+  @include desktop {
+    width: 350px;
   }
 
   &:nth-child(2n+1) {
@@ -67,14 +75,6 @@
 
   &:last-child {
     margin-bottom: 0;
-  }
-
-  @include tablet {
-    width: 334px;
-  }
-
-  @include desktop {
-    width: 350px;
   }
 
   &--eco {

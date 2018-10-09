@@ -1,6 +1,6 @@
 .production {
-  outline: 2px solid red;
   background-color: $bg-color-main;
+  outline: 2px solid red;
 }
 
 .production__wrapper {
@@ -19,24 +19,27 @@
 .production__header {
   margin: 0;
   padding: 0;
-  color: $color-black;
-  font-size: 17px;
+
   font-weight: bold;
+  font-size: 17px;
   line-height: 24px;
+  color: $color-black;
 }
 
 .production__video-container {
-  background-color: #bebdc2;
-  background-image: url("../img/video-mobile@1x.jpg");
   width: 260px;
   height: 150px;
+
+  background-color: #bebdc2;
+  background-image: url("../img/video-mobile@1x.jpg");
 }
 
 .production__text {
   margin: 0;
   padding: 0;
-  color: $color-main;
-  font-size: 13px;
+
   font-weight: normal;
+  font-size: 13px;
   line-height: 24px;
+  color: $color-main;
 }

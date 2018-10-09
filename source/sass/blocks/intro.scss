@@ -1,12 +1,13 @@
 .intro {
-  outline: 2px solid blue;
-
   padding-top: 70px;
+
   font-weight: bold;
+
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  outline: 2px solid blue;
 
   @include tablet {
     padding-top: 150px;
@@ -19,12 +20,14 @@
 }
 
 .intro__header {
-  @include container-mobile();
-  color: #010000;
+  margin-bottom: 115px;
+
   font-size: 27px;
   line-height: 30px;
-  margin-bottom: 115px;
   text-align: center;
+  color: #010000;
+
+  @include container-mobile();
 
   @include tablet {
     margin-bottom: 365px;
@@ -36,9 +39,9 @@
 }
 
 .intro__list {
-  outline: 2px solid red;
-
   @include reset-list();
+
+  outline: 2px solid red;
 
   @include tablet {
     display: flex;
@@ -47,12 +50,14 @@
 
 .intro__link {
   display: block;
-  background-color: $color-green;
-  color: $color-white;
-  font-size: 20px;
-  line-height: 30px;
   /* Временно для сетки */
   min-height: 103px;
+
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-white;
+
+  background-color: $color-green;
 
   @include tablet {
     /* Временно для сетки */
@@ -80,7 +85,7 @@
     min-height: 120px;
   }
 
-  @include tablet {
+  @include desktop {
     width: 525px;
   }
 

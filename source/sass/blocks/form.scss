@@ -1,8 +1,9 @@
 .form__fieldset {
-  outline: 2px solid red;
-  border: none;
   margin: 0;
   padding: 0;
+
+  border: none;
+  outline: 2px solid red;
 
   &:nth-child(1) {
     margin-bottom: 20px;
@@ -38,16 +39,17 @@
 }
 
 .form__comment {
-  outline: 2px solid red;
   margin: 0;
   padding: 0;
+
+  outline: 2px solid red;
 }
 
 .form__legend {
-  color: $color-green;
-  font-size: 17px;
   font-weight: bold;
+  font-size: 17px;
   line-height: 16px;
+  color: $color-green;
   text-transform: uppercase;
 }
 
@@ -56,19 +58,20 @@
 }
 
 .form__label {
-  color: $color-black;
-  font-size: 17px;
   font-weight: bold;
+  font-size: 17px;
   line-height: 18px;
+  color: $color-black;
 }
 
 .form__input {
   font: inherit;
-  color: $color-main;
-  background-color: $bg-color-main;
+  font-weight: normal;
   font-size: 19px;
   line-height: 18px;
-  font-weight: normal;
+  color: $color-main;
+
+  background-color: $bg-color-main;
 
   &--text,
   &--phone,
@@ -83,9 +86,10 @@
     }
 
     &::placeholder {
-      color: $color-main;
-      opacity: 0.3;
       font: inherit;
+      color: $color-main;
+
+      opacity: 0.3;
     }
   }
 }
@@ -94,13 +98,15 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
+
   font: inherit;
-  color: $color-main;
+  font-weight: normal;
   font-size: 19px;
   line-height: 18px;
-  font-weight: normal;
-  border: 2px solid $color-main;
+  color: $color-main;
+
   background-color: $bg-color-main;
+  border: 2px solid $color-main;
 
   &:hover,
   &:focus,
@@ -109,15 +115,16 @@
   }
 
   &::placeholder {
-    color: $color-main;
-    opacity: 0.3;
     font: inherit;
+    color: $color-main;
+
+    opacity: 0.3;
   }
 }
 
 .form__notice {
-  color: $color-main;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 16px;
+  color: $color-main;
 }

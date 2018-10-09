@@ -35,8 +35,8 @@
   }
 
   @include desktop {
-    width: 149px;
     order: 2;
+    width: 149px;
     /* Временно для сетки */
     min-height: 90px;
   }
@@ -44,6 +44,7 @@
 
 .navigation__menu {
   @include reset-list();
+
   outline: 2px solid red;
 
   @include desktop {
@@ -53,6 +54,7 @@
 
 .navigation__user-block {
   @include reset-list();
+
   outline: 2px solid green;
 
   @include tablet {

@@ -1,8 +1,9 @@
 .page-footer {
-  background-color: $bg-color-gray;
-  font-size: 17px;
   font-weight: bold;
+  font-size: 17px;
   line-height: 24px;
+
+  background-color: $bg-color-gray;
 
   @include tablet {
     padding-top: 45px;
@@ -27,7 +28,7 @@
     margin-right: 155px;
   }
 
-  @include tablet {
+  @include desktop {
     margin-right: 345px;
   }
 }
