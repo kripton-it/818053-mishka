@@ -8,6 +8,8 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    /* временно */
+  min-height: 0;
   }
 
   @include desktop {
