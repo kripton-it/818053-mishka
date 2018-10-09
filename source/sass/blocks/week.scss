@@ -1,11 +1,10 @@
 .week {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   color: $color-main;
 
   background-color: $bg-color-main;
-  outline: 2px solid red;
 
   @include container();
 
@@ -23,7 +22,7 @@
 .week__header-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @include tablet {
     flex-direction: row;
@@ -60,6 +59,7 @@
 
 .week__title {
   order: -1;
+  margin-bottom: 5px;
 
   @include tablet {
     flex-grow: 1;
@@ -88,7 +88,7 @@
 
 .week__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 0;
 
   font-weight: normal;
@@ -108,8 +108,9 @@
 }
 
 .week__table {
+  border-collapse: collapse;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   color: $color-main;
 
@@ -118,17 +119,38 @@
     margin-bottom: auto;
   }
 
+  tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  tr {
+    display: block;
+  }
+
+  .week__table-parameter {
+    width: 96px;
+    text-align: left;
+  }
+
   td,
   th {
+    display: block;
     font-weight: normal;
     font-size: 15px;
     line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
   }
 }
 
 .week__image {
   margin: 0;
+  margin-bottom: 22px;
   padding: 0;
+  width: 260px;
+  height: 315px;
 
   @include tablet {
     order: 2;
@@ -140,10 +162,17 @@
     width: 525px;
     height: 635px;
   }
+
+  img {
+    display: block;
+    width: 260px;
+    height: 315px;
+  }
 }
 
 .week__price {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 
   font-weight: bold;
@@ -158,6 +187,9 @@
 }
 
 .week__order {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   @include tablet {
     width: 295px;
   }
