@@ -6,15 +6,41 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url( "img/preview/mishka-index-mobile.png" );
+  }
+  /* Планшет */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url( "img/preview/mishka-index-tablet.jpg" );
+    }
+  }
+  /* Десктоп */
+  @media ( min-width: 1150px ) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url( "img/preview/mishka-index-desktop.jpg" );
+    }
+  }
+</style>
+  <link href="../pixel-glass/styles.css" rel="stylesheet">
+  <script src="../pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
 
   <header class="page-header">
     <nav class="navigation">
-      <!-- <button class="navigation__button" type="button">
+      <button class="navigation__button" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню</span>
-      </button> -->
+      </button>
       <div class="navigation__wrapper">
         <a class="navigation__logo logo">
           <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">

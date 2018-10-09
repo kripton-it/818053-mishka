@@ -65,3 +65,9 @@
     width: 350px;
   }
 }
+
+.navigation__button {
+  @include tablet {
+    display: none;
+  }
+}
