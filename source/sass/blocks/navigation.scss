@@ -1,5 +1,7 @@
 .navigation {
   outline: 2px solid pink;
+  /* временно */
+  min-height: 395px;
 
   @include container();
 

@@ -6,7 +6,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -15px;
   outline: 2px solid blue;
 
   @include tablet {
@@ -20,7 +20,7 @@
 }
 
 .intro__header {
-  margin-bottom: 115px;
+  margin-bottom: 125px;
 
   font-size: 27px;
   line-height: 30px;
@@ -50,11 +50,9 @@
 
 .intro__link {
   display: block;
-  /* Временно для сетки */
-  min-height: 103px;
 
   font-size: 20px;
-  line-height: 30px;
+  line-height: 26px;
   color: $color-white;
 
   background-color: $color-green;
@@ -76,8 +74,6 @@
 }
 
 .intro__item {
-  /* Временно для сетки */
-  min-height: 103px;
 
   @include tablet {
     width: 334px;
@@ -99,5 +95,24 @@
         background-color: #46c1ae;
       }
     }
+
+    .intro__link-center {
+      background-image: url("../img/icon-toy.svg");
+      background-position: 235px center;
+    }
   }
+}
+
+.intro__link-center {
+  display: block;
+  width: $mobile-width - $mobile-padding - 160px;
+  padding-left: $mobile-padding;
+  padding-right: 160px;
+  padding-top: 22px;
+  padding-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  background-position: 245px center;
 }
