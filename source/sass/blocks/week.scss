@@ -31,7 +31,9 @@
   }
 
   @include desktop {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -47,15 +49,15 @@
 
   @include tablet {
     width: 130px;
+    line-height: 17px;
     text-align: center;
     margin-bottom: 0;
     margin-left: 20px;
   }
 
   @include desktop {
-    width: 155px;
-    margin-right: 20px;
-    margin-left: 0;
+    margin-left: 15px;
+    margin-right: 23px;
   }
 }
 
@@ -71,6 +73,8 @@
 
   @include desktop {
     order: 1;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -86,7 +90,7 @@
   @include desktop {
     height: 635px;
     margin-top: -160px;
-    padding-left: 170px;
+    padding-left: 173px;
   }
 }
 
@@ -110,7 +114,7 @@
 
   @include desktop {
     margin-top: 160px;
-    margin-bottom: 55px;
+    margin-bottom: 49px;
   }
 }
 
@@ -122,7 +126,7 @@
   color: $color-main;
 
   @include tablet {
-    width: 295px;
+    width: 291px;
     margin-bottom: auto;
   }
 
@@ -133,9 +137,11 @@
 
   tr {
     display: block;
+    flex-grow: 1;
   }
 
   .week__table-parameter {
+    flex-grow: 0;
     width: 96px;
     text-align: left;
   }
@@ -172,7 +178,7 @@
 
   @include desktop {
     width: 525px;
-    height: 635px;
+    height: 636px;
   }
 
   img {
@@ -183,6 +189,11 @@
     @include tablet {
       width: 333px;
       height: 404px;
+    }
+
+    @include desktop {
+      width: 525px;
+      height: 636px;
     }
   }
 }
@@ -203,6 +214,11 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  @include desktop {
+    width: 295px;
+    margin-bottom: 32px;
+  }
 }
 
 .week__order {
@@ -212,6 +228,12 @@
   @include tablet {
     width: 292px;
     margin-left: -2px;
-    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 293px;
+    padding-top: 14px;
+    margin-left: 0;
+    margin-bottom: -2px;
   }
 }
