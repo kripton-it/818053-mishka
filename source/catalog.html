@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,20 +12,28 @@
 
   <header class="page-header">
     <nav class="navigation">
-      <button class="navigation__button" type="button">
+      <!-- <button class="navigation__button" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню</span>
-      </button>
-      <a class="navigation__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
-      </a>
-      <ul class="navigation__menu menu-list">
-        <li class="menu-list__item menu-list__item--active">
-          <a class="menu-list__link menu-list__link--active">Каталог товаров</a>
-        </li>
-        <li class="menu-list__item">
-          <a class="menu-list__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
+      </button> -->
+      <div class="navigation__wrapper">
+        <a class="navigation__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина «Мишка»">
+        </a>
+        <ul class="navigation__menu menu-list">
+          <li class="menu-list__item menu-list__item--active">
+            <a class="menu-list__link menu-list__link--active">Каталог товаров</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="menu-list__item menu-list__item--desktop">
+            <a class="menu-list__link" href="#">Новые поступления</a>
+          </li>
+          <li class="menu-list__item menu-list__item--desktop">
+            <a class="menu-list__link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
       <ul class="navigation__user-block user-block">
         <li class="user-block__item">
           <a class="user-block__link user-block__link--search" href="#">Поиск по сайту</a>
@@ -33,13 +42,16 @@
           <a class="user-block__link user-block__link--cart" href="#">Корзина: <span class="user-block__link-status">пока
               пуста</span></a>
         </li>
+        <li class="user-block__item user-block__item--delivery">
+          Бесплатная доставка по России
+        </li>
       </ul>
     </nav>
   </header>
 
   <main class="page-main">
     <h1 class="page-main__heading heading">
-      Каталог товаров
+      <span class="page-main__heading-wrapper">Каталог товаров</span>
     </h1>
     <ul class="page-main__goods goods">
       <li class="goods__item">
@@ -90,39 +102,46 @@
       </li>
     </ul>
     <section class="page-main__production production">
-      <h2 class="production__header">Процесс производства</h2>
-      <div class="production__video-container"></div>
-      <p class="production__text">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
+      <div class="production__wrapper">
+        <h2 class="production__header">Процесс производства</h2>
+        <div class="production__video-container"></div>
+        <p class="production__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+      </div>
       <a class="production__order button" href="#">Сделать заказ</a>
     </section>
   </main>
 
   <footer class="page-footer">
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link social__link--inst" href="#">
-          <span class="visually-hidden">Наш Инстаграм</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--fb" href="#">
-          <span class="visually-hidden">Наш Фейсбук</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--tw" href="#">
-          <span class="visually-hidden">Наш Твиттер</span>
-        </a>
-      </li>
-    </ul>
-    <p class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">Разработано</span>
-        <span class="visually-hidden">в HTML Academy</span>
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo" href="index.html">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина «Мишка»">
       </a>
-    </p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#">
+            <span class="visually-hidden">Наш Инстаграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Наш Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#">
+            <span class="visually-hidden">Наш Твиттер</span>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <span class="visually-hidden">в HTML Academy</span>
+        </a>
+      </p>
+    </div>
   </footer>
 
   <section class="modal">
@@ -143,7 +162,7 @@
           <label class="modal__form-label" for="l">L</label>
         </li>
       </ul>
-      <button class="modal__form-button" type="submit">Добавить</button>
+      <button class="modal__form-button button" type="submit">Добавить</button>
     </form>
   </section>
 

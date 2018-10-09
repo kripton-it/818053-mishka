@@ -1,17 +1,67 @@
 .navigation {
-  outline: 1px solid red;
+  outline: 2px solid pink;
+
+  @include container();
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-wrap: no-wrap;
+  }
+}
+
+.navigation__wrapper {
+  @include tablet {
+    width: 320px;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    display: flex;
+    width: 600px;
+  }
+}
+
+.navigation__logo {
+  outline: 2px solid blue;
+
+  @include tablet {
+    width: 113px;
+    /* Временно для сетки */
+    min-height: 90px;
+  }
+
+  @include desktop {
+    order: 2;
+    width: 149px;
+    /* Временно для сетки */
+    min-height: 90px;
+  }
 }
 
 .navigation__menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  outline: 1px solid blue;
+  @include reset-list();
+
+  outline: 2px solid red;
+
+  @include desktop {
+    width: 450px;
+  }
 }
 
 .navigation__user-block {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  outline: 1px solid green;
+  @include reset-list();
+
+  outline: 2px solid green;
+
+  @include tablet {
+    width: 347px;
+  }
+
+  @include desktop {
+    width: 350px;
+  }
 }

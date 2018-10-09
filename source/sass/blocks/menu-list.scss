@@ -10,3 +10,13 @@
     opacity: 0.3;
   }
 }
+
+.menu-list__item {
+  &--desktop {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+}

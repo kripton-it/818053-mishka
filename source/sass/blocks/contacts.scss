@@ -1,25 +1,74 @@
 .contacts {
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 40px;
-  outline: 1px solid orange;
+
+  outline: 2px solid red;
+
+  @include container-desktop();
+
+  @include tablet {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 457px;
+    padding-top: 75px;
+    padding-bottom: 105px;
+  }
 }
 
 .contacts__header {
-  color: $color-black;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-black;
+
+  @include container-mobile();
+  @include container-tablet();
+
+  @include tablet {
+    margin-bottom: 45px;
+  }
+
+  @include desktop {
+    width: 320px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 175px;
+  }
 }
 
 .contacts__list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
-  color: $color-main;
-  font-size: 15px;
+
   font-weight: normal;
+  font-size: 15px;
   line-height: 30px;
+  color: $color-main;
+
+  @include container-mobile();
+  @include container-tablet();
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    width: 320px;
+    margin-bottom: auto;
+    margin-left: 175px;
+  }
 }
 
 .contacts__property {
@@ -33,17 +82,20 @@
 }
 
 .contacts__email {
-  color: $color-main;
   position: relative;
+
+  color: $color-main;
 
   &::before {
     content: "";
     position: absolute;
-    height: 1px;
-    background-color: #62d1ba;
+    right: 0;
     bottom: -5px;
     left: 0;
-    right: 0;
+
+    height: 1px;
+
+    background-color: #62d1ba;
   }
 
   &:hover,
@@ -67,9 +119,33 @@
 
 .contacts__map {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
+
+  @include tablet {
+    margin-bottom: 55px;
+  }
+
+  @include desktop {
+    order: 2;
+    width: 525px;
+    margin-bottom: 55px;
+  }
 }
 
 .contacts__write {
+  width: $mobile-width;
+  margin-right: auto;
+  margin-left: auto;
+
   font-size: 18px;
+
+  @include tablet {
+    width: 230px;
+  }
+
+  @include desktop {
+    width: 230px;
+    margin-left: 175px;
+  }
 }

@@ -3,39 +3,95 @@
 }
 
 .page-main__heading {
+  margin-bottom: 28px;
+  padding-top: 65px;
+  padding-bottom: 75px;
+
   font-size: 27px;
   text-align: center;
-  padding-top: 75px;
-  padding-bottom: 75px;
+
   background-color: $bg-color-gray;
-  margin-bottom: 30px;
+  outline: 2px solid red;
+
+  @include tablet {
+    margin-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @include desktop {
+    margin-bottom: 125px;
+    padding-bottom: 100px;
+  }
 
   &--form {
     color: #231f20;
   }
 }
 
+.page-main__heading-wrapper {
+  display: block;
+
+  outline: 2px solid red;
+
+  @include container();
+}
+
 .page-main__goods {
-  list-style: none;
-  margin: 0;
+  @include reset-list();
+
   margin-bottom: 30px;
-  padding: 0;
+
+  outline: 2px solid red;
+
+  @include container();
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
 }
 
 .page-main__intro {
-  color: $color-main;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 24px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
+
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-main;
+
+  @include container();
 }
 
 .page-main__form {
-  outline: 1px solid red;
   margin-bottom: 55px;
+
+  outline: 2px solid green;
+
+  @include container-mobile();
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
 }
 
 .page-main__production {
   margin-bottom: 55px;
+
+  @include container();
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-bottom: 105px;
+  }
 }

@@ -1,55 +1,92 @@
 .comments {
   padding-top: 30px;
-  padding-bottom: 30px;
-  outline: 1px solid green;
+  padding-bottom: 50px;
+
+  background-color: $bg-color-main;
+  outline: 2px solid blue;
+
+  @include container-mobile();
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  @include desktop {
+    padding-bottom: 125px;
+  }
+}
+
+.comments__wrapper {
+  @include container-tablet();
+  @include container-desktop();
+}
+
+.comments__header {
+  margin-bottom: 25px;
+
+  @include tablet {
+    margin-bottom: 55px;
+  }
 }
 
 .comments__item {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .comments__text {
   margin: 0;
   padding: 0;
-  color: $color-main;
-  font-size: 15px;
+
   font-weight: normal;
+  font-size: 15px;
   line-height: 30px;
+  color: $color-main;
 }
 
 .comments__author-name {
   display: block;
-  color: $color-black;
-  font-size: 17px;
+
   font-weight: bold;
+  font-size: 17px;
   line-height: 24px;
+  color: $color-black;
 }
 
 .comments__author-link {
-  font-size: 17px;
-  color: $color-main;
   font-weight: normal;
+  font-size: 17px;
   line-height: 30px;
+  color: $color-main;
 }
 
 .comments__controls {
-  border: 1px solid #ececec;
-  background-color: $bg-color-main;
   height: 50px;
+  margin-bottom: 35px;
+
   font-size: 0;
+
+  background-color: $bg-color-main;
+  border: 1px solid #ececec;
 }
 
 .comments__button {
+  display: inline-block;
+  width: 129px;
+  height: 50px;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  border: none;
-  width: 130px;
-  height: 50px;
+
   background-color: $bg-color-main;
   background-repeat: no-repeat;
   background-position: center;
+  border: none;
   cursor: pointer;
 
   &:hover,

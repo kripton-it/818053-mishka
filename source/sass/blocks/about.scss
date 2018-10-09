@@ -1,24 +1,81 @@
 .about {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+
   background-color: $bg-color-main;
-  outline: 1px solid red;
+  outline: 2px solid green;
+
+  @include container();
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  @include desktop {
+    padding-bottom: 85px;
+  }
+}
+
+.about__header {
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+    margin-left: 175px;
+  }
 }
 
 .about__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list();
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    margin-right: 175px;
+    margin-left: 175px;
+  }
 }
 
 .about__item {
+  margin-bottom: 29px;
   padding-top: 85px;
-  color: $color-black;
-  font-size: 17px;
+
   font-weight: bold;
+  font-size: 17px;
   line-height: 20px;
+  color: $color-black;
+
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: top left;
+  outline: 2px solid red;
+
+  @include tablet {
+    width: 334px;
+    margin-bottom: 58px;
+  }
+
+  @include desktop {
+    width: 350px;
+  }
+
+  &:nth-child(2n+1) {
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--eco {
     background-image: url("../../img/icon-feature-flower.svg");

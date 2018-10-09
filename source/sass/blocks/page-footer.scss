@@ -1,15 +1,52 @@
 .page-footer {
-  outline: 1px solid blue;
-  background-color: $bg-color-gray;
-  font-size: 17px;
   font-weight: bold;
+  font-size: 17px;
   line-height: 24px;
-  padding-top: 25px;
-  padding-bottom: 20px;
+
+  background-color: $bg-color-gray;
+
+  @include tablet {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+
+.page-footer__wrapper {
+  @include container();
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @include tablet {
+    display: block;
+    width: 102px;
+    margin-right: 155px;
+  }
+
+  @include desktop {
+    margin-right: 345px;
+  }
 }
 
 .page-footer__social {
-  list-style: none;
+  @include reset-list();
+
+  @include tablet {
+    width: 150px;
+  }
+}
+
+.page-footer__copyright {
   margin: 0;
   padding: 0;
+
+  @include tablet {
+    width: 182px;
+    margin-left: auto;
+  }
 }
