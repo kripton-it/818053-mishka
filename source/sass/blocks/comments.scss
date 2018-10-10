@@ -8,8 +8,12 @@
   @include container-mobile();
 
   @include tablet {
-    padding-top: 80px;
+    padding-top: 79px;
     padding-bottom: 120px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
   }
 
   @include desktop {
@@ -18,15 +22,22 @@
 }
 
 .comments__wrapper {
+  outline: 1px solid red;
+
   @include container-tablet();
   @include container-desktop();
+
+  @include tablet {
+    position: relative;
+  }
 }
 
 .comments__header {
   margin-bottom: 25px;
 
   @include tablet {
-    margin-bottom: 55px;
+    margin-bottom: 48px;
+    margin-left: -3px;
   }
 }
 
@@ -49,6 +60,12 @@
   font-size: 15px;
   line-height: 30px;
   color: $color-main;
+
+  @include tablet {
+    font-size: 17px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+  }
 }
 
 .comments__author-name {
@@ -60,6 +77,11 @@
   line-height: 24px;
   font-style: normal;
   color: $color-black;
+
+  @include tablet {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
 }
 
 .comments__author-link {
@@ -76,8 +98,16 @@
 
   font-size: 0;
 
-  background-color: $bg-color-main;
+  background-color: transparent;
   border: 1px solid #ececec;
+
+  @include tablet {
+    position: absolute;
+    right: $tablet-padding;
+    bottom: 1px;
+    border-color: red;
+    margin-bottom: 0;
+  }
 }
 
 .comments__button {
@@ -87,7 +117,7 @@
   margin: 0;
   padding: 0;
 
-  background-color: $bg-color-main;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -109,10 +139,23 @@
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
+
+  @include tablet {
+    width: 87px;
+  }
 }
 
 .comments__write {
   padding-top: 14px;
   padding-bottom: 15px;
   font-size: 18px;
+
+  @include tablet {
+    font-size: 17px;
+    position: absolute;
+    top: 0;
+    right: $tablet-padding;
+    padding-left: 35px;
+    padding-right: 40px;
+  }
 }
