@@ -13,7 +13,9 @@
   }
 
   @include desktop {
-    padding-bottom: 85px;
+    padding-top: 58px;
+    padding-left: $tablet-padding - 10px;
+    padding-bottom: 90px;
   }
 }
 
@@ -25,7 +27,7 @@
   }
 
   @include desktop {
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     margin-left: 175px;
   }
 }
@@ -34,7 +36,6 @@
   @include reset-list();
 
   @include tablet {
-    outline: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -60,7 +61,6 @@
 
   background-repeat: no-repeat;
   background-position: left top;
-  outline: 2px solid red;
 
   @include tablet {
     width: 334px;
@@ -85,6 +85,10 @@
       padding-left: 5px;
       background-position: 10px top;
     }
+
+    @include desktop {
+      background-position: 12px top;
+    }
   }
 
   &--style {
@@ -101,6 +105,11 @@
       background-position: 5px top;
       margin-bottom: 64px;
       margin-right: 70px;
+    }
+
+    @include desktop {
+      padding-top: 55px;
+      margin-right: 86px;
     }
   }
 
@@ -119,6 +128,11 @@
       background-position: 11px top;
       margin-bottom: 0;
     }
+
+    @include desktop {
+      padding-left: 5px;
+      background-position: 13px top;
+    }
   }
 
   &--knit {
@@ -135,6 +149,11 @@
       width: 260px;
       background-position: 2px 4px;
       margin-bottom: 60px;
+    }
+
+    @include desktop {
+      background-position: 4px 4px;
+      margin-bottom: 62px;
     }
   }
 
@@ -164,6 +183,12 @@
       padding-right: 0;
       margin-bottom: 0;
       background-position: 2px top;
+    }
+
+    @include desktop {
+      padding-top: 52px;
+      padding-left: 1px;
+      background-position: 3px top;
     }
   }
 }
