@@ -81,6 +81,10 @@
     background-position: 6px top;
     background-size: 32px 37px;
     padding-right: 80px;
+
+    @include tablet {
+      padding-right: 0;
+    }
   }
 
   &--style {
@@ -88,6 +92,10 @@
     background-size: 47px 27px;
     padding-right: 50px;
     margin-bottom: 34px;
+
+    @include tablet {
+      padding-right: 0;
+    }
   }
 
   &--like {
@@ -97,6 +105,10 @@
     background-position: 6px top;
     padding-right: 60px;
     margin-bottom: 31px;
+
+    @include tablet {
+      padding-right: 0;
+    }
   }
 
   &--knit {
@@ -106,6 +118,10 @@
     padding-top: 50px;
     padding-right: 50px;
     margin-bottom: 35px;
+
+    @include tablet {
+      padding-right: 0;
+    }
   }
 
   &--support {
@@ -114,6 +130,10 @@
     background-position: -6px top;
     padding-top: 50px;
     margin-bottom: 31px;
+
+    @include tablet {
+      padding-right: 0;
+    }
   }
 
   &--box {
@@ -121,5 +141,9 @@
     background-size: 33px 32px;
     padding-right: 50px;
     padding-top: 51px;
+
+    @include tablet {
+      padding-right: 0;
+    }
   }
 }

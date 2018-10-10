@@ -67,14 +67,10 @@
 
   @include tablet {
     flex-grow: 1;
-    font-size: 43px;
-    line-height: 50px;
   }
 
   @include desktop {
     order: 1;
-    font-size: 53px;
-    line-height: 57px;
   }
 }
 
