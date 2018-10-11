@@ -2,8 +2,6 @@
   padding-top: 38px;
   padding-bottom: 40px;
 
-  outline: 2px solid red;
-
   @include container-desktop();
 
   @include tablet {
@@ -17,7 +15,7 @@
     flex-wrap: wrap;
     align-content: space-between;
     height: 457px;
-    padding-top: 75px;
+    padding-top: 77px;
     padding-bottom: 105px;
   }
 }
@@ -42,9 +40,9 @@
 
   @include desktop {
     width: 320px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    margin-left: 175px;
+    margin-top: 71px;
+    margin-bottom: 49px;
+    margin-left: 170px;
   }
 
   &::after {
@@ -57,6 +55,12 @@
       height: 81px;
       background-image: url("../../img/icon-flag.svg");
       background-repeat: no-repeat;
+    }
+
+    @include desktop {
+      left: -107px;
+      right: auto;
+      top: -8px;
     }
   }
 }
@@ -110,13 +114,17 @@
   margin: 0;
   padding: 0;
 
-  @include tablet {
+  @include tablet-only {
     width: 225px;
     margin-right: 30px;
 
     &:last-of-type {
       margin-right: 0;
     }
+  }
+
+  @include desktop {
+    width: 225px;
   }
 }
 
@@ -178,6 +186,10 @@
 
     @include tablet {
       width: 768px;
+    }
+
+    @include desktop {
+      width: 525px;
     }
   }
 }
