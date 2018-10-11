@@ -15,6 +15,12 @@
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+  }
 }
 
 .production__header {
@@ -39,6 +45,18 @@
     height: 32px;
     background-image: url("../img/icon-video.svg");
   }
+
+  @include tablet {
+    font-size: 20px;
+    padding-top: 38px;
+    padding-left: 106px;
+    padding-bottom: 33px;
+
+    &::before {
+      left: 40px;
+      top: 34px;
+    }
+  }
 }
 
 .production__video-container {
@@ -49,6 +67,15 @@
 
   background-color: #bebdc2;
   background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @include tablet {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    background-size: 668px 455px;
+    margin-bottom: 0;
+  }
 }
 
 .production__video-button {
@@ -86,6 +113,13 @@
   font-size: 13px;
   line-height: 24px;
   color: $color-main;
+
+  @include tablet {
+    padding-left: 40px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 34px;
+  }
 }
 
 .production__order {
@@ -95,4 +129,9 @@
   line-height: 16px;
   margin-left: 34px;
   margin-right: 34px;
+
+  @include tablet {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
