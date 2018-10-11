@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     /* временно */
-  min-height: 0;
+    min-height: 0;
   }
 
   @include desktop {
