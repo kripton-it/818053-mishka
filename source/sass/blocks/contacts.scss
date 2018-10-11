@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 40px;
 
   outline: 2px solid red;
@@ -49,8 +49,10 @@
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 
   font-weight: normal;
   font-size: 15px;
@@ -72,11 +74,19 @@
 }
 
 .contacts__property {
+  width: 50px;
   margin: 0;
+  margin-right: 27px;
+  margin-bottom: 31px;
   padding: 0;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__value {
+  width: 180px;
   margin: 0;
   padding: 0;
 }
@@ -119,8 +129,9 @@
 
 .contacts__map {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   padding: 0;
+  text-align: center;
 
   @include tablet {
     margin-bottom: 55px;
@@ -134,7 +145,9 @@
 }
 
 .contacts__write {
-  width: $mobile-width;
+  width: $mobile-width - 2 * $mobile-padding;
+  padding-top: 14px;
+  padding-bottom: 14px;
   margin-right: auto;
   margin-left: auto;
 
