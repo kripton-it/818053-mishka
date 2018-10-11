@@ -5,6 +5,8 @@
   outline: 2px solid green;
 
   @include tablet {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 52px;
   }
 
@@ -33,6 +35,17 @@
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
   }
+
+  &:nth-child(2) {
+    @include tablet {
+      margin-bottom: 54px;
+    }
+    .goods__title {
+      @include tablet {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 .goods__photo-link {
@@ -40,12 +53,22 @@
   display: block;
   width: 260px;
   height: 195px;
+
+  @include tablet {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 .goods__image {
   display: block;
   width: 260px;
   height: 195px;
+
+  @include tablet {
+    width: 334px;
+    height: 334px;
+  }
 }
 
 .goods__info {
@@ -54,6 +77,15 @@
   padding-top: 27px;
   padding-left: 28px;
   padding-bottom: 27px;
+
+  @include tablet {
+    outline: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    padding-left: 26px;
+    padding-top: 23px;
+  }
 }
 
 .goods__title {
@@ -65,6 +97,11 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
+  @include tablet {
+    font-size: 20px;
+    padding-right: 70px;
+  }
 }
 
 .goods__title-link {
@@ -89,12 +126,17 @@
   font-size: 13px;
   line-height: 30px;
   color: $color-main;
+
+  @include tablet {
+    font-size: 15px;
+    margin-bottom: auto;
+  }
 }
 
 .goods__price {
-  position: relative;
   margin: 0;
   padding: 0;
+  position: relative;
 
   font-weight: bold;
   font-size: 15px;
@@ -108,6 +150,15 @@
     width: 204px;
     height: 1px;
     background-color: #ececec;
+
+    @include tablet {
+      width: 268px;
+    }
+  }
+
+  @include tablet {
+    font-size: 17px;
+    margin-left: 5px;
   }
 }
 
@@ -134,5 +185,9 @@
   &:active {
     color: #63d1bb;
     opacity: 0.3;
+  }
+
+  @include tablet {
+    right: 33px;
   }
 }

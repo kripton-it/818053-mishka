@@ -7,7 +7,10 @@
   padding-top: 70px;
   padding-bottom: 75px;
 
-  font-size: 27px;
+  @include mobile-only {
+    font-size: 27px;
+  }
+
   text-align: center;
 
   background-color: $bg-color-gray;
@@ -15,7 +18,7 @@
 
   @include tablet {
     margin-bottom: 80px;
-    padding-top: 100px;
+    padding-top: 95px;
     padding-bottom: 80px;
   }
 
