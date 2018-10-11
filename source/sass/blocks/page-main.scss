@@ -14,7 +14,6 @@
   text-align: center;
 
   background-color: $bg-color-gray;
-  outline: 2px solid red;
 
   @include tablet {
     margin-bottom: 80px;
@@ -23,7 +22,8 @@
   }
 
   @include desktop {
-    margin-bottom: 125px;
+    padding-top: 93px;
+    margin-bottom: 130px;
     padding-bottom: 100px;
   }
 
@@ -35,8 +35,6 @@
 .page-main__heading-wrapper {
   display: block;
 
-  outline: 2px solid red;
-
   @include container();
 }
 
@@ -44,8 +42,6 @@
   @include reset-list();
 
   margin-bottom: 30px;
-
-  outline: 2px solid red;
 
   @include container();
 

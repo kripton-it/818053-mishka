@@ -2,15 +2,15 @@
   margin-bottom: 30px;
   position: relative;
 
-  outline: 2px solid green;
-
-  @include tablet {
+  @include tablet-only {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 52px;
   }
 
   @include desktop {
+    display: flex;
+    flex-direction: column;
     width: 316px;
     margin-bottom: 0;
   }
@@ -37,11 +37,12 @@
   }
 
   &:nth-child(2) {
-    @include tablet {
+    @include tablet-only {
       margin-bottom: 54px;
     }
+
     .goods__title {
-      @include tablet {
+      @include tablet-only {
         margin-bottom: 10px;
       }
     }
@@ -58,6 +59,11 @@
     width: 334px;
     height: 334px;
   }
+
+  @include desktop {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .goods__image {
@@ -69,6 +75,11 @@
     width: 334px;
     height: 334px;
   }
+
+  @include desktop {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .goods__info {
@@ -76,15 +87,20 @@
   border: 1px solid #ececec;
   padding-top: 27px;
   padding-left: 28px;
+  padding-right: 28px;
   padding-bottom: 27px;
 
   @include tablet {
-    outline: 1px solid blue;
     display: flex;
     flex-direction: column;
-    width: 306px;
+    width: 278px;
     padding-left: 26px;
     padding-top: 23px;
+  }
+
+  @include desktop {
+    flex-grow: 1;
+    width: auto;
   }
 }
 
@@ -92,7 +108,6 @@
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
-  padding-right: 30px;
 
   font-weight: bold;
   font-size: 17px;
@@ -100,7 +115,12 @@
 
   @include tablet {
     font-size: 20px;
-    padding-right: 70px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    padding-right: 20px;
+    margin-bottom: 7px;
   }
 }
 
@@ -131,6 +151,10 @@
     font-size: 15px;
     margin-bottom: auto;
   }
+
+  @include desktop {
+    margin-bottom: 38px;
+  }
 }
 
 .goods__price {
@@ -147,18 +171,20 @@
     position: absolute;
     top: -23px;
     content: "";
-    width: 204px;
+    left: 0;
+    right: 0;
     height: 1px;
     background-color: #ececec;
-
-    @include tablet {
-      width: 268px;
-    }
   }
 
   @include tablet {
     font-size: 17px;
     margin-left: 5px;
+  }
+
+  @include desktop {
+    margin-top: auto;
+    margin-left: 0;
   }
 }
 
