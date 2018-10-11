@@ -6,8 +6,8 @@
   background-color: $bg-color-gray;
 
   @include tablet {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 }
 
@@ -16,6 +16,7 @@
 
   @include tablet {
     display: flex;
+    align-items: flex-end;
   }
 }
 
@@ -26,6 +27,17 @@
     display: block;
     width: 102px;
     margin-right: 155px;
+    color: #231f20;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: #46c1ae;
+    }
+
+    &[href]:active {
+      color: #46c1ae;
+      opacity: 0.3;
+    }
   }
 
   @include desktop {
@@ -42,6 +54,8 @@
   border-bottom: 1px solid #e5e5e5;
 
   @include tablet {
+    padding: 0;
+    margin: 0;
     width: 150px;
   }
 }
@@ -53,7 +67,9 @@
   padding-bottom: 23px;
 
   @include tablet {
+    padding: 0;
     width: 182px;
     margin-left: auto;
+    margin-right: 0;
   }
 }
