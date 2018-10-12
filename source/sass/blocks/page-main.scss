@@ -34,6 +34,10 @@
     @include tablet {
       margin-bottom: 80px;
     }
+
+    @include tablet {
+      margin-bottom: 123px;
+    }
   }
 }
 
@@ -77,12 +81,16 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @include desktop {
+    width: $desktop-width - 450px;
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }
 
 .page-main__form {
   margin-bottom: 55px;
-
-  outline: 2px solid green;
 
   @include container-mobile();
 
