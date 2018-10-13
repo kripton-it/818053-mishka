@@ -78,21 +78,24 @@
 }
 
 .navigation__button {
+  cursor: pointer;
   position: absolute;
+  z-index: 10;
   border: none;
   background-color: transparent;
+  width: 21px;
+  height: 20px;
+  right: 30px;
+  top: 29px;
+  background-image: url("../img/icon-menu-close.svg");
 
   @include tablet {
     display: none;
   }
 }
 
-.navigation--opened .navigation__button {
-  width: 21px;
-  height: 20px;
-  right: 30px;
-  top: 29px;
-  background-image: url("../img/icon-menu-close.svg");
+.button-red {
+  background-color: red;
 }
 
 .navigation--closed .navigation__button {
@@ -101,4 +104,16 @@
   right: 30px;
   top: 29px;
   background-image: url("../../img/icon-menu-open.svg");
+}
+
+.navigation--closed .navigation__menu {
+  display: none;
+}
+
+.navigation--closed .navigation__user-block {
+  display: none;
+}
+
+.navigation--nojs .navigation__button {
+  display: none;
 }
