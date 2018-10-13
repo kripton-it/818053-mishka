@@ -24,6 +24,12 @@
     padding-bottom: 19px;
   }
 
+  @include desktop {
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-right: 35px;
+  }
+
   &[href]:hover,
   &[href]:focus {
     opacity: 0.6;
@@ -52,11 +58,40 @@
     }
   }
 
+  @include desktop {
+    font-size: 17px;
+  }
+
+  &:first-child {
+    @include desktop {
+      position: relative;
+    }
+
+    &::after {
+      @include desktop {
+        position: absolute;
+        content: "";
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(#000000, 0.1);
+      }
+    }
+  }
+
   &--desktop {
     display: none;
 
     @include desktop {
       display: block;
+      font-size: 15px;
+      margin-right: 26px;
+    }
+
+    .menu-list__link {
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 }

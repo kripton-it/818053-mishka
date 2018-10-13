@@ -14,8 +14,8 @@
     background-position: center -5px;
   }
 
-  @include tablet {
-    padding-top: 150px;
+  @include desktop {
+    padding-top: 152px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center -5px;
   }

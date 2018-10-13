@@ -1,8 +1,11 @@
 .page-header {
   background-color: $bg-color-main;
 
+  @include tablet-only {
+    border-bottom: 1px solid rgba(#000000, 0.1);
+  }
+
   @include tablet {
     height: 88px;
-    border-bottom: 1px solid red;
   }
 }

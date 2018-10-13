@@ -1,5 +1,4 @@
 .navigation {
-  // outline: 2px solid pink;
   position: relative;
 
   @include container-tablet();
@@ -14,6 +13,19 @@
 
   @include desktop {
     flex-wrap: no-wrap;
+  }
+
+  &::after {
+    @include desktop {
+      content: "";
+      position: absolute;
+      opacity: 0.1;
+      left: 0;
+      right: 0;
+      height: 1px;
+      top: 88px;
+      background-color: #000000;
+    }
   }
 }
 
@@ -48,13 +60,13 @@
   @include desktop {
     order: 2;
     width: 149px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 .navigation__menu {
   @include reset-list();
-
-  outline: 2px solid red;
 
   @include desktop {
     width: 450px;
@@ -63,8 +75,6 @@
 
 .navigation__user-block {
   @include reset-list();
-
-  outline: 2px solid green;
 
   @include tablet {
     width: 347px;
