@@ -83,15 +83,17 @@
   }
 
   &::before {
-    content: "";
-    opacity: 0.5;
-    position: absolute;
-    right: 35px;
-    top: 30px;
-    width: 40px;
-    height: 62px;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
+    @include tablet {
+      content: "";
+      opacity: 0.5;
+      position: absolute;
+      right: 35px;
+      top: 30px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   &:hover,
@@ -149,11 +151,13 @@
       }
 
       &::before {
-        width: 60px;
-        height: 60px;
-        background-image: url("../img/icon-toy.svg");
-        right: 33px;
-        top: 32px;
+        @include tablet {
+          width: 60px;
+          height: 60px;
+          background-image: url("../img/icon-toy.svg");
+          right: 33px;
+          top: 32px;
+        }
       }
     }
 
