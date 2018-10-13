@@ -165,6 +165,7 @@
 }
 
 .contacts__map {
+  position: relative;
   margin: 0;
   margin-bottom: 34px;
   padding: 0;
@@ -192,6 +193,16 @@
       width: 525px;
     }
   }
+
+  iframe {
+    width: 100%;
+    height: 457px;
+  }
+}
+
+.contacts__map-image {
+  position: absolute;
+  z-index: -1;
 }
 
 .contacts__write {
