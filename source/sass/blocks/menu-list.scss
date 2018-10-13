@@ -1,3 +1,10 @@
+.menu-list {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .menu-list__link {
   display: block;
   color: $color-black;
@@ -12,6 +19,11 @@
     margin-right: auto;
   }
 
+  @include tablet {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
   &[href]:hover,
   &[href]:focus {
     opacity: 0.6;
@@ -23,9 +35,23 @@
 }
 
 .menu-list__item {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
   @include mobile-only {
     box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   }
+
+  @include tablet {
+    font-size: 15px;
+    margin-right: 35px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
   &--desktop {
     display: none;
 

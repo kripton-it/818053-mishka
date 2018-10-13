@@ -41,22 +41,20 @@
 
   @include tablet {
     width: 113px;
-    /* Временно для сетки */
-    min-height: 90px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   @include desktop {
     order: 2;
     width: 149px;
-    /* Временно для сетки */
-    min-height: 90px;
   }
 }
 
 .navigation__menu {
   @include reset-list();
 
-  // outline: 2px solid red;
+  outline: 2px solid red;
 
   @include desktop {
     width: 450px;
@@ -66,7 +64,7 @@
 .navigation__user-block {
   @include reset-list();
 
-  // outline: 2px solid green;
+  outline: 2px solid green;
 
   @include tablet {
     width: 347px;
@@ -94,24 +92,23 @@
   }
 }
 
-.button-red {
-  background-color: red;
-}
-
 .navigation--closed .navigation__button {
-  width: 21px;
   height: 14px;
   right: 30px;
-  top: 29px;
+  top: 32px;
   background-image: url("../../img/icon-menu-open.svg");
 }
 
 .navigation--closed .navigation__menu {
-  display: none;
+  @include mobile-only {
+    display: none;
+  }
 }
 
 .navigation--closed .navigation__user-block {
-  display: none;
+  @include mobile-only {
+    display: none;
+  }
 }
 
 .navigation--nojs .navigation__button {
