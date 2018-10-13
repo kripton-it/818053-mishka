@@ -1,5 +1,16 @@
 .menu-list__link {
+  display: block;
   color: $color-black;
+
+  @include mobile-only {
+    width: $mobile-width - 2 * $mobile-padding - 46px;
+    padding-left: $mobile-padding + 46px;
+    padding-right: $mobile-padding;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &[href]:hover,
   &[href]:focus {
@@ -12,6 +23,9 @@
 }
 
 .menu-list__item {
+  @include mobile-only {
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  }
   &--desktop {
     display: none;
 

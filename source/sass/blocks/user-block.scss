@@ -5,6 +5,10 @@
 }
 
 .user-block__item {
+  @include mobile-only {
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  }
+
   &--delivery {
     display: none;
 
@@ -20,7 +24,25 @@
 }
 
 .user-block__link {
+  display: block;
   color: $color-black;
+
+  @include mobile-only {
+    width: $mobile-width - 2 * $mobile-padding - 46px;
+    padding-left: $mobile-padding + 46px;
+    padding-right: $mobile-padding;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: $mobile-padding;
+      bottom: 30px;
+    }
+  }
 
   &:hover,
   &:focus {

@@ -1,5 +1,7 @@
 .logo {
   display: block;
+  // outline: 2px solid blue;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 }
 
 .logo[href] {
@@ -11,4 +13,11 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.logo__image {
+  display: block;
+  width: 86px;
+  height: 35px;
+  margin: auto;
 }
