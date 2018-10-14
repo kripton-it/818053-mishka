@@ -8,14 +8,14 @@
 
   @include tablet {
     padding-top: 52px;
-    padding-bottom: 83px;
+    padding-bottom: 3px;
     padding-left: $tablet-padding - 5px;
   }
 
   @include desktop {
     padding-top: 58px;
     padding-left: $tablet-padding - 10px;
-    padding-bottom: 90px;
+    padding-bottom: 10px;
   }
 }
 
@@ -41,7 +41,7 @@
     align-items: flex-start;
     align-content: flex-start;
     flex-direction: column;
-    max-height: 500px;
+    height: 490px;
   }
 
   @include desktop {
