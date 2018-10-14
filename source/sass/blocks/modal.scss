@@ -113,7 +113,7 @@
 }
 
 .modal__form-input-radio:checked {
-  +.modal__form-label {
+  + .modal__form-label {
     border-color: $color-green;
   }
 }

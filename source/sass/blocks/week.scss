@@ -1,4 +1,5 @@
 .week {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 40px;
 
@@ -7,6 +8,34 @@
   background-color: $bg-color-main;
 
   @include container();
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+
+    @include tablet {
+      bottom: -2px;
+      height: 17px;
+      background-size: 772px 17px;
+      background-position: 19px top;
+    }
+
+    @include desktop {
+      left: 50px;
+      right: 50px;
+      bottom: 0;
+      height: 23px;
+      background-size: 1050px 23px;
+      background-position: 19px top;
+    }
+  }
 
   @include tablet {
     padding-top: 46px;

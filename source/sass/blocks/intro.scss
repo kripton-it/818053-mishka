@@ -24,6 +24,29 @@
 .intro__wrapper {
   @include container-tablet();
   @include container-desktop();
+  position: relative;
+
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      right: 0;
+      height: 24px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 770px 24px;
+    }
+
+    @include desktop {
+      height: 34px;
+      background-size: 1250px 34px;
+      background-position: center;
+    }
+
+    /* На десктопе никак не получается совместить волны */
+  }
 }
 
 .intro__header {
@@ -53,6 +76,16 @@
 
   @include tablet {
     display: flex;
+
+    &:hover,
+    &:focus,
+    &:active {
+      .intro__link {
+        padding-bottom: 35px;
+      }
+    }
+
+    /* Недостаток этой реализации - не реагирует на фокус. Пришлось добавить атрибут tabindex="0" */
   }
 }
 
@@ -117,9 +150,10 @@
       }
     }
 
+    /* При такой реализации некрасиво скачет волнистая линия. Поэтому сделал по-другому (строки 72-78).
     @include tablet {
       padding-bottom: 35px;
-    }
+    } */
   }
 
   &:active {

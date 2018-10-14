@@ -1,4 +1,5 @@
 .comments {
+  position: relative;
   padding-top: 4px;
   padding-bottom: 50px;
 
@@ -8,7 +9,7 @@
 
   @include tablet {
     padding-top: 79px;
-    padding-bottom: 125px;
+    padding-bottom: 0;
   }
 
   @include tablet-only {
@@ -20,7 +21,21 @@
 
   @include desktop {
     padding-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 0;
+  }
+
+  &::after {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
   }
 }
 
@@ -30,15 +45,38 @@
 
   @include tablet {
     position: relative;
+    padding-bottom: 125px;
   }
 
   @include desktop {
     padding-top: 70px;
-    padding-bottom: 100px;
+    padding-bottom: 180px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
     background-position: $desktop-padding 0;
+  }
+
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: cover;
+      background-position: 10px top;
+      height: 17px;
+    }
+
+    @include desktop {
+      height: 23px;
+      left: 50px;
+      right: 50px;
+      background-position: 15px top;
+    }
   }
 }
 
@@ -142,13 +180,13 @@
   @include tablet {
     position: absolute;
     right: $tablet-padding;
-    bottom: 1px;
+    bottom: 126px;
     border-color: transparent;
     margin-bottom: 0;
   }
 
   @include desktop {
-    bottom: 101px;
+    bottom: 181px;
   }
 }
 
