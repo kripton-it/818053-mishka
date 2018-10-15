@@ -44,14 +44,10 @@
       background-size: 1250px 34px;
       background-position: center;
     }
-
-    /* На десктопе никак не получается совместить волны */
   }
 }
 
 .intro__header {
-  margin-bottom: 125px;
-
   text-align: center;
   color: #010000;
 
@@ -60,6 +56,7 @@
   @include mobile-only {
     font-size: 27px;
     line-height: 30px;
+    margin-bottom: 125px;
   }
 
   @include tablet {
@@ -67,7 +64,7 @@
   }
 
   @include desktop {
-    margin-bottom: 364px;
+    margin-bottom: 360px;
   }
 }
 
@@ -82,6 +79,7 @@
 
 .intro__link {
   display: block;
+  position: relative;
 
   font-size: 20px;
   line-height: 26px;
@@ -90,7 +88,6 @@
   background-color: $color-green;
 
   @include tablet {
-    position: relative;
     padding-top: 29px;
     padding-left: 34px;
     padding-right: 130px;
@@ -118,15 +115,22 @@
     }
   }
 
+  &::after {
+    display: block;
+    content: "";
+    height: 0;
+    background-color: #59d5bc;
+    width: 100%;
+  }
+
   &:hover,
   &:focus,
   &:active {
     background-color: #59d5bc;
+    margin-top: -5px;
 
-    .intro__link-center {
-      @include mobile-only {
-        padding-bottom: 33px;
-      }
+    &::after {
+      height: 5px;
     }
 
     .intro__link-center::before {
@@ -139,10 +143,6 @@
       @include tablet {
         opacity: 0.7;
       }
-    }
-
-    @include tablet {
-      padding-bottom: 35px;
     }
   }
 
@@ -175,6 +175,10 @@
   &--different {
     .intro__link {
       background-color: #56c3b2;
+
+      &::after {
+        background-color: #46c1ae;
+      }
 
       &:hover,
       &:focus,
