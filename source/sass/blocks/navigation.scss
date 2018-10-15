@@ -1,14 +1,12 @@
 .navigation {
   position: relative;
 
-  @include container-tablet();
-  @include container-desktop();
+  /* @include container-tablet();
+  @include container-desktop(); */
 
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    /* временно */
-    min-height: 0;
   }
 
   @include desktop {
@@ -27,11 +25,6 @@
       background-color: #000000;
     }
   }
-}
-
-.navigation__button-wrapper {
-  @include container-mobile();
-  position: relative;
 }
 
 .navigation__wrapper {

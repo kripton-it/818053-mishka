@@ -2,7 +2,21 @@
   display: block;
 
   @include mobile-only {
-    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    position: relative;
+  }
+
+  &::after {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      bottom: 0;
+      box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    }
   }
 }
 

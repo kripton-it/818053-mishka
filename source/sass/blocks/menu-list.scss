@@ -10,9 +10,9 @@
   color: $color-black;
 
   @include mobile-only {
+    position: relative;
     width: $mobile-width - 2 * $mobile-padding - 46px;
-    padding-left: $mobile-padding + 46px;
-    padding-right: $mobile-padding;
+    padding-left: 46px;
     padding-top: 27px;
     padding-bottom: 27px;
     margin-left: auto;
@@ -46,7 +46,21 @@
   font-weight: 700;
 
   @include mobile-only {
-    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    position: relative;
+  }
+
+  &::before {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      top: 0;
+      box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    }
   }
 
   @include tablet {
