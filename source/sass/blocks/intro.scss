@@ -115,6 +115,8 @@
     }
   }
 
+/* заготовка псевдоэлемента для закрытия пустоты при наведении */
+
   &::after {
     display: block;
     content: "";
@@ -127,11 +129,22 @@
   &:focus,
   &:active {
     background-color: #59d5bc;
+    // transform: translateY(-5px);
     margin-top: -5px;
+
+    /* псевдоэлемент при наведении увеличивает высоту и закрывает пустоту */
 
     &::after {
       height: 5px;
     }
+
+    /* Вместо псевдоэлемента можно увеличить на 5px padding-bottom:
+    (мобильная версия)
+    .intro__link-center {
+      @include mobile-only {
+        padding-bottom: 33px;
+      }
+    } */
 
     .intro__link-center::before {
       @include mobile-only {
@@ -144,6 +157,12 @@
         opacity: 0.7;
       }
     }
+
+    /* Вместо псевдоэлемента можно увеличить на 5px padding-bottom:
+    (планшетная и десктопная версии)
+    @include tablet {
+      padding-bottom: 35px;
+    } */
   }
 
   &:active {
