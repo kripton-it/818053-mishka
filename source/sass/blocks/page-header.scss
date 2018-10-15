@@ -1,11 +1,26 @@
 .page-header {
   background-color: $bg-color-main;
 
-  @include tablet-only {
+  /* @include tablet-only {
     border-bottom: 1px solid rgba(#000000, 0.1);
-  }
+  } */
 
   @include tablet {
-    height: 88px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &::before {
+    @include tablet {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 88px;
+      background-color: #ffffff;
+      border-bottom: 1px solid rgba(#000000, 0.1);
+    }
   }
 }

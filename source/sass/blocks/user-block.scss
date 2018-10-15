@@ -16,6 +16,11 @@
     position: relative;
   }
 
+  @include tablet-only {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(#000000, 0.1);
+  }
+
   &::before {
     @include mobile-only {
       content: "";
@@ -45,6 +50,8 @@
       align-self: flex-start;
       padding-top: 18px;
       padding-bottom: 18px;
+      background-color: #f9f9f9;
+      border-bottom: none;
     }
   }
 }
@@ -70,9 +77,10 @@
   }
 
   @include tablet {
-    height: 88px;
+    padding-top: 30px;
+    padding-bottom: 34px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 
   &:hover,
@@ -114,6 +122,8 @@
       width: 82px;
       justify-content: center;
       position: relative;
+      padding-top: 37px;
+      padding-bottom: 33px;
 
       &::before {
         content: "";

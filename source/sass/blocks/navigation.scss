@@ -6,11 +6,6 @@
 
   @include tablet {
     display: flex;
-    flex-wrap: wrap;
-  }
-
-  @include desktop {
-    flex-wrap: no-wrap;
   }
 
   &::after {
@@ -29,8 +24,8 @@
 
 .navigation__wrapper {
   @include tablet {
-    width: 320px;
-    margin-right: auto;
+    width: 300px;
+    flex-grow: 1;
   }
 
   @include desktop {
@@ -45,9 +40,11 @@
   position: relative;
 
   @include tablet {
-    width: 113px;
+    background-color: #ffffff;
+    width: 100%;
     padding-top: 21px;
     padding-bottom: 21px;
+    // border-bottom: 1px solid rgba(#000000, 0.1);
   }
 
   @include desktop {
@@ -56,6 +53,31 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  /* &::before,
+  &::after {
+    @include tablet-only {
+      content: "";
+      position: absolute;
+      background-color: red;
+      width: $tablet-padding + ($desktop-width - $tablet-width) / 2;
+      top: 0;
+      height: 100%;
+      border-bottom: 1px solid rgba(#000000, 0.1);
+    }
+  }
+
+  &::before {
+    @include tablet-only {
+      right: 320px;
+    }
+  }
+
+  &::after {
+    @include tablet-only {
+      left: 668px;
+    }
+  }*/
 }
 
 .navigation__menu {

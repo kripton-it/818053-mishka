@@ -9,9 +9,9 @@
   background-position: center -15px;
 
   @include tablet {
-    padding-top: 150px;
+    padding-top: 90px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: center -5px;
+    background-position: center -62px;
   }
 
   @include desktop {
