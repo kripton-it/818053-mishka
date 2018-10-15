@@ -12,8 +12,6 @@
 }
 
 .page-footer__wrapper {
-  @include container();
-
   @include tablet {
     display: flex;
     align-items: flex-end;

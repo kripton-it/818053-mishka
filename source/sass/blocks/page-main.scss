@@ -43,16 +43,14 @@
 
 .page-main__heading-wrapper {
   display: block;
-
-  @include container();
 }
 
 .page-main__goods {
   @include reset-list();
+  margin-left: auto;
+  margin-right: auto;
 
   margin-bottom: 30px;
-
-  @include container();
 
   @include tablet {
     margin-bottom: 53px;
@@ -75,7 +73,8 @@
   line-height: 24px;
   color: $color-main;
 
-  @include container();
+  @include container-mobile();
+  @include container-tablet();
 
   @include tablet {
     font-size: 17px;
@@ -86,6 +85,8 @@
     width: $desktop-width - 450px;
     padding-left: 225px;
     padding-right: 225px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -101,8 +102,6 @@
 
 .page-main__production {
   margin-bottom: 60px;
-
-  @include container();
 
   @include tablet {
     margin-bottom: 61px;
