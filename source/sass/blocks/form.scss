@@ -9,7 +9,8 @@
   border: none;
 
   @include mobile-only {
-    border-top: 1px solid green;
+    width: 100%;
+    border-top: 1px solid $color-green;
   }
 
   &--radio {
@@ -99,16 +100,6 @@
   }
 }
 
-.form__fieldset-wrapper {
-  @include container-tablet();
-  @include container-desktop();
-
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .form__legend {
   background-color: transparent;
   font-weight: bold;
@@ -141,7 +132,7 @@
         left: 1px;
         width: 260px;
         height: 1px;
-        background-color: green;
+        background-color: $color-green;
       }
     }
   }
@@ -241,7 +232,10 @@
     }
 
     .form__input {
-      width: 500px;
+      @include tablet {
+        width: 500px;
+      }
+
 
       @include desktop {
         width: 700px;
