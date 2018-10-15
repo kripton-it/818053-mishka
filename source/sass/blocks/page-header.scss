@@ -2,7 +2,7 @@
   background-color: $bg-color-main;
 
   @include tablet {
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     overflow: hidden;
     position: relative;
   }
@@ -21,6 +21,12 @@
 
     @include desktop {
       border-bottom: none;
+    }
+  }
+
+  &--index {
+    @include tablet {
+      background-color: #f9f9f9;
     }
   }
 }
