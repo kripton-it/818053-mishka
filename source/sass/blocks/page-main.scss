@@ -20,6 +20,7 @@
     margin-bottom: 80px;
     padding-top: 32px;
     padding-bottom: 80px;
+    position: relative;
   }
 
   @include desktop {
@@ -38,6 +39,28 @@
 
     @include desktop {
       margin-bottom: 123px;
+    }
+  }
+
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 50%;
+      transform: translateX(-50%);
+      width: $tablet-width;
+    }
+
+    @include desktop {
+      width: $desktop-width;
+      background-size: cover;
+      height: 34px;
+      bottom: -20px;
     }
   }
 }

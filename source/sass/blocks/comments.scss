@@ -72,10 +72,12 @@
     }
 
     @include desktop {
+      bottom: -10px;
       height: 23px;
       left: 50px;
       right: 50px;
-      background-position: 15px top;
+      background-position: 25px top;
+      background-size: contain;
     }
   }
 }
