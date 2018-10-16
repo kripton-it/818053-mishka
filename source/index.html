@@ -131,7 +131,11 @@
           </tr>
         </table>
         <p class="week__image">
-          <img src="img/triple-set-mobile@1x.jpg" alt="Товар недели: вязаные корзинки" width="260" height="315">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели: вязаные корзинки">
+          </picture>
         </p>
         <p class="week__price">
           Цена: 990 руб.
