@@ -13,15 +13,19 @@
     border-top: 1px solid $color-green;
   }
 
+  @include tablet {
+    padding-left: 168px;
+  }
+
   &--radio {
     padding-top: 30px;
     margin-bottom: 23px;
 
     @include tablet {
-      padding-top: 17px;
+      padding-top: 25px;
       padding-bottom: 50px;
       margin-bottom: 0;
-      padding-left: 1px;
+      // padding-left: 1px;
     }
 
     @include desktop {
@@ -37,12 +41,23 @@
       padding-top: 50px;
       padding-bottom: 50px;
       margin-bottom: 0;
-      background-color: $bg-color-gray;
 
       .form__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        background-color: $bg-color-gray;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -71,7 +86,18 @@
       padding-top: 50px;
       padding-bottom: 50px;
       margin-bottom: 0;
-      background-color: $bg-color-gray;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        background-color: $bg-color-gray;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     @include desktop {
@@ -87,13 +113,11 @@
   padding-top: 30px;
 
   @include mobile-only {
-    border-top: 1px solid green;
+    border-top: 1px solid $color-green;
   }
 
-  @include container-tablet();
-  @include container-desktop();
-
   @include tablet {
+    padding-left: 168px;
     padding-top: 50px;
     padding-bottom: 52px;
     display: flex;
@@ -107,9 +131,11 @@
   line-height: 16px;
   color: $color-green;
   text-transform: uppercase;
+  position: absolute;
+  left: -1px;
 
   @include mobile-only {
-    position: absolute;
+    // position: absolute;
     left: -1px;
     top: -10px;
     min-width: 62px;
@@ -138,6 +164,7 @@
   }
 
   @include tablet {
+    left: 1px;
     width: 147px;
     margin-right: 20px;
     padding-top: 16px;
@@ -150,6 +177,10 @@
   }
 
   &--phone {
+    @include tablet {
+      left: -168px;
+    }
+
     @include desktop {
       width: 155px;
       margin-right: 20px;
@@ -158,6 +189,10 @@
   }
 
   &--email {
+    @include tablet {
+      left: -168px;
+    }
+
     @include desktop {
       width: 170px;
       margin-right: 0;
@@ -235,7 +270,6 @@
       @include tablet {
         width: 500px;
       }
-
 
       @include desktop {
         width: 700px;
@@ -526,9 +560,6 @@
 }
 
 .form__notice-wrapper {
-  @include container-tablet();
-  @include container-desktop();
-
   @include tablet {
     display: flex;
     flex-direction: row-reverse;

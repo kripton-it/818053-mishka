@@ -1,5 +1,6 @@
 .page-main {
   border-bottom: 1px solid transparent;
+  overflow: hidden;
 }
 
 .page-main__heading {
@@ -92,8 +93,6 @@
 
 .page-main__form {
   margin-bottom: 55px;
-
-  @include container-mobile();
 
   @include tablet {
     margin-bottom: 50px;
