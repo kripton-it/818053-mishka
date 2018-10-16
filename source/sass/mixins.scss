@@ -77,3 +77,9 @@
     padding-right: $desktop-padding;
   }
 }
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
