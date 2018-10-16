@@ -39,33 +39,12 @@
     }
 
     @include desktop {
-      // width: $desktop-width;
       background-size: cover;
       width: 1250px;
       height: 34px;
       bottom: -20px;
     }
   }
-
-  /* &::after {
-    @include tablet {
-      content: "";
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      right: 0;
-      height: 24px;
-      background-image: url("../../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-size: 770px 24px;
-    }
-
-    @include desktop {
-      height: 34px;
-      background-size: 1250px 34px;
-      background-position: center;
-    }
-  } */
 }
 
 .intro__header {
@@ -136,7 +115,7 @@
     }
   }
 
-/* заготовка псевдоэлемента для закрытия пустоты при наведении */
+  /* заготовка псевдоэлемента для закрытия пустоты при наведении */
 
   &::after {
     display: block;
