@@ -9,12 +9,15 @@
   border: none;
 
   @include mobile-only {
-    width: 100%;
     border-top: 1px solid $color-green;
   }
 
   @include tablet {
     padding-left: 168px;
+  }
+
+  @include desktop {
+    padding-left: 175px;
   }
 
   &--radio {
@@ -25,11 +28,20 @@
       padding-top: 25px;
       padding-bottom: 50px;
       margin-bottom: 0;
-      // padding-left: 1px;
     }
 
     @include desktop {
       padding-top: 27px;
+    }
+
+    .form__legend {
+      @include tablet {
+        top: 40px;
+      }
+
+      @include desktop {
+        top: 45px;
+      }
     }
   }
 
@@ -79,11 +91,11 @@
   }
 
   &--contacts {
-    padding-top: 11px;
+    padding-top: 0;
     margin-bottom: 20px;
 
     @include tablet {
-      padding-top: 50px;
+      padding-top: 40px;
       padding-bottom: 50px;
       margin-bottom: 0;
 
@@ -101,7 +113,7 @@
     }
 
     @include desktop {
-      padding-top: 45px;
+      padding-top: 35px;
     }
   }
 }
@@ -122,6 +134,11 @@
     padding-bottom: 52px;
     display: flex;
   }
+
+  @include desktop {
+    padding-left: 175px;
+    padding-bottom: 47px;
+  }
 }
 
 .form__legend {
@@ -135,26 +152,23 @@
   left: -1px;
 
   @include mobile-only {
-    // position: absolute;
-    left: -1px;
     top: -10px;
     min-width: 62px;
     background-color: $bg-color-main;
 
     &--phone {
-      top: -20px;
+      top: -7px;
     }
 
     &--email {
-      position: relative;
-      top: 0;
+      top: -7px;
       padding-right: 22px;
 
       &::after {
         content: "";
         position: absolute;
         z-index: -1;
-        top: 11px;
+        top: 7px;
         left: 1px;
         width: 260px;
         height: 1px;
@@ -165,9 +179,7 @@
 
   @include tablet {
     left: 1px;
-    width: 147px;
-    margin-right: 20px;
-    padding-top: 16px;
+    top: 67px;
   }
 
   @include desktop {
@@ -179,36 +191,30 @@
   &--phone {
     @include tablet {
       left: -168px;
+      top: 30px;
     }
 
     @include desktop {
-      width: 155px;
-      margin-right: 20px;
-      margin-top: 5px;
+      left: -178px;
+      top: 26px;
     }
   }
 
   &--email {
     @include tablet {
-      left: -168px;
+      left: -167px;
+      top: 30px;
     }
 
     @include desktop {
-      width: 170px;
-      margin-right: 0;
-      margin-left: 5px;
-      margin-top: 5px;
+      left: -173px;
+      top: 28px;
     }
   }
 }
 
 .form__list {
   @include reset-list();
-
-  @include tablet {
-    width: 500px;
-    flex-grow: 1;
-  }
 }
 
 .form__item {
@@ -259,11 +265,12 @@
   }
 
   &--contacts {
-    margin-bottom: 30px;
+    padding-top: 11px;
+    margin-bottom: 42px;
 
     @include tablet {
       display: flex;
-      margin-bottom: 22px;
+      margin-bottom: 10px;
     }
 
     .form__input {
@@ -556,6 +563,7 @@
 
   @include desktop {
     width: 700px;
+    min-height: 145px;
   }
 }
 
