@@ -1,11 +1,32 @@
 .page-header {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-
   background-color: $bg-color-main;
+  overflow: hidden;
 
   @include tablet {
-    height: 90px;
+    background-color: #f1f1f1;
+    position: relative;
+  }
+
+  &::before {
+    @include tablet {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 88px;
+      background-color: #ffffff;
+      border-bottom: 1px solid rgba(#000000, 0.1);
+    }
+
+    @include desktop {
+      border-bottom: none;
+    }
+  }
+
+  &--index {
+    @include tablet {
+      background-color: #f9f9f9;
+    }
   }
 }

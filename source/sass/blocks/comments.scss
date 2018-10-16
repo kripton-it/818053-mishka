@@ -1,32 +1,103 @@
 .comments {
-  padding-top: 30px;
+  position: relative;
+  padding-top: 4px;
   padding-bottom: 50px;
 
   background-color: $bg-color-main;
-  outline: 2px solid blue;
 
   @include container-mobile();
 
   @include tablet {
-    padding-top: 80px;
-    padding-bottom: 120px;
+    padding-top: 79px;
+    padding-bottom: 0;
+  }
+
+  @include tablet-only {
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   @include desktop {
-    padding-bottom: 125px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &::after {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
   }
 }
 
 .comments__wrapper {
   @include container-tablet();
   @include container-desktop();
+
+  @include tablet {
+    position: relative;
+    padding-bottom: 125px;
+  }
+
+  @include desktop {
+    padding-top: 70px;
+    padding-bottom: 180px;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    background-position: $desktop-padding 0;
+  }
+
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat-x;
+      background-size: cover;
+      background-position: 10px top;
+      height: 17px;
+    }
+
+    @include desktop {
+      bottom: -10px;
+      height: 23px;
+      left: 50px;
+      right: 50px;
+      background-position: 25px top;
+      background-size: contain;
+    }
+  }
 }
 
 .comments__header {
   margin-bottom: 25px;
 
   @include tablet {
-    margin-bottom: 55px;
+    margin-bottom: 48px;
+    margin-left: -3px;
+  }
+
+  @include desktop {
+    margin-left: 172px;
+  }
+}
+
+.comments__list {
+  @include desktop {
+    margin-left: 175px;
   }
 }
 
@@ -42,27 +113,60 @@
 
 .comments__text {
   margin: 0;
+  margin-bottom: 27px;
   padding: 0;
 
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: $color-main;
+
+  br {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  @include tablet {
+    font-size: 17px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-right: 105px;
+    margin-bottom: 40px;
+  }
 }
 
 .comments__author-name {
   display: block;
+  margin-bottom: 5px;
 
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  font-style: normal;
   color: $color-black;
+
+  @include tablet {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  @include tablet {
+    font-size: 17px;
+    margin-bottom: 3px;
+  }
 }
 
 .comments__author-link {
   font-weight: normal;
   font-size: 17px;
   line-height: 30px;
+  font-style: normal;
   color: $color-main;
 }
 
@@ -72,8 +176,20 @@
 
   font-size: 0;
 
-  background-color: $bg-color-main;
+  background-color: transparent;
   border: 1px solid #ececec;
+
+  @include tablet {
+    position: absolute;
+    right: $tablet-padding;
+    bottom: 126px;
+    border-color: transparent;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    bottom: 181px;
+  }
 }
 
 .comments__button {
@@ -83,7 +199,7 @@
   margin: 0;
   padding: 0;
 
-  background-color: $bg-color-main;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -104,5 +220,28 @@
 
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
+  }
+
+  @include tablet {
+    width: 87px;
+  }
+}
+
+.comments__write {
+  padding-top: 14px;
+  padding-bottom: 15px;
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 17px;
+    position: absolute;
+    top: 0;
+    right: $tablet-padding;
+    padding-left: 35px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    top: 79px;
   }
 }

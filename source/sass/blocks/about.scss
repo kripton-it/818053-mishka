@@ -1,19 +1,19 @@
 .about {
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 25px;
 
   background-color: $bg-color-main;
-  outline: 2px solid green;
-
-  @include container();
 
   @include tablet {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 52px;
+    padding-bottom: 3px;
+    padding-left: $tablet-padding - 5px;
   }
 
   @include desktop {
-    padding-bottom: 85px;
+    padding-top: 58px;
+    padding-left: $tablet-padding - 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -21,11 +21,11 @@
   margin-bottom: 30px;
 
   @include tablet {
-    margin-bottom: 40px;
+    margin-bottom: 49px;
   }
 
   @include desktop {
-    margin-bottom: 40px;
+    margin-bottom: 47px;
     margin-left: 175px;
   }
 }
@@ -37,6 +37,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    height: 490px;
   }
 
   @include desktop {
@@ -47,7 +50,7 @@
 
 .about__item {
   margin-bottom: 29px;
-  padding-top: 85px;
+  padding-top: 55px;
 
   font-weight: bold;
   font-size: 17px;
@@ -55,55 +58,135 @@
   color: $color-black;
 
   background-repeat: no-repeat;
-  background-position: top left;
-  outline: 2px solid red;
+  background-position: left top;
 
   @include tablet {
     width: 334px;
     margin-bottom: 58px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   @include desktop {
     width: 350px;
   }
 
-  &:nth-child(2n+1) {
-    @include tablet {
-      margin-bottom: 0;
-    }
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   &--eco {
     background-image: url("../../img/icon-feature-flower.svg");
+    background-position: 6px top;
     background-size: 32px 37px;
+    padding-right: 80px;
+
+    @include tablet {
+      width: 230px;
+      padding-right: 0;
+      padding-left: 5px;
+      background-position: 10px top;
+    }
+
+    @include desktop {
+      background-position: 12px top;
+    }
   }
 
   &--style {
     background-image: url("../../img/icon-feature-money.svg");
     background-size: 47px 27px;
+    padding-right: 50px;
+    margin-bottom: 34px;
+
+    @include tablet {
+      width: 263px;
+      padding-top: 52px;
+      padding-left: 4px;
+      padding-right: 0;
+      background-position: 5px top;
+      margin-bottom: 64px;
+      margin-right: 70px;
+    }
+
+    @include desktop {
+      padding-top: 55px;
+      margin-right: 86px;
+    }
   }
 
   &--like {
     background-image: url("../../img/icon-feature-heart.svg");
     background-size: 34px 27px;
+    padding-top: 48px;
+    background-position: 6px top;
+    padding-right: 60px;
+    margin-bottom: 31px;
+
+    @include tablet {
+      width: 240px;
+      padding-right: 0;
+      padding-left: 2px;
+      background-position: 11px top;
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      padding-left: 5px;
+      background-position: 13px top;
+    }
   }
 
   &--knit {
     background-image: url("../../img/icon-feature-ball.svg");
     background-size: 35px 34px;
+    background-position: 2px top;
+    padding-top: 50px;
+    padding-right: 50px;
+    margin-bottom: 35px;
+
+    @include tablet {
+      padding-top: 55px;
+      padding-right: 0;
+      width: 260px;
+      background-position: 2px 4px;
+      margin-bottom: 60px;
+    }
+
+    @include desktop {
+      background-position: 4px 4px;
+      margin-bottom: 62px;
+    }
   }
 
   &--support {
     background-image: url("../../img/icon-feature-rocket.svg");
     background-size: 55px 23px;
+    background-position: -6px top;
+    padding-top: 50px;
+    margin-bottom: 31px;
+
+    @include tablet {
+      width: 330px;
+      padding-right: 0;
+      margin-bottom: 60px;
+    }
   }
 
   &--box {
     background-image: url("../../img/icon-feature-gift.svg");
     background-size: 33px 32px;
+    padding-right: 50px;
+    padding-top: 51px;
+
+    @include tablet {
+      width: 290px;
+      padding-top: 53px;
+      padding-right: 0;
+      margin-bottom: 0;
+      background-position: 2px top;
+    }
+
+    @include desktop {
+      padding-top: 52px;
+      padding-left: 1px;
+      background-position: 3px top;
+    }
   }
 }

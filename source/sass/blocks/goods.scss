@@ -1,13 +1,16 @@
 .goods__item {
   margin-bottom: 30px;
+  position: relative;
 
-  outline: 2px solid green;
-
-  @include tablet {
+  @include tablet-only {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 52px;
   }
 
   @include desktop {
+    display: flex;
+    flex-direction: column;
     width: 316px;
     margin-bottom: 0;
   }
@@ -32,24 +35,93 @@
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
   }
+
+  &:nth-child(2) {
+    @include tablet-only {
+      margin-bottom: 54px;
+    }
+
+    .goods__title {
+      @include tablet-only {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 .goods__photo-link {
   background-color: #e4e3e1;
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @include tablet {
+    width: 334px;
+    height: 334px;
+  }
+
+  @include desktop {
+    width: 316px;
+    height: 462px;
+  }
+}
+
+.goods__image {
+  display: block;
+  width: 260px;
+  height: 195px;
+
+  @include tablet {
+    width: 334px;
+    height: 334px;
+  }
+
+  @include desktop {
+    width: 316px;
+    height: 462px;
+  }
 }
 
 .goods__info {
   background-color: $bg-color-main;
   border: 1px solid #ececec;
+  padding-top: 27px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 27px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    width: 278px;
+    padding-left: 26px;
+    padding-top: 23px;
+  }
+
+  @include desktop {
+    flex-grow: 1;
+    width: auto;
+  }
 }
 
 .goods__title {
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
+  @include tablet {
+    font-size: 20px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    padding-right: 20px;
+    margin-bottom: 7px;
+  }
 }
 
 .goods__title-link {
@@ -67,20 +139,81 @@
 
 .goods__features {
   margin: 0;
+  margin-bottom: 42px;
   padding: 0;
 
   font-weight: normal;
   font-size: 13px;
   line-height: 30px;
   color: $color-main;
+
+  @include tablet {
+    font-size: 15px;
+    margin-bottom: auto;
+  }
+
+  @include desktop {
+    margin-bottom: 38px;
+  }
 }
 
 .goods__price {
   margin: 0;
   padding: 0;
+  position: relative;
 
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
   color: $color-black;
+
+  &::before {
+    position: absolute;
+    top: -23px;
+    content: "";
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ececec;
+  }
+
+  @include tablet {
+    font-size: 17px;
+    margin-left: 5px;
+  }
+
+  @include desktop {
+    margin-top: auto;
+    margin-left: 0;
+  }
+}
+
+.goods__cart-button {
+  position: absolute;
+  right: 27px;
+  bottom: 32px;
+  width: 20px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: #231f20;
+  opacity: 0.2;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    color: #63d1bb;
+    opacity: 0.3;
+  }
+
+  @include tablet {
+    right: 33px;
+  }
 }

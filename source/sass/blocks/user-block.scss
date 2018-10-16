@@ -1,10 +1,40 @@
 .user-block {
   @include tablet {
-    min-height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
   }
 }
 
 .user-block__item {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @include mobile-only {
+    position: relative;
+  }
+
+  @include tablet-only {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(#000000, 0.1);
+  }
+
+  &::before {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      top: 0;
+      box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    }
+  }
+
   &--delivery {
     display: none;
 
@@ -15,19 +45,119 @@
 
     @include tablet {
       display: block;
+      width: 100%;
+      text-align: right;
+      align-self: flex-start;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      background-color: transparent;
+      border-bottom: none;
     }
   }
 }
 
 .user-block__link {
+  display: block;
   color: $color-black;
+
+  @include mobile-only {
+    width: $mobile-width - 2 * $mobile-padding - 46px;
+    padding-left: 46px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 34px;
+    display: flex;
+    align-items: flex-end;
+  }
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    .user-block__link-text {
+      opacity: 0.6;
+    }
+
+    svg {
+      fill: $color-green;
+      opacity: 1;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    .user-block__link-text {
+      opacity: 0.3;
+    }
+
+    svg {
+      fill: $color-green;
+      opacity: 0.3;
+    }
+  }
+
+  svg {
+    fill: $color-black;
+    opacity: 0.2;
+  }
+
+  &--search {
+    .user-block__link-text {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @include tablet {
+      width: 82px;
+      justify-content: center;
+      position: relative;
+      padding-top: 37px;
+      padding-bottom: 33px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        background-color: #000000;
+        opacity: 0.1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        background-color: #000000;
+        opacity: 0.1;
+        top: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &--cart {
+    @include tablet {
+      margin-left: auto;
+      width: 234px;
+      padding-left: 30px;
+
+      svg {
+        margin-right: auto;
+      }
+    }
   }
 }

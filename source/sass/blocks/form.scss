@@ -1,96 +1,519 @@
 .form__fieldset {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 
   border: none;
-  outline: 2px solid red;
 
-  &:nth-child(1) {
-    margin-bottom: 20px;
+  @include mobile-only {
+    border-top: 1px solid $color-green;
+  }
+
+  @include tablet {
+    padding-left: 168px;
+  }
+
+  @include desktop {
+    padding-left: 175px;
+  }
+
+  &--radio {
+    padding-top: 30px;
+    margin-bottom: 23px;
 
     @include tablet {
+      padding-top: 25px;
+      padding-bottom: 50px;
       margin-bottom: 0;
+    }
+
+    @include desktop {
+      padding-top: 27px;
+    }
+
+    .form__legend {
+      @include tablet {
+        top: 40px;
+      }
+
+      @include desktop {
+        top: 45px;
+      }
     }
   }
 
-  &:nth-child(2) {
-    margin-bottom: 20px;
+  &--checkbox {
+    padding-top: 26px;
+    margin-bottom: 17px;
 
     @include tablet {
+      padding-top: 50px;
+      padding-bottom: 50px;
       margin-bottom: 0;
+
+      .form__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        background-color: $bg-color-gray;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 
-  &:nth-child(3) {
-    margin-bottom: 20px;
+  &--info {
+    padding-top: 35px;
+    margin-bottom: 18px;
 
     @include tablet {
+      padding-top: 50px;
       margin-bottom: 0;
+      padding-bottom: 48px;
+    }
+
+    @include desktop {
+      padding-top: 49px;
+      padding-bottom: 51px;
     }
   }
 
-  &:nth-child(4) {
+  &--contacts {
+    padding-top: 0;
     margin-bottom: 20px;
 
     @include tablet {
+      padding-top: 40px;
+      padding-bottom: 50px;
       margin-bottom: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        background-color: $bg-color-gray;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    @include desktop {
+      padding-top: 35px;
     }
   }
 }
 
 .form__comment {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
 
-  outline: 2px solid red;
+  @include mobile-only {
+    border-top: 1px solid $color-green;
+  }
+
+  @include tablet {
+    padding-left: 168px;
+    padding-top: 50px;
+    padding-bottom: 52px;
+    display: flex;
+  }
+
+  @include desktop {
+    padding-left: 175px;
+    padding-bottom: 47px;
+  }
 }
 
 .form__legend {
+  background-color: transparent;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   color: $color-green;
   text-transform: uppercase;
+  position: absolute;
+  left: -1px;
+
+  @include mobile-only {
+    top: -10px;
+    min-width: 62px;
+    background-color: $bg-color-main;
+
+    &--phone {
+      top: -7px;
+    }
+
+    &--email {
+      top: -7px;
+      padding-right: 22px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 7px;
+        left: 1px;
+        width: 260px;
+        height: 1px;
+        background-color: $color-green;
+      }
+    }
+  }
+
+  @include tablet {
+    left: 1px;
+    top: 67px;
+  }
+
+  @include desktop {
+    text-align: center;
+    width: 165px;
+    margin-right: 10px;
+  }
+
+  &--phone {
+    @include tablet {
+      left: -168px;
+      top: 30px;
+    }
+
+    @include desktop {
+      left: -178px;
+      top: 26px;
+    }
+  }
+
+  &--email {
+    @include tablet {
+      left: -167px;
+      top: 30px;
+    }
+
+    @include desktop {
+      left: -173px;
+      top: 28px;
+    }
+  }
 }
 
 .form__list {
   @include reset-list();
 }
 
+.form__item {
+  margin-bottom: 5px;
+  position: relative;
+
+  @include tablet {
+    margin-bottom: 25px;
+  }
+
+  &--checkbox {
+    margin-bottom: 13.5px;
+
+    @include tablet {
+      width: 239px;
+      margin-right: auto;
+    }
+
+    &:nth-child(2n) {
+      @include tablet-only {
+        margin-right: 0;
+        margin-bottom: 38px;
+      }
+    }
+
+    @include desktop {
+      width: 250px;
+      margin-right: 10px;
+
+      &:nth-child(3n) {
+        margin-left: 6px;
+        margin-bottom: 38px;
+      }
+    }
+  }
+
+  &--text {
+    margin-bottom: 19px;
+
+    @include tablet {
+      display: flex;
+      margin-bottom: 21px;
+    }
+
+    @include desktop {
+      padding-right: 175px;
+    }
+  }
+
+  &--contacts {
+    padding-top: 11px;
+    margin-bottom: 42px;
+
+    @include tablet {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .form__input {
+      @include tablet {
+        width: 500px;
+      }
+
+      @include desktop {
+        width: 700px;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .form__label {
+  display: block;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   color: $color-black;
+
+  @include tablet {
+    font-size: 19px;
+    margin-right: 26px;
+    padding-top: 16px;
+  }
 }
 
 .form__input {
+  outline: none;
   font: inherit;
   font-weight: normal;
   font-size: 19px;
   line-height: 18px;
   color: $color-main;
 
-  background-color: $bg-color-main;
+  background-color: transparent;
 
-  &--text,
-  &--phone,
-  &--email {
-    border: none;
-    box-shadow: inset 0 -2px 0 $color-black;
+  border: none;
+  box-shadow: inset 0 -2px 0 $color-black;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 14px;
 
-    &:hover,
-    &:focus,
-    &:active {
-      box-shadow: inset 0 -2px 0 #62d1ba;
+  @include tablet {
+    padding-left: 16px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+
+    + .form__contacts-button {
+      color: #62d1ba;
+      opacity: 1;
     }
+  }
 
-    &::placeholder {
-      font: inherit;
-      color: $color-main;
+  &::placeholder {
+    font: inherit;
+    font-size: 17px;
+    line-height: 18px;
+    color: $color-main;
 
-      opacity: 0.3;
+    opacity: 0.3;
+
+    @include tablet {
+      font-size: 19px;
     }
+  }
+}
+
+.form__input-radio + .form__label {
+  cursor: pointer;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 62px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+
+  @include tablet {
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 19px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $color-main;
+    border-radius: 50%;
+    background-color: transparent;
+
+    @include tablet {
+      width: 48px;
+      height: 48px;
+      top: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: rgba(#62d1ba, 0.3);
+    }
+  }
+}
+
+.form__input-radio:focus + .form__label {
+  &::before {
+    border-color: #62d1ba;
+  }
+}
+
+.form__input-radio:checked + .form__label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+
+    @include tablet {
+      width: 22px;
+      height: 22px;
+      left: 14px;
+      top: 15px;
+    }
+  }
+}
+
+.form__input-checkbox + .form__label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 62px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid $color-main;
+    background-color: transparent;
+
+    @include tablet {
+      width: 50px;
+      height: 48px;
+      top: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: rgba(#62d1ba, 0.3);
+    }
+  }
+
+  @include tablet {
+    padding-left: 80px;
+    padding-bottom: 5px;
+  }
+}
+
+.form__input-checkbox:focus + .form__label {
+  &::before {
+    border-color: #62d1ba;
+  }
+}
+
+.form__input-checkbox:checked + .form__label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 16px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-size: 22px 16px;
+
+    @include tablet {
+      left: 10px;
+      width: 33px;
+      height: 22px;
+      background-size: 33px 22px;
+    }
+  }
+}
+
+.form__contacts-button {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  bottom: 9px;
+  border: none;
+  background-color: transparent;
+  color: $color-black;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #62d1ba;
+    opacity: 1;
+  }
+
+  @include tablet {
+    right: 17px;
+  }
+
+  @include desktop {
+    right: 175px;
   }
 }
 
@@ -98,6 +521,10 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 15px;
+  min-height: 145px;
 
   font: inherit;
   font-weight: normal;
@@ -116,15 +543,71 @@
 
   &::placeholder {
     font: inherit;
+    font-size: 17px;
+    line-height: 18px;
     color: $color-main;
 
     opacity: 0.3;
+
+    @include tablet {
+      font-size: 19px;
+    }
+  }
+
+  @include tablet {
+    width: 500px;
+    padding-top: 11px;
+    min-height: 140px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 700px;
+    min-height: 145px;
+  }
+}
+
+.form__notice-wrapper {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
 .form__notice {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: $color-main;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    margin-right: 175px;
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 14px;
+
+  @include tablet {
+    width: 230px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @include desktop {
+    margin-left: 175px;
+    padding-top: 14px;
+  }
 }

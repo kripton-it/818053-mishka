@@ -1,5 +1,34 @@
+.menu-list {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .menu-list__link {
+  display: block;
   color: $color-black;
+
+  @include mobile-only {
+    position: relative;
+    width: $mobile-width - 2 * $mobile-padding - 46px;
+    padding-left: 46px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include tablet {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  @include desktop {
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-right: 35px;
+  }
 
   &[href]:hover,
   &[href]:focus {
@@ -12,11 +41,71 @@
 }
 
 .menu-list__item {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @include mobile-only {
+    position: relative;
+  }
+
+  &::before {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      top: 0;
+      box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    }
+  }
+
+  @include tablet {
+    font-size: 15px;
+    margin-right: 35px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include desktop {
+    font-size: 17px;
+  }
+
+  &:first-child {
+    @include desktop {
+      position: relative;
+    }
+
+    &::after {
+      @include desktop {
+        position: absolute;
+        content: "";
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(#000000, 0.1);
+      }
+    }
+  }
+
   &--desktop {
     display: none;
 
     @include desktop {
       display: block;
+      font-size: 15px;
+      margin-right: 26px;
+    }
+
+    .menu-list__link {
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
   }
 }

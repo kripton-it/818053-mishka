@@ -6,83 +6,185 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  outline: 2px solid blue;
+  background-position: center -15px;
 
   @include tablet {
-    padding-top: 150px;
+    padding-top: 90px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center -62px;
+  }
+
+  @include desktop {
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
 }
 
 .intro__wrapper {
   @include container-tablet();
   @include container-desktop();
+  position: relative;
+
+  &::after {
+    @include tablet {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 50%;
+      transform: translateX(-50%);
+      width: $tablet-width;
+    }
+
+    @include desktop {
+      background-size: cover;
+      width: 1250px;
+      height: 34px;
+      bottom: -20px;
+    }
+  }
 }
 
 .intro__header {
-  margin-bottom: 115px;
-
-  font-size: 27px;
-  line-height: 30px;
   text-align: center;
   color: #010000;
 
   @include container-mobile();
 
+  @include mobile-only {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 125px;
+  }
+
   @include tablet {
-    margin-bottom: 365px;
+    margin-bottom: 375px;
   }
 
   @include desktop {
-    margin-bottom: 345px;
+    margin-bottom: 360px;
   }
 }
 
 .intro__list {
   @include reset-list();
 
-  outline: 2px solid red;
-
   @include tablet {
     display: flex;
+    align-items: flex-end;
   }
 }
 
 .intro__link {
   display: block;
-  /* Временно для сетки */
-  min-height: 103px;
+  position: relative;
 
   font-size: 20px;
-  line-height: 30px;
+  line-height: 26px;
   color: $color-white;
 
   background-color: $color-green;
 
   @include tablet {
-    /* Временно для сетки */
-    min-height: 120px;
+    padding-top: 29px;
+    padding-left: 34px;
+    padding-right: 130px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+
+  @include desktop {
+    padding-top: 27px;
+    padding-left: 37px;
+    padding-right: 350px;
+  }
+
+  &::before {
+    @include tablet {
+      content: "";
+      opacity: 0.5;
+      position: absolute;
+      right: 35px;
+      top: 30px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  /* заготовка псевдоэлемента для закрытия пустоты при наведении */
+
+  &::after {
+    display: block;
+    content: "";
+    height: 0;
+    background-color: #59d5bc;
+    width: 100%;
   }
 
   &:hover,
   &:focus,
   &:active {
     background-color: #59d5bc;
+    // transform: translateY(-5px);
+    margin-top: -5px;
+
+    /* псевдоэлемент при наведении увеличивает высоту и закрывает пустоту */
+
+    &::after {
+      height: 5px;
+    }
+
+    /* Вместо псевдоэлемента можно увеличить на 5px padding-bottom:
+    (мобильная версия)
+    .intro__link-center {
+      @include mobile-only {
+        padding-bottom: 33px;
+      }
+    } */
+
+    .intro__link-center::before {
+      @include mobile-only {
+        opacity: 0.7;
+      }
+    }
+
+    &::before {
+      @include tablet {
+        opacity: 0.7;
+      }
+    }
+
+    /* Вместо псевдоэлемента можно увеличить на 5px padding-bottom:
+    (планшетная и десктопная версии)
+    @include tablet {
+      padding-bottom: 35px;
+    } */
   }
 
   &:active {
     color: rgba($color-white, 0.3);
+
+    .intro__link-center::before {
+      @include mobile-only {
+        opacity: 0.3;
+      }
+    }
+
+    &::before {
+      @include tablet {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
 .intro__item {
-  /* Временно для сетки */
-  min-height: 103px;
-
   @include tablet {
     width: 334px;
-    /* Временно для сетки */
-    min-height: 120px;
   }
 
   @include desktop {
@@ -93,11 +195,61 @@
     .intro__link {
       background-color: #56c3b2;
 
+      &::after {
+        background-color: #46c1ae;
+      }
+
       &:hover,
       &:focus,
       &:active {
         background-color: #46c1ae;
       }
+
+      &::before {
+        @include tablet {
+          width: 60px;
+          height: 60px;
+          background-image: url("../img/icon-toy.svg");
+          right: 33px;
+          top: 32px;
+        }
+      }
+    }
+
+    .intro__link-center {
+      @include mobile-only {
+        &::before {
+          width: 60px;
+          height: 60px;
+          background-image: url("../img/icon-toy.svg");
+          right: 28px;
+        }
+      }
+    }
+  }
+}
+
+.intro__link-center {
+  @include mobile-only {
+    position: relative;
+    display: block;
+    width: $mobile-width - $mobile-padding - 160px;
+    padding-left: $mobile-padding;
+    padding-right: 160px;
+    padding-top: 22px;
+    padding-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      content: "";
+      opacity: 0.5;
+      position: absolute;
+      right: 35px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
     }
   }
 }

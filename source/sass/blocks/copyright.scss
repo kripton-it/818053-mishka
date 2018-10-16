@@ -5,9 +5,28 @@
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $color-black;
+
+  svg {
+    fill: #63d1bb;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    svg {
+      fill: #46c1ae;
+    }
+  }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__text {
+  margin-right: 30px;
 }

@@ -1,16 +1,42 @@
 .week {
+  position: relative;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   color: $color-main;
 
   background-color: $bg-color-main;
-  outline: 2px solid red;
 
-  @include container();
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+
+    @include tablet {
+      bottom: -2px;
+      height: 17px;
+      background-size: 772px 17px;
+      background-position: 19px top;
+    }
+
+    @include desktop {
+      left: 50px;
+      right: 50px;
+      bottom: 0;
+      height: 23px;
+      background-size: 1050px 23px;
+      background-position: 19px top;
+    }
+  }
 
   @include tablet {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 65px;
   }
 
@@ -23,15 +49,18 @@
 .week__header-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   @include tablet {
     flex-direction: row;
-    margin-bottom: 50px;
+    align-items: center;
+    margin-bottom: 53px;
   }
 
   @include desktop {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -47,19 +76,21 @@
 
   @include tablet {
     width: 130px;
+    line-height: 17px;
+    text-align: center;
     margin-bottom: 0;
     margin-left: 20px;
   }
 
   @include desktop {
-    width: 155px;
-    margin-right: 20px;
-    margin-left: 0;
+    margin-left: 15px;
+    margin-right: 23px;
   }
 }
 
 .week__title {
   order: -1;
+  margin-bottom: 5px;
 
   @include tablet {
     flex-grow: 1;
@@ -72,23 +103,20 @@
 
 .week__wrapper {
   @include tablet {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 405px;
+    position: relative;
+    padding-right: 333px;
   }
 
   @include desktop {
-    height: 635px;
+    padding-left: 175px;
     margin-top: -160px;
-    padding-left: 170px;
+    padding-top: 170px;
   }
 }
 
 .week__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   padding: 0;
 
   font-weight: normal;
@@ -97,53 +125,107 @@
   color: $color-main;
 
   @include tablet {
+    font-size: 17px;
+    line-height: 30px;
     width: 295px;
-    margin-bottom: 40px;
+    margin-top: -8px;
+    margin-bottom: 37px;
   }
 
   @include desktop {
-    margin-top: 160px;
-    margin-bottom: 55px;
+    margin-bottom: 49px;
   }
 }
 
 .week__table {
+  border-collapse: collapse;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   color: $color-main;
 
   @include tablet {
-    width: 295px;
-    margin-bottom: auto;
+    width: 291px;
+    margin-bottom: 55px;
+  }
+
+  @include desktop {
+    margin-bottom: 110px;
+  }
+
+  tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  tr {
+    display: block;
+    flex-grow: 1;
+  }
+
+  .week__table-parameter {
+    flex-grow: 0;
+    width: 96px;
+    text-align: left;
   }
 
   td,
   th {
+    display: block;
     font-weight: normal;
     font-size: 15px;
     line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+
+    @include tablet {
+      padding-bottom: 9px;
+    }
   }
 }
 
 .week__image {
   margin: 0;
+  margin-bottom: 22px;
   padding: 0;
+  width: 260px;
+  height: 315px;
 
   @include tablet {
-    order: 2;
-    width: 334px;
-    height: 405px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    margin-bottom: 0;
+    width: 333px;
+    height: 404px;
   }
 
   @include desktop {
     width: 525px;
-    height: 635px;
+    height: 636px;
+  }
+
+  img {
+    display: block;
+    width: 260px;
+    height: 315px;
+
+    @include tablet {
+      width: 333px;
+      height: 404px;
+    }
+
+    @include desktop {
+      width: 525px;
+      height: 636px;
+    }
   }
 }
 
 .week__price {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 
   font-weight: bold;
@@ -152,13 +234,31 @@
   text-align: center;
 
   @include tablet {
+    width: 288px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @include desktop {
     width: 295px;
-    margin-bottom: 10px;
+    margin-bottom: 32px;
   }
 }
 
 .week__order {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   @include tablet {
-    width: 295px;
+    width: 292px;
+    margin-left: -2px;
+  }
+
+  @include desktop {
+    width: 293px;
+    padding-top: 14px;
+    margin-left: 0;
+    margin-bottom: -2px;
   }
 }

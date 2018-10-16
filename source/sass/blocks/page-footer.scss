@@ -6,16 +6,15 @@
   background-color: $bg-color-gray;
 
   @include tablet {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 }
 
 .page-footer__wrapper {
-  @include container();
-
   @include tablet {
     display: flex;
+    align-items: flex-end;
   }
 }
 
@@ -26,6 +25,17 @@
     display: block;
     width: 102px;
     margin-right: 155px;
+    color: #231f20;
+
+    &[href]:hover,
+    &[href]:focus {
+      color: #46c1ae;
+    }
+
+    &[href]:active {
+      color: #46c1ae;
+      opacity: 0.3;
+    }
   }
 
   @include desktop {
@@ -35,18 +45,30 @@
 
 .page-footer__social {
   @include reset-list();
+  margin: 0 auto;
+  padding-right: 5px;
+  padding-top: 25px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #e5e5e5;
 
   @include tablet {
+    padding: 0;
+    margin: 0;
     width: 150px;
+    border: none;
   }
 }
 
 .page-footer__copyright {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 23px;
 
   @include tablet {
+    padding: 0;
     width: 182px;
     margin-left: auto;
+    margin-right: 0;
   }
 }
