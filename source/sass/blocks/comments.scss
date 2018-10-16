@@ -14,9 +14,13 @@
 
   @include tablet-only {
     background-image: url("../img/review@1x.jpg");
-    background-size: 350px 457px;
+    background-size: 350px auto;
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @include retina {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @include desktop {
