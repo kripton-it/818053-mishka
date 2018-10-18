@@ -89,7 +89,7 @@
       opacity: 0.6;
     }
 
-    svg {
+    .user-block__link-icon {
       fill: $color-green;
       opacity: 1;
     }
@@ -100,15 +100,10 @@
       opacity: 0.3;
     }
 
-    svg {
+    .user-block__link-icon {
       fill: $color-green;
       opacity: 0.3;
     }
-  }
-
-  svg {
-    fill: $color-black;
-    opacity: 0.2;
   }
 
   &--search {
@@ -160,4 +155,10 @@
       }
     }
   }
+}
+
+.user-block__link-icon {
+  outline: 1px solid red;
+  fill: $color-black;
+  opacity: 0.2;
 }

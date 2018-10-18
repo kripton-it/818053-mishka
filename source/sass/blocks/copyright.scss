@@ -11,14 +11,14 @@
   color: $color-black;
 
   svg {
-    fill: #63d1bb;
+    color: #63d1bb;
   }
 
   &:hover,
   &:focus,
   &:active {
     svg {
-      fill: #46c1ae;
+      color: #46c1ae;
     }
   }
 
