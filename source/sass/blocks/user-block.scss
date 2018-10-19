@@ -90,7 +90,7 @@
     }
 
     .user-block__link-icon {
-      fill: $color-green;
+      color: $color-green;
       opacity: 1;
     }
   }
@@ -101,7 +101,7 @@
     }
 
     .user-block__link-icon {
-      fill: $color-green;
+      color: $color-green;
       opacity: 0.3;
     }
   }
@@ -158,7 +158,6 @@
 }
 
 .user-block__link-icon {
-  outline: 1px solid red;
-  fill: $color-black;
+  color: $color-black;
   opacity: 0.2;
 }
