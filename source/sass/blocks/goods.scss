@@ -206,14 +206,26 @@
   &:focus {
     color: #63d1bb;
     opacity: 1;
+
+    svg {
+      color: #63d1bb;
+    }
   }
 
   &:active {
     color: #63d1bb;
     opacity: 0.3;
+
+    svg {
+      color: #63d1bb;
+    }
   }
 
   @include tablet {
     right: 33px;
+  }
+
+  svg {
+    color: #231f20;
   }
 }

@@ -89,8 +89,8 @@
       opacity: 0.6;
     }
 
-    svg {
-      fill: $color-green;
+    .user-block__link-icon {
+      color: $color-green;
       opacity: 1;
     }
   }
@@ -100,15 +100,10 @@
       opacity: 0.3;
     }
 
-    svg {
-      fill: $color-green;
+    .user-block__link-icon {
+      color: $color-green;
       opacity: 0.3;
     }
-  }
-
-  svg {
-    fill: $color-black;
-    opacity: 0.2;
   }
 
   &--search {
@@ -160,4 +155,9 @@
       }
     }
   }
+}
+
+.user-block__link-icon {
+  color: $color-black;
+  opacity: 0.2;
 }

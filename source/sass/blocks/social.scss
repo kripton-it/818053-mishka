@@ -16,6 +16,10 @@
   display: block;
   color: #000000;
 
+  svg {
+    color: #000000;
+  }
+
   &--inst {
     width: 22px;
     height: 21px;
@@ -34,10 +38,18 @@
   &:hover,
   &:focus {
     color: #46c1ae;
+
+    svg {
+      color: #46c1ae;
+    }
   }
 
   &:active {
     color: #46c1ae;
     opacity: 0.3;
+
+    svg {
+      color: #46c1ae;
+    }
   }
 }
