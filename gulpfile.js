@@ -86,7 +86,7 @@ gulp.task("copy", function () {
 
 gulp.task("js", function (cb) {
   pump([
-      gulp.src("source/js/**"),
+      gulp.src("source/js/**/*.js"),
       uglify(),
       gulp.dest("build/js")
     ],
