@@ -328,13 +328,17 @@
   &:hover,
   &:focus,
   &:active {
-    color: rgba($color-main, 1);
     box-shadow: inset 0 -2px 0 #62d1ba;
 
     + .form__contacts-button {
       color: #62d1ba;
       opacity: 1;
     }
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($color-main, 1);
   }
 
   &::placeholder {
