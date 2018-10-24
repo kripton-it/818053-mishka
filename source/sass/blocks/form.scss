@@ -309,7 +309,8 @@
   font-weight: normal;
   font-size: 19px;
   line-height: 18px;
-  color: $color-main;
+  // color: $color-main;
+  color: rgba($color-main, 0.3);
 
   background-color: transparent;
 
@@ -327,6 +328,7 @@
   &:hover,
   &:focus,
   &:active {
+    color: rgba($color-main, 1);
     box-shadow: inset 0 -2px 0 #62d1ba;
 
     + .form__contacts-button {
@@ -339,9 +341,10 @@
     font: inherit;
     font-size: 17px;
     line-height: 18px;
-    color: $color-main;
+    // color: $color-main;
+    color: rgba($color-main, 0.3);
 
-    opacity: 0.3;
+    // opacity: 0.3;
 
     @include tablet {
       font-size: 19px;
