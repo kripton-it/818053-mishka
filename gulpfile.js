@@ -99,6 +99,10 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("clean-sprite", function () {
+  return del("build/img/sprite");
+});
+
 gulp.task("refresh", function (done) {
   server.reload();
   done();
@@ -118,5 +122,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "js", "images", "webp", "css", "sprite", "html"));
+// gulp.task("build", gulp.series("clean", "copy", "js", "images", "webp", "css", "sprite", "clean-sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "clean-sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
