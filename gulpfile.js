@@ -122,6 +122,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-// gulp.task("build", gulp.series("clean", "copy", "js", "images", "webp", "css", "sprite", "clean-sprite", "html"));
-gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "clean-sprite", "html"));
+//gulp.task("build", gulp.series("clean", "copy", "js", "images", "webp", "css", "sprite", "clean-sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "js", "webp", "css", "sprite", "clean-sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
