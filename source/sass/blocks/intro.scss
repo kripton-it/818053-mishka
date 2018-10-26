@@ -95,13 +95,14 @@
   display: block;
   position: relative;
 
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 19px;
+  line-height: 24px;
   color: $color-white;
 
   background-color: $color-green;
 
   @include tablet {
+    font-size: 20px;
     padding-top: 29px;
     padding-left: 34px;
     padding-right: 130px;
