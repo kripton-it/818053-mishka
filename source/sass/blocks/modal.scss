@@ -28,21 +28,6 @@
   display: block;
 }
 
-.modal__overlay {
-  position: fixed;
-  z-index: 5;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(#000000, 0.3);
-  display: none;
-}
-
-.modal__overlay--show {
-  display: block;
-}
-
 .modal__title {
   margin: 0;
   margin-bottom: 20px;
