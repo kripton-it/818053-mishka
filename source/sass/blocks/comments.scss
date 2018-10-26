@@ -59,6 +59,10 @@
     background-size: 350px 457px;
     background-repeat: no-repeat;
     background-position: $desktop-padding 0;
+
+    @include retina {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   &::after {
