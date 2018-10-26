@@ -309,11 +309,8 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 18px;
-  // color: $color-main;
   color: rgba($color-main, 0.3);
-
   background-color: transparent;
-
   border: none;
   box-shadow: inset 0 -2px 0 $color-black;
   box-sizing: border-box;
@@ -347,10 +344,7 @@
     font: inherit;
     font-size: 17px;
     line-height: 18px;
-    // color: $color-main;
     color: rgba($color-main, 0.3);
-
-    // opacity: 0.3;
 
     @include tablet {
       font-size: 19px;
@@ -539,7 +533,7 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 18px;
-  color: $color-main;
+  color: rgba($color-main, 0.3);
 
   background-color: $bg-color-main;
   border: 2px solid $color-main;
@@ -550,13 +544,16 @@
     border-color: #62d1ba;
   }
 
+  &:focus,
+  &:active {
+    color: rgba($color-main, 1);
+  }
+
   &::placeholder {
     font: inherit;
     font-size: 17px;
     line-height: 18px;
-    color: $color-main;
-
-    opacity: 0.3;
+    color: rgba($color-main, 0.3);
 
     @include tablet {
       font-size: 19px;
