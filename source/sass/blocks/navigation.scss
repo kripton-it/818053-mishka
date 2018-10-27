@@ -50,31 +50,6 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
-
-  /* &::before,
-  &::after {
-    @include tablet-only {
-      content: "";
-      position: absolute;
-      background-color: red;
-      width: $tablet-padding + ($desktop-width - $tablet-width) / 2;
-      top: 0;
-      height: 100%;
-      border-bottom: 1px solid rgba(#000000, 0.1);
-    }
-  }
-
-  &::before {
-    @include tablet-only {
-      right: 320px;
-    }
-  }
-
-  &::after {
-    @include tablet-only {
-      left: 668px;
-    }
-  }*/
 }
 
 .navigation__menu {
