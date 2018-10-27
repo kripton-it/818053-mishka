@@ -64,7 +64,7 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: 100vw;
+        width: calc(100vw - 17px);
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
@@ -103,7 +103,7 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: 100vw;
+        width: calc(100vw - 17px);
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
