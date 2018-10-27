@@ -3,9 +3,10 @@
 
   @include mobile-only {
     position: relative;
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   }
 
-  &::after {
+  /* &::after {
     @include mobile-only {
       content: "";
       position: absolute;
@@ -15,6 +16,34 @@
       transform: translateX(-50%);
       top: 0;
       bottom: 0;
+      box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    }
+  } */
+
+  &::before {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      width: calc(50vw - 50%);
+      left: 10px;
+      margin-left: calc(50% - 50vw);
+      bottom: 0;
+      top: 0;
+      box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    }
+  }
+
+  &::after {
+    @include mobile-only {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      width: calc(50vw - 50%);
+      right: 10px;
+      margin-right: calc(50% - 50vw);
+      bottom: 0;
+      top: 0;
       box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
     }
   }

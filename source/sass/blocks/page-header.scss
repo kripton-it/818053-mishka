@@ -1,5 +1,6 @@
 .page-header {
   background-color: $bg-color-main;
+  // overflow: hidden;
 
   @include tablet {
     background-color: #f1f1f1;
