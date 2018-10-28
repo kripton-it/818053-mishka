@@ -64,12 +64,18 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: calc(100vw - 17px);
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
-        left: 50%;
-        transform: translateX(-50%);
+        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding}/* + 12px */);
+        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding}/* + 12px */);
+      }
+    }
+
+    @include desktop {
+      &::before {
+        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
+        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
       }
     }
   }
@@ -103,17 +109,21 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: calc(100vw - 17px);
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
-        left: 50%;
-        transform: translateX(-50%);
+        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding} /* + 12px */);
+        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding} /* + 12px */);
       }
     }
 
     @include desktop {
       padding-top: 35px;
+
+      &::before {
+        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
+        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
+      }
     }
   }
 }

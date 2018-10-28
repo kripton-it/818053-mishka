@@ -50,13 +50,13 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: 50%;
-      transform: translateX(-50%);
       width: $tablet-width;
+      left: calc(50% - #{$tablet-width} / 2);
     }
 
     @include desktop {
       width: $desktop-width;
+      left: calc(50% - #{$desktop-width} / 2);
       background-size: cover;
       height: 34px;
       bottom: -20px;
