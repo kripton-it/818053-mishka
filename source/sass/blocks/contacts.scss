@@ -1,11 +1,11 @@
 .contacts {
-  padding-top: 38px;
+  padding-top: 35px;
   padding-bottom: 38px;
 
   @include container-desktop();
 
   @include tablet {
-    padding-top: 68px;
+    padding-top: 66px;
     padding-bottom: 57px;
   }
 
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     align-content: space-between;
     height: 457px;
-    padding-top: 77px;
+    padding-top: 80px;
     padding-bottom: 105px;
   }
 }
@@ -34,8 +34,9 @@
   }
 
   @include tablet {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
     position: relative;
+    margin-left: 75px;
   }
 
   @include desktop {
@@ -49,8 +50,8 @@
     @include tablet {
       content: "";
       position: absolute;
-      right: 52px;
-      top: -17px;
+      right: 50px;
+      top: -15px;
       width: 47px;
       height: 81px;
       background-image: url("../../img/icon-flag.svg");
@@ -172,7 +173,7 @@
   text-align: center;
 
   @include tablet {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 
   @include desktop {

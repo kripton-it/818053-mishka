@@ -19,6 +19,11 @@
 
   svg {
     color: #63d1bb;
+
+    @include desktop {
+      position: relative;
+      top: 5px;
+    }
   }
 
   &:hover,
