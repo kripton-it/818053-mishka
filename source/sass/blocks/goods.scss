@@ -1,11 +1,11 @@
 .goods__item {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   position: relative;
 
   @include tablet-only {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 
   @include desktop {
@@ -95,7 +95,7 @@
     flex-direction: column;
     width: 278px;
     padding-left: 26px;
-    padding-top: 23px;
+    padding-top: 25px;
   }
 
   @include desktop {
@@ -116,6 +116,7 @@
   @include tablet {
     font-size: 20px;
     padding-right: 40px;
+    margin-bottom: 7px;
   }
 
   @include desktop {
@@ -153,7 +154,7 @@
   }
 
   @include desktop {
-    margin-bottom: 38px;
+    margin-bottom: 35px;
   }
 }
 
@@ -175,6 +176,14 @@
     right: 0;
     height: 1px;
     background-color: #ececec;
+
+    @include tablet {
+      top: -20px;
+    }
+
+    @include desktop {
+      top: -22px;
+    }
   }
 
   @include tablet {

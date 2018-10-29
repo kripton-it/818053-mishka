@@ -4,7 +4,7 @@
 
 .production__wrapper {
   border: 1px solid #ececec;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
 
   &:hover,
   &:focus {
@@ -46,7 +46,7 @@
     content: "";
     position: absolute;
     left: 33px;
-    top: 26px;
+    top: 28px;
     width: 32px;
     height: 32px;
     background-image: url("../img/icon-video.svg");
@@ -81,7 +81,7 @@
   position: relative;
   width: 260px;
   height: 150px;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   background-color: #bebdc2;
   background-image: url("../img/video-mobile@1x.jpg");
