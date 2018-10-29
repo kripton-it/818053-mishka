@@ -36,9 +36,7 @@
       right: 0;
       height: 6px;
       background-image: url("../../img/bg-zigzag-line.svg");
-      background-repeat: repeat-x;
-      background-size: 320px 6px;
-      background-position: 8px top;
+      background-size: contain;
     }
   }
 }
@@ -49,7 +47,7 @@
 
   @include tablet {
     position: relative;
-    padding-bottom: 125px;
+    padding-bottom: 127px;
   }
 
   @include desktop {
@@ -74,8 +72,8 @@
       right: 0;
       background-image: url("../../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
-      background-size: contain;
-      background-position: 15px top;
+      background-size: 768px 17px;
+      background-position: 13px 0;
       height: 17px;
     }
 
@@ -91,7 +89,7 @@
 }
 
 .comments__header {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   @include tablet {
     margin-bottom: 48px;
@@ -111,7 +109,7 @@
 
 .comments__item {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   padding: 0;
 
   @include tablet {
@@ -121,7 +119,7 @@
 
 .comments__text {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   padding: 0;
 
   font-weight: normal;
@@ -172,7 +170,7 @@
 
 .comments__controls {
   height: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   font-size: 0;
 
@@ -188,7 +186,7 @@
   }
 
   @include desktop {
-    bottom: 181px;
+    bottom: 179px;
   }
 }
 
@@ -242,6 +240,6 @@
   }
 
   @include desktop {
-    top: 79px;
+    top: 77px;
   }
 }

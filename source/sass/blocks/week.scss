@@ -1,6 +1,6 @@
 .week {
   position: relative;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-bottom: 41px;
 
   color: $color-main;
@@ -22,7 +22,7 @@
     @include tablet {
       bottom: -2px;
       height: 17px;
-      background-size: 772px 17px;
+      background-size: 768px 17px;
       background-position: 19px top;
     }
 
@@ -37,7 +37,7 @@
   }
 
   @include tablet {
-    padding-top: 46px;
+    padding-top: 48px;
     padding-bottom: 65px;
   }
 
@@ -59,7 +59,7 @@
   }
 
   @include desktop {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     position: relative;
     z-index: 2;
   }
@@ -141,7 +141,7 @@
 .week__table {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   color: $color-main;
 
@@ -245,7 +245,7 @@
 
   @include desktop {
     width: 295px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
 

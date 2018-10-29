@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 38px;
 
   @include container-desktop();
@@ -36,7 +36,7 @@
   @include tablet {
     margin-bottom: 48px;
     position: relative;
-    margin-left: 75px;
+    margin-left: 26px;
   }
 
   @include desktop {
@@ -50,7 +50,7 @@
     @include tablet {
       content: "";
       position: absolute;
-      right: 50px;
+      right: 48px;
       top: -15px;
       width: 47px;
       height: 81px;
