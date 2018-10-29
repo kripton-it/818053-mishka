@@ -2,7 +2,18 @@
   position: relative;
 
   @include tablet {
+    width: $tablet-width - 2 * $tablet-padding;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+  }
+
+  @include desktop {
+    width: $desktop-width - 2 * $desktop-padding;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
   }
 
   &::after {
