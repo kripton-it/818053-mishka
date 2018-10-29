@@ -1,6 +1,5 @@
 .comments {
   position: relative;
-  padding-top: 4px;
   padding-bottom: 50px;
 
   background-color: $bg-color-main;
@@ -8,7 +7,7 @@
   @include container-mobile();
 
   @include tablet {
-    padding-top: 79px;
+    padding-top: 75px;
     padding-bottom: 0;
   }
 
@@ -38,7 +37,8 @@
       height: 6px;
       background-image: url("../../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
-      background-size: contain;
+      background-size: 320px 6px;
+      background-position: 8px top;
     }
   }
 }
@@ -54,7 +54,7 @@
 
   @include desktop {
     padding-top: 70px;
-    padding-bottom: 180px;
+    padding-bottom: 175px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
@@ -74,8 +74,8 @@
       right: 0;
       background-image: url("../../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
-      background-size: cover;
-      background-position: 10px top;
+      background-size: contain;
+      background-position: 15px top;
       height: 17px;
     }
 
@@ -91,7 +91,7 @@
 }
 
 .comments__header {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @include tablet {
     margin-bottom: 48px;
@@ -129,14 +129,6 @@
   line-height: 30px;
   color: $color-main;
 
-  br {
-    display: none;
-
-    @include desktop {
-      display: block;
-    }
-  }
-
   @include tablet {
     font-size: 17px;
     padding-right: 20px;
@@ -151,7 +143,7 @@
 
 .comments__author-name {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 
   font-weight: bold;
   font-size: 17px;
@@ -180,7 +172,7 @@
 
 .comments__controls {
   height: 50px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   font-size: 0;
 
@@ -190,7 +182,7 @@
   @include tablet {
     position: absolute;
     right: $tablet-padding;
-    bottom: 126px;
+    bottom: 130px;
     border-color: transparent;
     margin-bottom: 0;
   }
@@ -243,7 +235,7 @@
   @include tablet {
     font-size: 17px;
     position: absolute;
-    top: 0;
+    top: 2px;
     right: $tablet-padding;
     padding-left: 35px;
     padding-right: 40px;
