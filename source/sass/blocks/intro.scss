@@ -47,7 +47,7 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      left: -$tablet-padding;
+      left: 0;
       width: $tablet-width;
     }
 
@@ -69,7 +69,7 @@
   @include mobile-only {
     font-size: 27px;
     line-height: 30px;
-    margin-bottom: 125px;
+    margin-bottom: 123px;
   }
 
   @include tablet {
@@ -102,7 +102,7 @@
 
   @include tablet {
     font-size: 20px;
-    padding-top: 29px;
+    padding-top: 27px;
     padding-left: 34px;
     padding-right: 130px;
     line-height: 30px;
@@ -129,8 +129,6 @@
     }
   }
 
-  /* заготовка псевдоэлемента для закрытия пустоты при наведении */
-
   &::after {
     display: block;
     content: "";
@@ -143,22 +141,11 @@
   &:focus,
   &:active {
     background-color: #59d5bc;
-    // transform: translateY(-5px);
     margin-top: -5px;
-
-    /* псевдоэлемент при наведении увеличивает высоту и закрывает пустоту */
 
     &::after {
       height: 5px;
     }
-
-    /* Вместо псевдоэлемента можно увеличить на 5px padding-bottom:
-    (мобильная версия)
-    .intro__link-center {
-      @include mobile-only {
-        padding-bottom: 33px;
-      }
-    } */
 
     .intro__link-center::before {
       @include mobile-only {
@@ -171,12 +158,6 @@
         opacity: 0.7;
       }
     }
-
-    /* Вместо псевдоэлемента можно увеличить на 5px padding-bottom:
-    (планшетная и десктопная версии)
-    @include tablet {
-      padding-bottom: 35px;
-    } */
   }
 
   &:active {
@@ -237,6 +218,7 @@
           height: 60px;
           background-image: url("../img/icon-toy.svg");
           right: 28px;
+          top: 20px;
         }
       }
     }
@@ -250,8 +232,8 @@
     width: $mobile-width - $mobile-padding - 160px;
     padding-left: $mobile-padding;
     padding-right: 160px;
-    padding-top: 22px;
-    padding-bottom: 28px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 
@@ -260,6 +242,7 @@
       opacity: 0.5;
       position: absolute;
       right: 35px;
+      top: 23px;
       width: 40px;
       height: 62px;
       background-image: url("../img/icon-interior.svg");
