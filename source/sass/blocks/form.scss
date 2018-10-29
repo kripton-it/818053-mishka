@@ -22,7 +22,7 @@
 
   &--radio {
     padding-top: 30px;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 
     @include tablet {
       padding-top: 25px;
@@ -50,8 +50,8 @@
     margin-bottom: 17px;
 
     @include tablet {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 51px;
+      padding-bottom: 52px;
       margin-bottom: 0;
 
       .form__list {
@@ -82,16 +82,16 @@
 
   &--info {
     padding-top: 35px;
-    margin-bottom: 19px;
+    margin-bottom: 21px;
 
     @include tablet {
-      padding-top: 50px;
+      padding-top: 48px;
       margin-bottom: 0;
       padding-bottom: 48px;
     }
 
     @include desktop {
-      padding-top: 52px;
+      padding-top: 45px;
       padding-bottom: 51px;
     }
   }
@@ -101,7 +101,7 @@
     margin-bottom: 20px;
 
     @include tablet {
-      padding-top: 40px;
+      padding-top: 37px;
       padding-bottom: 50px;
       margin-bottom: 0;
 
@@ -118,7 +118,7 @@
     }
 
     @include desktop {
-      padding-top: 37px;
+      padding-top: 35px;
 
       &::before {
         left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
@@ -141,7 +141,7 @@
   @include tablet {
     padding-left: 168px;
     padding-top: 50px;
-    padding-bottom: 54px;
+    padding-bottom: 52px;
     display: flex;
   }
 
@@ -206,7 +206,7 @@
 
     @include desktop {
       left: -178px;
-      top: 27px;
+      top: 31px;
     }
   }
 
@@ -214,6 +214,10 @@
     @include tablet {
       left: -167px;
       top: 30px;
+    }
+
+    @include desktop {
+      top: 32px;
     }
   }
 }
@@ -231,7 +235,7 @@
   }
 
   &--checkbox {
-    margin-bottom: 13px;
+    margin-bottom: 13.5px;
 
     @include tablet {
       width: 239px;
@@ -262,12 +266,12 @@
 
     @include tablet {
       display: flex;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     @include desktop {
       padding-right: 175px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
   }
 
@@ -277,7 +281,7 @@
 
     @include tablet {
       display: flex;
-      margin-bottom: 12px;
+      margin-bottom: 9px;
     }
 
     .form__input {
@@ -307,6 +311,10 @@
     font-size: 19px;
     margin-right: 26px;
     padding-top: 16px;
+  }
+
+  @include desktop {
+    padding-top: 20px;
   }
 }
 
@@ -573,7 +581,6 @@
 
   @include desktop {
     width: 700px;
-    min-height: 145px;
   }
 }
 
@@ -612,7 +619,7 @@
 
   @include tablet {
     width: 230px;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 15px;
   }
 

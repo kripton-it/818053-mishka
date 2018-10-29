@@ -31,14 +31,14 @@
 
   &--form {
     color: #231f20;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 
     @include tablet {
       margin-bottom: 75px;
     }
 
     @include desktop {
-      margin-bottom: 123px;
+      margin-bottom: 125px;
     }
   }
 
