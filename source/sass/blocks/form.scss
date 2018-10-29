@@ -67,15 +67,15 @@
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
-        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding}/* + 12px */);
-        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding}/* + 12px */);
+        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
+        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
       }
     }
 
     @include desktop {
       &::before {
-        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
-        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
+        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
+        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
       }
     }
   }
@@ -112,8 +112,8 @@
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
-        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding} /* + 12px */);
-        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding} /* + 12px */);
+        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
+        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
       }
     }
 
@@ -121,8 +121,8 @@
       padding-top: 35px;
 
       &::before {
-        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
-        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding} /* + 12px */);
+        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
+        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
       }
     }
   }

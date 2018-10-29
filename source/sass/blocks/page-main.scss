@@ -1,5 +1,9 @@
 .page-main {
   border-bottom: 1px solid transparent;
+
+  &--form {
+    overflow: hidden;
+  }
 }
 
 .page-main__heading {
