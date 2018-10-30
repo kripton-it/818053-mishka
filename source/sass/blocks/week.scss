@@ -55,7 +55,7 @@
   @include tablet {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   @include desktop {
@@ -147,7 +147,7 @@
 
   @include tablet {
     width: 291px;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 
   @include desktop {
@@ -179,6 +179,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ececec;
+
+    @include tablet {
+      padding-top: 10px;
+      padding-bottom: 9px;
+    }
 
     @include desktop {
       padding-top: 8px;
@@ -256,12 +261,10 @@
   @include tablet {
     width: 292px;
     margin-left: -2px;
-    padding-top: 13px;
   }
 
   @include desktop {
     width: 293px;
-    padding-top: 14px;
     margin-left: 0;
     margin-bottom: -2px;
   }

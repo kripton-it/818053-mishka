@@ -7,7 +7,7 @@
   @include container-mobile();
 
   @include tablet {
-    padding-top: 75px;
+    padding-top: 77px;
     padding-bottom: 0;
   }
 
@@ -92,7 +92,7 @@
   margin-bottom: 25px;
 
   @include tablet {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     margin-left: -3px;
   }
 
@@ -130,7 +130,7 @@
   @include tablet {
     font-size: 17px;
     padding-right: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   @include desktop {
@@ -237,6 +237,7 @@
     right: $tablet-padding;
     padding-left: 35px;
     padding-right: 40px;
+    padding-top: 15px;
   }
 
   @include desktop {

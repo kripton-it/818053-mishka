@@ -36,7 +36,7 @@
   @include tablet {
     margin-bottom: 48px;
     position: relative;
-    margin-left: 26px;
+    margin-left: 68px;
   }
 
   @include desktop {
@@ -82,7 +82,7 @@
   @include container-tablet();
 
   @include tablet {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     font-size: 17px;
   }
 
@@ -173,7 +173,7 @@
   text-align: center;
 
   @include tablet {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
   }
 
   @include desktop {
@@ -218,6 +218,7 @@
   @include tablet {
     width: 230px;
     font-size: 17px;
+    padding-top: 15px;
   }
 
   @include desktop {
