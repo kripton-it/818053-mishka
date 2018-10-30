@@ -28,6 +28,13 @@ if (goodsButtons) {
   }
 }
 
+if (overlay) {
+  overlay.addEventListener("click", function () {
+    modal.classList.remove("modal--show");
+    overlay.classList.remove("overlay--show");
+  });
+}
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     if (modal.classList.contains("modal--show")) {
@@ -36,9 +43,4 @@ window.addEventListener("keydown", function (evt) {
       overlay.classList.remove("overlay--show");
     }
   }
-});
-
-overlay.addEventListener("click", function () {
-  modal.classList.remove("modal--show");
-  overlay.classList.remove("overlay--show");
 });
