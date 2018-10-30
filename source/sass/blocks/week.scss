@@ -1,6 +1,6 @@
 .week {
   position: relative;
-  padding-top: 29px;
+  padding-top: 28px;
   padding-bottom: 41px;
 
   color: $color-main;
@@ -16,8 +16,8 @@
     height: 6px;
     background-image: url("../../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-size: 320px 6px;
-    background-position: 7px 0;
+    background-size: contain;
+    background-position: 8px 0;
 
     @include tablet {
       bottom: -2px;
@@ -50,7 +50,7 @@
 .week__header-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   @include tablet {
     flex-direction: row;
@@ -189,7 +189,7 @@
 
 .week__image {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding: 0;
   width: 260px;
   height: 315px;
@@ -228,7 +228,7 @@
 
 .week__price {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   padding: 0;
 
   font-weight: bold;
