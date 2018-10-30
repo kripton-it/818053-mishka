@@ -85,7 +85,7 @@
     margin-bottom: 21px;
 
     @include tablet {
-      padding-top: 48px;
+      padding-top: 45px;
       margin-bottom: 0;
       padding-bottom: 48px;
     }
@@ -201,7 +201,7 @@
   &--phone {
     @include tablet {
       left: -168px;
-      top: 30px;
+      top: 32px;
     }
 
     @include desktop {
@@ -213,7 +213,7 @@
   &--email {
     @include tablet {
       left: -167px;
-      top: 30px;
+      top: 32px;
     }
 
     @include desktop {
@@ -231,7 +231,7 @@
   position: relative;
 
   @include tablet {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   &--checkbox {
@@ -267,6 +267,10 @@
     @include tablet {
       display: flex;
       margin-bottom: 20px;
+
+      .form__label {
+        margin-top: 5px;
+      }
     }
 
     @include desktop {
@@ -623,7 +627,6 @@
 
   @include tablet {
     width: 230px;
-    padding-top: 14px;
     padding-bottom: 15px;
   }
 
