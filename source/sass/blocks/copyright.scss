@@ -36,4 +36,8 @@
 
 .copyright__text {
   margin-right: 30px;
+
+  @include desktop {
+    margin-bottom: 10px;
+  }
 }

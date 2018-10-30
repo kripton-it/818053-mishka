@@ -118,7 +118,7 @@
     }
 
     @include desktop {
-      padding-top: 35px;
+      padding-top: 33px;
 
       &::before {
         left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
@@ -147,7 +147,7 @@
 
   @include desktop {
     padding-left: 175px;
-    padding-bottom: 47px;
+    padding-bottom: 49px;
   }
 }
 
@@ -206,7 +206,7 @@
 
     @include desktop {
       left: -178px;
-      top: 31px;
+      top: 33px;
     }
   }
 
@@ -217,7 +217,7 @@
     }
 
     @include desktop {
-      top: 32px;
+      top: 35px;
     }
   }
 }
@@ -276,6 +276,10 @@
     @include desktop {
       padding-right: 175px;
       margin-bottom: 20px;
+
+      .form__label {
+        margin-top: 0;
+      }
     }
   }
 
