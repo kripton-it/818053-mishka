@@ -47,7 +47,7 @@
 
   &--checkbox {
     padding-top: 27px;
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 
     @include tablet {
       padding-top: 51px;
@@ -132,7 +132,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 31px;
 
   @include mobile-only {
     border-top: 1px solid $color-green;
@@ -235,7 +235,7 @@
   }
 
   &--checkbox {
-    margin-bottom: 13.5px;
+    margin-bottom: 13px;
 
     @include tablet {
       width: 239px;
@@ -277,7 +277,7 @@
 
   &--contacts {
     padding-top: 11px;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
 
     @include tablet {
       display: flex;
@@ -333,10 +333,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 52px;
-
-  &--contacts {
-    padding-bottom: 16px;
-  }
 
   @include tablet {
     font-size: 19px;
@@ -451,7 +447,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 4px;
     width: 36px;
     height: 36px;
     border: 2px solid $color-main;
@@ -512,12 +508,21 @@
 .form__contacts-button {
   position: absolute;
   cursor: pointer;
-  right: -1px;
-  bottom: 9px;
+  right: 0;
+  bottom: 10px;
   border: none;
   background-color: transparent;
   color: $color-black;
   opacity: 0.2;
+
+  &--phone {
+    right: 3px;
+    bottom: 13px;
+  }
+
+  &--email {
+    bottom: 6px;
+  }
 
   &:hover,
   &:focus,
@@ -541,8 +546,8 @@
   width: 100%;
   padding: 15px;
   margin: 0;
-  margin-bottom: 15px;
-  min-height: 145px;
+  margin-bottom: 17px;
+  min-height: 142px;
 
   font: inherit;
   font-weight: normal;
@@ -575,7 +580,6 @@
     font-size: 19px;
     width: 500px;
     padding-top: 14px;
-    min-height: 142px;
     margin-bottom: 0;
   }
 
