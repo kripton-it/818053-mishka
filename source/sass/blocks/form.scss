@@ -67,15 +67,9 @@
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
-        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
-        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
-      }
-    }
-
-    @include desktop {
-      &::before {
-        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
-        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -112,18 +106,14 @@
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
-        left: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
-        right: calc(#{$tablet-width} / 2 - 50vw - #{$tablet-padding});
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
     @include desktop {
       padding-top: 33px;
-
-      &::before {
-        left: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
-        right: calc(#{$desktop-width} / 2 - 50vw - #{$desktop-padding});
-      }
     }
   }
 }
