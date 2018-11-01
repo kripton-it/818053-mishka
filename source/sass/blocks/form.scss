@@ -76,7 +76,7 @@
 
   &--info {
     padding-top: 35px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
 
     @include tablet {
       padding-top: 45px;
@@ -91,7 +91,7 @@
   }
 
   &--contacts {
-    padding-top: 3px;
+    padding-top: 0;
     margin-bottom: 20px;
 
     @include tablet {
@@ -252,11 +252,10 @@
   }
 
   &--text {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 
     @include tablet {
       display: flex;
-      margin-bottom: 20px;
 
       .form__label {
         margin-top: 5px;
@@ -328,13 +327,15 @@
   box-shadow: inset 0 -2px 0 $color-black;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  min-height: 56px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   @include tablet {
     font-size: 19px;
     padding-left: 16px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    min-height: 56px;
   }
 
   &:hover,
@@ -342,7 +343,7 @@
   &:active {
     box-shadow: inset 0 -2px 0 #62d1ba;
 
-    + .form__contacts-button {
+    +.form__contacts-button {
       color: #62d1ba;
       opacity: 1;
     }
@@ -361,7 +362,7 @@
   }
 }
 
-.form__input-radio + .form__label {
+.form__input-radio+.form__label {
   cursor: pointer;
   position: relative;
   padding-top: 10px;
@@ -407,13 +408,13 @@
   }
 }
 
-.form__input-radio:focus + .form__label {
+.form__input-radio:focus+.form__label {
   &::before {
     border-color: #62d1ba;
   }
 }
 
-.form__input-radio:checked + .form__label {
+.form__input-radio:checked+.form__label {
   &::after {
     content: "";
     position: absolute;
@@ -433,7 +434,7 @@
   }
 }
 
-.form__input-checkbox + .form__label {
+.form__input-checkbox+.form__label {
   cursor: pointer;
   position: relative;
   padding-left: 62px;
@@ -477,13 +478,13 @@
   }
 }
 
-.form__input-checkbox:focus + .form__label {
+.form__input-checkbox:focus+.form__label {
   &::before {
     border-color: #62d1ba;
   }
 }
 
-.form__input-checkbox:checked + .form__label {
+.form__input-checkbox:checked+.form__label {
   &::after {
     content: "";
     position: absolute;
