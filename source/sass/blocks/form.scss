@@ -26,7 +26,7 @@
 
     @include tablet {
       padding-top: 25px;
-      padding-bottom: 50px;
+      padding-bottom: 48px;
       margin-bottom: 0;
     }
 
@@ -46,12 +46,12 @@
   }
 
   &--checkbox {
-    padding-top: 26px;
-    margin-bottom: 17px;
+    padding-top: 27px;
+    margin-bottom: 15px;
 
     @include tablet {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 51px;
+      padding-bottom: 52px;
       margin-bottom: 0;
 
       .form__list {
@@ -64,10 +64,10 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: 100vw;
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
+        width: 100vw;
         left: 50%;
         transform: translateX(-50%);
       }
@@ -76,16 +76,16 @@
 
   &--info {
     padding-top: 35px;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
 
     @include tablet {
-      padding-top: 50px;
+      padding-top: 45px;
       margin-bottom: 0;
       padding-bottom: 48px;
     }
 
     @include desktop {
-      padding-top: 49px;
+      padding-top: 45px;
       padding-bottom: 51px;
     }
   }
@@ -95,7 +95,7 @@
     margin-bottom: 20px;
 
     @include tablet {
-      padding-top: 40px;
+      padding-top: 37px;
       padding-bottom: 50px;
       margin-bottom: 0;
 
@@ -103,17 +103,17 @@
         content: "";
         position: absolute;
         z-index: -1;
-        width: 100vw;
         top: 0;
         bottom: 0;
         background-color: $bg-color-gray;
+        width: 100vw;
         left: 50%;
         transform: translateX(-50%);
       }
     }
 
     @include desktop {
-      padding-top: 35px;
+      padding-top: 33px;
     }
   }
 }
@@ -122,7 +122,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 31px;
 
   @include mobile-only {
     border-top: 1px solid $color-green;
@@ -137,7 +137,7 @@
 
   @include desktop {
     padding-left: 175px;
-    padding-bottom: 47px;
+    padding-bottom: 49px;
   }
 }
 
@@ -157,18 +157,18 @@
     background-color: $bg-color-main;
 
     &--phone {
-      top: -7px;
+      top: -11px;
     }
 
     &--email {
-      top: -7px;
+      top: -12px;
       padding-right: 22px;
 
       &::after {
         content: "";
         position: absolute;
         z-index: -1;
-        top: 7px;
+        top: 8px;
         left: 1px;
         width: 260px;
         height: 1px;
@@ -191,24 +191,23 @@
   &--phone {
     @include tablet {
       left: -168px;
-      top: 30px;
+      top: 32px;
     }
 
     @include desktop {
       left: -178px;
-      top: 26px;
+      top: 33px;
     }
   }
 
   &--email {
     @include tablet {
       left: -167px;
-      top: 30px;
+      top: 32px;
     }
 
     @include desktop {
-      left: -173px;
-      top: 28px;
+      top: 35px;
     }
   }
 }
@@ -218,15 +217,15 @@
 }
 
 .form__item {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   position: relative;
 
   @include tablet {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   &--checkbox {
-    margin-bottom: 13.5px;
+    margin-bottom: 13px;
 
     @include tablet {
       width: 239px;
@@ -242,35 +241,44 @@
 
     @include desktop {
       width: 250px;
-      margin-right: 10px;
+      margin-right: 12px;
 
       &:nth-child(3n) {
-        margin-left: 6px;
+        margin-right: 0;
+        margin-left: 3px;
         margin-bottom: 38px;
       }
     }
   }
 
   &--text {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 
     @include tablet {
       display: flex;
-      margin-bottom: 21px;
+
+      .form__label {
+        margin-top: 5px;
+      }
     }
 
     @include desktop {
       padding-right: 175px;
+      margin-bottom: 20px;
+
+      .form__label {
+        margin-top: 0;
+      }
     }
   }
 
   &--contacts {
     padding-top: 11px;
-    margin-bottom: 42px;
+    margin-bottom: 43px;
 
     @include tablet {
       display: flex;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
 
     .form__input {
@@ -301,27 +309,33 @@
     margin-right: 26px;
     padding-top: 16px;
   }
+
+  @include desktop {
+    padding-top: 20px;
+  }
 }
 
 .form__input {
   outline: none;
   font: inherit;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
   color: $color-main;
-
   background-color: transparent;
-
   border: none;
   box-shadow: inset 0 -2px 0 $color-black;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 14px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   @include tablet {
+    font-size: 19px;
     padding-left: 16px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    min-height: 56px;
   }
 
   &:hover,
@@ -340,7 +354,6 @@
     font-size: 17px;
     line-height: 18px;
     color: $color-main;
-
     opacity: 0.3;
 
     @include tablet {
@@ -433,7 +446,7 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 3px;
+    top: 4px;
     width: 36px;
     height: 36px;
     border: 2px solid $color-main;
@@ -476,7 +489,7 @@
     content: "";
     position: absolute;
     left: 8px;
-    top: 16px;
+    top: 17px;
     width: 22px;
     height: 16px;
     background-image: url("../img/icon-tick.svg");
@@ -495,11 +508,20 @@
   position: absolute;
   cursor: pointer;
   right: 0;
-  bottom: 9px;
+  bottom: 10px;
   border: none;
   background-color: transparent;
   color: $color-black;
   opacity: 0.2;
+
+  &--phone {
+    right: 3px;
+    bottom: 13px;
+  }
+
+  &--email {
+    bottom: 6px;
+  }
 
   &:hover,
   &:focus,
@@ -523,12 +545,12 @@
   width: 100%;
   padding: 15px;
   margin: 0;
-  margin-bottom: 15px;
-  min-height: 145px;
+  margin-bottom: 17px;
+  min-height: 142px;
 
   font: inherit;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
   color: $color-main;
 
@@ -546,7 +568,6 @@
     font-size: 17px;
     line-height: 18px;
     color: $color-main;
-
     opacity: 0.3;
 
     @include tablet {
@@ -555,15 +576,14 @@
   }
 
   @include tablet {
+    font-size: 19px;
     width: 500px;
-    padding-top: 11px;
-    min-height: 140px;
+    padding-top: 14px;
     margin-bottom: 0;
   }
 
   @include desktop {
     width: 700px;
-    min-height: 145px;
   }
 }
 
@@ -602,7 +622,6 @@
 
   @include tablet {
     width: 230px;
-    padding-top: 15px;
     padding-bottom: 15px;
   }
 

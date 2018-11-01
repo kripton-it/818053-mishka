@@ -6,9 +6,16 @@
 
 .copyright__link {
   display: flex;
-  justify-content: center;
   align-items: center;
   color: $color-black;
+
+  @include mobile-only {
+    justify-content: center;
+  }
+
+  @include tablet {
+    margin-right: -3px;
+  }
 
   svg {
     color: #63d1bb;
@@ -29,4 +36,8 @@
 
 .copyright__text {
   margin-right: 30px;
+
+  @include desktop {
+    margin-bottom: 10px;
+  }
 }

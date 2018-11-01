@@ -1,7 +1,7 @@
 .week {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 28px;
+  padding-bottom: 41px;
 
   color: $color-main;
 
@@ -17,11 +17,12 @@
     background-image: url("../../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: contain;
+    background-position: 8px 0;
 
     @include tablet {
       bottom: -2px;
       height: 17px;
-      background-size: 772px 17px;
+      background-size: 768px 17px;
       background-position: 19px top;
     }
 
@@ -31,34 +32,34 @@
       bottom: 0;
       height: 23px;
       background-size: 1050px 23px;
-      background-position: 19px top;
+      background-position: 25px top;
     }
   }
 
   @include tablet {
-    padding-top: 46px;
+    padding-top: 48px;
     padding-bottom: 65px;
   }
 
   @include desktop {
     padding-top: 125px;
-    padding-bottom: 100px;
+    padding-bottom: 95px;
   }
 }
 
 .week__header-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   @include tablet {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 53px;
+    margin-bottom: 43px;
   }
 
   @include desktop {
-    margin-bottom: 43px;
+    margin-bottom: 35px;
     position: relative;
     z-index: 2;
   }
@@ -75,14 +76,13 @@
   text-transform: uppercase;
 
   @include tablet {
-    width: 130px;
+    width: 125px;
     line-height: 17px;
     text-align: center;
-    margin-bottom: 0;
-    margin-left: 20px;
   }
 
   @include desktop {
+    width: 131px;
     margin-left: 15px;
     margin-right: 23px;
   }
@@ -94,10 +94,12 @@
 
   @include tablet {
     flex-grow: 1;
+    margin-left: -5px;
   }
 
   @include desktop {
     order: 1;
+    margin-left: 0;
   }
 }
 
@@ -128,29 +130,28 @@
     font-size: 17px;
     line-height: 30px;
     width: 295px;
-    margin-top: -8px;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   @include desktop {
-    margin-bottom: 49px;
+    margin-bottom: 48px;
   }
 }
 
 .week__table {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   color: $color-main;
 
   @include tablet {
     width: 291px;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 
   @include desktop {
-    margin-bottom: 110px;
+    margin-bottom: 109px;
   }
 
   tbody {
@@ -180,14 +181,24 @@
     border-bottom: 1px solid #ececec;
 
     @include tablet {
+      padding-top: 10px;
       padding-bottom: 9px;
     }
+
+    @include desktop {
+      padding-top: 8px;
+      padding-bottom: 11px;
+    }
+  }
+
+  th {
+    text-align: left;
   }
 }
 
 .week__image {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   padding: 0;
   width: 260px;
   height: 315px;
@@ -204,6 +215,7 @@
   @include desktop {
     width: 525px;
     height: 636px;
+    top: 12px;
   }
 
   img {
@@ -225,7 +237,7 @@
 
 .week__price {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   padding: 0;
 
   font-weight: bold;
@@ -242,12 +254,12 @@
 
   @include desktop {
     width: 295px;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
   }
 }
 
 .week__order {
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 15px;
 
   @include tablet {
@@ -257,8 +269,7 @@
 
   @include desktop {
     width: 293px;
-    padding-top: 14px;
     margin-left: 0;
-    margin-bottom: -2px;
+    padding-bottom: 14px;
   }
 }

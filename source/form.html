@@ -8,32 +8,6 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию показывается мобильный макет */
-    background-image: url( "img/preview/mishka-form-mobile.png" );
-  }
-  /* Планшет */
-  @media ( min-width: 768px ) {
-    HTML {
-      /* Планшетный макет */
-      background-image: url( "img/preview/mishka-form-tablet.jpg" );
-    }
-  }
-  /* Десктоп */
-  @media ( min-width: 1150px ) {
-    HTML {
-      /* Десктопный макет */
-      background-image: url( "img/preview/mishka-form-desktop.jpg" );
-    }
-  }
-</style>
-  <link href="../pixel-glass/styles.css" rel="stylesheet">
-  <script src="../pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
@@ -43,7 +17,7 @@
   </div>
 
   <header class="page-header">
-    <nav class="navigation container navigation--nojs">
+    <nav class="navigation navigation--nojs">
       <button class="navigation__button" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню</span>
       </button>
@@ -170,8 +144,8 @@
         <ul class="form__list">
           <li class="form__item form__item--contacts">
             <label class="form__legend form__legend--phone" for="phone">Тел<span class="visually-hidden">ефон</span></label>
-            <input class="form__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            <button class="form__contacts-button" type="button">
+            <input class="form__input form__input--contacts" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <button class="form__contacts-button form__contacts-button--phone" type="button">
               <svg width="25" height="24">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -179,8 +153,8 @@
           </li>
           <li class="form__item form__item--contacts">
             <label class="form__legend form__legend--email" for="email">e-mail</label>
-            <input class="form__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-            <button class="form__contacts-button" type="button">
+            <input class="form__input form__input--contacts" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            <button class="form__contacts-button form__contacts-button--email" type="button">
               <svg width="32" height="32">
                 <use xlink:href="#icon-mail"></use>
               </svg>

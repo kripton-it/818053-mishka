@@ -8,32 +8,6 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию показывается мобильный макет */
-    background-image: url( "img/preview/mishka-index-mobile.png" );
-  }
-  /* Планшет */
-  @media ( min-width: 768px ) {
-    HTML {
-      /* Планшетный макет */
-      background-image: url( "img/preview/mishka-index-tablet.jpg" );
-    }
-  }
-  /* Десктоп */
-  @media ( min-width: 1150px ) {
-    HTML {
-      /* Десктопный макет */
-      background-image: url( "img/preview/mishka-index-desktop.jpg" );
-    }
-  }
-</style>
-  <link href="../pixel-glass/styles.css" rel="stylesheet">
-  <script src="../pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
@@ -43,7 +17,7 @@
   </div>
 
   <header class="page-header page-header--index">
-    <nav class="navigation navigation--nojs container">
+    <nav class="navigation navigation--nojs">
       <button class="navigation__button" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню</span>
       </button>
@@ -104,12 +78,12 @@
         <p class="intro__header heading">Милые штуки ручной<br> работы для дома</p>
         <ul class="intro__list">
           <li class="intro__item">
-            <a class="intro__link" href="#">
+            <a class="intro__link" href="catalog.html#interior">
               <span class="intro__link-center">Предметы интерьера</span>
             </a>
           </li>
           <li class="intro__item intro__item--different">
-            <a class="intro__link" href="#">
+            <a class="intro__link" href="catalog.html#toys">
               <span class="intro__link-center">Детские игрушки</span>
             </a>
           </li>
@@ -186,7 +160,7 @@
           <blockquote class="comments__item">
             <p class="comments__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои фотографии сразу стали
+              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали
               более
               стильными, а также набирают больше лайков!
             </p>
@@ -204,7 +178,7 @@
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
-        <a class="comments__write button" href="#">Написать</a>
+        <a class="comments__write button" href="write-comment.html">Написать</a>
       </div>
     </section>
 
@@ -228,7 +202,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3014890173391!2d30.322081803822137!3d59.938729908698924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1539455833768"
           width="322" height="457" style="border:0" allowfullscreen></iframe>
       </p>
-      <a class="contacts__write button" href="#">Напишите нам</a>
+      <a class="contacts__write button" href="feedback-form.html">Напишите нам</a>
     </section>
   </main>
 
@@ -299,7 +273,7 @@
     </form>
   </section>
 
-  <div class="modal__overlay"></div>
+  <div class="overlay"></div>
 
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>

@@ -8,32 +8,6 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url( "img/preview/mishka-catalog-mobile.png" );
-    }
-    /* Планшет */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url( "img/preview/mishka-catalog-tablet.jpg" );
-      }
-    }
-    /* Десктоп */
-    @media ( min-width: 1150px ) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url( "img/preview/mishka-catalog-desktop.jpg" );
-      }
-    }
-  </style>
-  <link href="../pixel-glass/styles.css" rel="stylesheet">
-  <script src="../pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 
 <body class="body">
@@ -43,7 +17,7 @@
   </div>
 
   <header class="page-header">
-    <nav class="navigation container navigation--nojs">
+    <nav class="navigation navigation--nojs">
       <button class="navigation__button" type="button">
         <span class="visually-hidden">Открыть/Закрыть меню</span>
       </button>
@@ -100,7 +74,7 @@
     </h1>
     <ul class="page-main__goods goods container">
       <li class="goods__item">
-        <a class="goods__photo-link" href="#">
+        <a class="goods__photo-link" href="hare.html">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
@@ -125,7 +99,7 @@
         </div>
       </li>
       <li class="goods__item">
-        <a class="goods__photo-link" href="#">
+        <a class="goods__photo-link" href="bowl.html">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
@@ -150,7 +124,7 @@
         </div>
       </li>
       <li class="goods__item">
-        <a class="goods__photo-link" href="#">
+        <a class="goods__photo-link" href="big-cart-for-toys.html">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
@@ -256,7 +230,7 @@
     </form>
   </section>
 
-  <div class="modal__overlay"></div>
+  <div class="overlay"></div>
 
   <script src="js/picturefill.min.js"></script>
   <script src="js/script.min.js"></script>

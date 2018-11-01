@@ -1,6 +1,5 @@
 .comments {
   position: relative;
-  padding-top: 4px;
   padding-bottom: 50px;
 
   background-color: $bg-color-main;
@@ -8,7 +7,7 @@
   @include container-mobile();
 
   @include tablet {
-    padding-top: 79px;
+    padding-top: 77px;
     padding-bottom: 0;
   }
 
@@ -37,7 +36,6 @@
       right: 0;
       height: 6px;
       background-image: url("../../img/bg-zigzag-line.svg");
-      background-repeat: repeat-x;
       background-size: contain;
     }
   }
@@ -49,16 +47,20 @@
 
   @include tablet {
     position: relative;
-    padding-bottom: 125px;
+    padding-bottom: 127px;
   }
 
   @include desktop {
     padding-top: 70px;
-    padding-bottom: 180px;
+    padding-bottom: 175px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
     background-position: $desktop-padding 0;
+
+    @include retina {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   &::after {
@@ -70,8 +72,8 @@
       right: 0;
       background-image: url("../../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
-      background-size: cover;
-      background-position: 10px top;
+      background-size: 768px 17px;
+      background-position: 13px 0;
       height: 17px;
     }
 
@@ -90,12 +92,13 @@
   margin-bottom: 25px;
 
   @include tablet {
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     margin-left: -3px;
   }
 
   @include desktop {
     margin-left: 172px;
+    margin-bottom: 49px;
   }
 }
 
@@ -125,29 +128,21 @@
   line-height: 30px;
   color: $color-main;
 
-  br {
-    display: none;
-
-    @include desktop {
-      display: block;
-    }
-  }
-
   @include tablet {
     font-size: 17px;
     padding-right: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   @include desktop {
     padding-right: 105px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }
 
 .comments__author-name {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 
   font-weight: bold;
   font-size: 17px;
@@ -160,7 +155,7 @@
     margin-bottom: 3px;
   }
 
-  @include tablet {
+  @include desktop {
     font-size: 17px;
     margin-bottom: 3px;
   }
@@ -176,7 +171,7 @@
 
 .comments__controls {
   height: 50px;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 
   font-size: 0;
 
@@ -186,13 +181,13 @@
   @include tablet {
     position: absolute;
     right: $tablet-padding;
-    bottom: 126px;
+    bottom: 130px;
     border-color: transparent;
     margin-bottom: 0;
   }
 
   @include desktop {
-    bottom: 181px;
+    bottom: 179px;
   }
 }
 
@@ -232,20 +227,21 @@
 }
 
 .comments__write {
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 15px;
   font-size: 18px;
 
   @include tablet {
     font-size: 17px;
     position: absolute;
-    top: 0;
+    top: 2px;
     right: $tablet-padding;
     padding-left: 35px;
     padding-right: 40px;
+    padding-top: 15px;
   }
 
   @include desktop {
-    top: 79px;
+    top: 77px;
   }
 }

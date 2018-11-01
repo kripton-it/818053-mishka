@@ -6,8 +6,9 @@
   background-color: $bg-color-gray;
 
   @include tablet {
-    padding-top: 48px;
+    padding-top: 50px;
     padding-bottom: 52px;
+    overflow: hidden;
   }
 }
 
@@ -54,6 +55,7 @@
   @include tablet {
     padding: 0;
     margin: 0;
+    margin-bottom: 4px;
     width: 150px;
     border: none;
   }
@@ -70,5 +72,9 @@
     width: 182px;
     margin-left: auto;
     margin-right: 0;
+  }
+
+  @include desktop {
+    margin-right: 3px;
   }
 }
