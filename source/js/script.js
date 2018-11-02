@@ -8,12 +8,12 @@ var overlay = document.querySelector(".overlay");
 navigation.classList.remove("navigation--nojs");
 navigation.classList.add("navigation--closed");
 
-button.addEventListener('click', function () {
+button.addEventListener("click", function () {
   navigation.classList.toggle("navigation--closed");
 });
 
 if (weekOrder) {
-  weekOrder.addEventListener('click', function () {
+  weekOrder.addEventListener("click", function () {
     modal.classList.add("modal--show");
     overlay.classList.add("overlay--show");
   });
@@ -21,7 +21,7 @@ if (weekOrder) {
 
 if (goodsButtons) {
   for (var i = 0; i < goodsButtons.length; i++) {
-    goodsButtons[i].addEventListener('click', function () {
+    goodsButtons[i].addEventListener("click", function () {
       modal.classList.add("modal--show");
       overlay.classList.add("overlay--show");
     });

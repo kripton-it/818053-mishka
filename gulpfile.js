@@ -13,9 +13,9 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var htmlmin = require('gulp-htmlmin');
-var uglify = require('gulp-uglify');
-var pump = require('pump');
+var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
